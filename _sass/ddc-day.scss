@@ -378,8 +378,8 @@ div.wrapper {
 
         font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
         padding: 0;
-        line-height: 1.1;
-        margin-bottom: 0.75em;
+        line-height: 1.0;
+        margin-bottom: 1em;
 
         a {
 
@@ -410,15 +410,10 @@ div.wrapper {
 
         &.tag-h3 {
           font-size: 14px;
-          line-height: 1.0;
           text-align: right;
           list-style-type: circle;
           direction: rtl;
           margin-right: 1em;
-          
-          & + .tag-h2 {
-            margin-top: 0.25em;
-          }
           
         }
 
