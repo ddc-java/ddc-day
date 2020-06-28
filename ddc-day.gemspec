@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.summary       = 'DDC Day is a Jekyll theme by Nick Bennett, based on Leap Day by Matt Graham, intended for GitHub Pages-hosted curriculum used in the Deep Dive Coding Java+Android Bootcamp.'
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^((_includes|_layouts|_sass|assets)/|(LICENSE|README)(\.(txt|md|markdown)|$)|(.*\.(md|html)))}i)
+    f.match(%r{^((_includes|_layouts|_sass|assets)/|(LICENSE|README)(\.(txt|md|markdown)|$))}i)
   end
 
   s.platform = Gem::Platform::RUBY
