@@ -1,0 +1,120 @@
+<!--
+  Copyright 2020 Deep Dive Coding/CNM Ingenuity, Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0>
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {% seo %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            inlineMath: [['$','$']]
+          },
+          TeX: { 
+            equationNumbers: { 
+              autoNumber: 'AMS' 
+            } 
+          }
+        });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>{{ site.title | default: site.github.repository_name }}{% if page.title %}: {{ page.title }}{% endif %}</h1>
+        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo" style="background-image: url('{{ site.icon | relative_url }}');"></span>
+
+        {% unless site.github.private %}
+          {% if site.show_downloads %}
+            <div class="downloads">
+              <ul>
+                <li>
+                  <a href="{{ site.github.repository_url }}" title="View repository on GitHub">
+                    <span class="fa-stack fa-lg" aria-hidden="true">
+                      <i class="fa fa-github fa-stack-2x"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          {% endif %}
+        {% endunless %}
+
+        {% if site.page_navigator %}
+          {%- assign navPages = site.pages | sort: 'order' -%}
+          <div class="page-navigator">
+            <ul>
+              {%- for navPage in navPages %}
+                {%- if navPage.menu -%}
+                  <li><a href="{{ navPage.url | relative_url }}" title="{{ navPage.title | escape }}">{{ navPage.menu }}</a></li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </div>
+        {% endif %}
+
+      </div>
+
+    <div class="wrapper">
+      {% if site.heading_navigator %}
+        <nav>
+          <ul></ul>
+        </nav>
+      {% endif %}
+      <section>
+        {{ content }}
+      </section>
+      <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} <a href="https://cnmingenuity.org">CNM Ingenuity, Inc.</a>
+          {%if site.author.name %}Written by {%if site.author.email %}<a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>{% else %}{{ site.author.name }}{% endif %},{% else %}Maintained by{% endif %}
+          <a href="https://deepdivecoding.com">Deep Dive Coding</a>.
+        </p>
+      </footer>
+    </div>
+
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+    
+  </body>
+</html>
