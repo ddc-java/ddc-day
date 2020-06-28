@@ -59,7 +59,7 @@
         <span id="logo" style="background-image: url('{{ icon_url }}');"></span>
 
         {% unless site.github.private %}
-          {% if site.show_downloads %}
+          {% if site.show_downloads != false %}
             <div class="downloads">
               <ul>
                 <li>
@@ -75,7 +75,7 @@
         {% endunless %}
 
         {% if site.page_navigator %}
-          {%- assign navPages = site.pages | sort: 'order' -%}
+          {%- assign navPages = site.pages | where: 'menu' | sort: 'order' -%}
           <div class="page-navigator">
             <ul>
               {%- for navPage in navPages %}
