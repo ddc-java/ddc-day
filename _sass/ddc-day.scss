@@ -379,7 +379,7 @@ div.wrapper {
         font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
         padding: 0;
         line-height: 1.0;
-        margin-bottom: 1em;
+        margin-top: 0.75em;
 
         a {
 
@@ -403,7 +403,7 @@ div.wrapper {
           font-size: 16px;
           
           & + .tag-h3 {
-            margin-top: -0.25em;
+            margin-top: 0.5em;
           }
           
         }
