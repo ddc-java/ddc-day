@@ -216,7 +216,7 @@ div#banner {
     position: absolute;
     float: left;
     height: 100%;
-    right: 872px;
+    right: 865px;
     margin: 0;
     padding: 0;
 
@@ -554,14 +554,12 @@ div.wrapper {
     width: 100%;
     top: 94px;
 
-    .downloads {
-      left: 0;
-      margin-left: 16px;
-      margin-right: 60px;
+    div.downloads {
+      left: 15px;
     }
 
-    #logo {
-      margin-right: 15px;
+    span#logo {
+      right: 15px;
     }
 
     div.page-navigator {
