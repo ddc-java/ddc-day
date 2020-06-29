@@ -59,7 +59,12 @@
         <span id="logo" style="background-image: url('{{ icon_url }}');"></span>
 
         {% unless site.github.private %}
-          {% if site.show_downloads != false %}
+          {%- if site.repository_link -%}
+            {%- assign show_repository_link = site.repository_link.enabled -%}
+          {%- else -%}
+            {%- assign show_repository_link = true -%}
+          {%- endif -%}
+          {% if show_repository_link %}
             <div class="downloads">
               <ul>
                 <li>
