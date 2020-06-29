@@ -3,8 +3,8 @@ description: Theme for Deep Dive Coding Java + Android Bootcamp curricular conte
 
 show_downloads: true # This setting is ignored if the repository is private.
 
-#heading_navigator:
-#  enabled: true # Set this to false if intra-page navigator is not wanted.
+heading_navigator:
+  enabled: false # Set this to false if intra-page navigator is not wanted.
 
 page_navigator:
   enabled: true # Set this to false if an inter-page navigator is not wanted.
