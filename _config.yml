@@ -1,8 +1,8 @@
 title: Curriculum Theme
 description: Theme for Deep Dive Coding Java + Android Bootcamp curricular content hosted on GitHub Pages.
 
-#repository_link:
-#  enabled: true # Set this to false if repository link is not wanted on a public repository.
+repository_link:
+  enabled: false # Set this to false if repository link is not wanted on a public repository.
 
 heading_navigator:
   enabled: true # Set this to false if intra-page navigator is not wanted.
