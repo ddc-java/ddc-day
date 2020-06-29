@@ -74,7 +74,12 @@
           {% endif %}
         {% endunless %}
 
-        {% if site.page_navigator %}
+        {%- unless site.page_navigator -%}
+          {%- assign show_page_navigator = true -%}
+        {%- elsif -%}
+          {%- assign show_page_navigator = site.page_navigator.enabled -%}
+        {%- endunless -%}
+        {% if show_page_navigator %}
           {%- assign navPages = site.pages | sort: 'order' -%}
           <div class="page-navigator">
             <ul>

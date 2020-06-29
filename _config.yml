@@ -5,7 +5,7 @@ show_downloads: true # This setting is ignored if the repository is private.
 
 heading_navigator: true # Set this to false if intra-page navigator is not wanted.
 
-page_navigator: true # Set this to true if an inter-page navigator bar is wanted.
+# page_navigator: true # Set this to true if an inter-page navigator bar is wanted.
 
 titles_from_headings:
   enabled: false # We recommend leaving this setting disabled in this theme.
