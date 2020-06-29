@@ -13,7 +13,7 @@ $base-light-color: #f5f5f6;
 $medium-light-color: #e1e2e1;
 $deep-dive-yellow: #ffd007;
 
-// TODO Define additional colors for links (incl. hover) and tables.
+// TODO Define additional colors for links (incl. hover) and code blocks.
 
 body {
   font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
@@ -277,6 +277,20 @@ div#banner {
         
     }
       
+  }
+
+  ul {
+
+    list-style: none;
+    height: 40px;
+    padding: 0;
+    float: left;
+    margin-left: 10px;
+
+    li {
+      display:inline;
+    }
+
   }
 
   span#logo {
