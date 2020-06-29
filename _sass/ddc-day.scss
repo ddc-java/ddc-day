@@ -13,13 +13,15 @@ $base-light-color: #f5f5f6;
 $medium-light-color: #e1e2e1;
 $deep-dive-yellow: #ffd007;
 
+// TODO Define additional colors for links (incl. hover) and tables.
+
 body {
   font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: $base-dark-color;
   font-weight: 300;
-  margin: 0px;
+  margin: 0;
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 20px;
@@ -85,11 +87,10 @@ ul {
 
 strong {
   font-weight: bold;
-  color: #333;
 }
 
 blockquote {
-  border-left: 1px solid #ffcc00;
+  border-left: 1px solid $deep-dive-yellow;
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
@@ -117,8 +118,8 @@ pre {
   overflow-y: hidden;
 
   code {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: $base-dark-color;
     color: $medium-light-color;
   }
@@ -149,12 +150,12 @@ td {
 }
 
 dt {
-  color:#444;
-  font-weight:700;
+  color: $base-dark-color;
+  font-weight: 700;
 }
 
 small {
-  font-size:12px;
+  font-size: 12px;
 }
 
 header {
@@ -169,17 +170,16 @@ header {
   text-align: center;
   background-color: $base-dark-color;
   background-image: none;
-  box-shadow: 1px 0px 2px rgba(0,0,0,.75);
+  box-shadow: 1px 0 2px rgba(0,0,0,.75);
   z-index:99;
-  -webkit-font-smoothing:antialiased;
+  -webkit-font-smoothing: antialiased;
 
   h1 {
     font-size: 36px;
     line-height: 48px;
     font-weight: 400;
-    text-shadow: 0px 2px 0px #235796;
     color: $base-light-color;
-    margin: 0px;
+    margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -191,7 +191,7 @@ header {
     font-family: "Aleo", "Copse", serif;
     color: $base-light-color;
     font-size: 18px;
-    margin: 0px;
+    margin: 0;
   }
   
 }
@@ -207,8 +207,8 @@ div#banner {
   top: 105px;
   background-color: $deep-dive-yellow;
   border: 0 none transparent;
-  box-shadow: 0px 1px 3px rgba(0,0,0,.25);
-  border-radius: 0px 2px 2px 0px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  border-radius: 0 2px 2px 0;
   padding: 0;
   
   div.downloads {
@@ -277,26 +277,6 @@ div#banner {
         
     }
       
-  }
-
-  ul {
-
-    list-style:none;
-    height: 40px;
-    padding: 0;
-    float: left;
-    margin-left: 10px;
-
-    li {
-
-      display:inline;
-
-      a.button {
-        background-color: #FFE788;
-      }
-
-    }
-
   }
 
   span#logo {
@@ -434,7 +414,7 @@ div.wrapper {
     background-color: $base-light-color;
     border-radius: 3px;
     border: 1px solid $base-light-color;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09), inset 0 0 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
 
     *[id], a[name] {
         scroll-margin-top: 155px;
