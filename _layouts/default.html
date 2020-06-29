@@ -95,7 +95,12 @@
       </div>
 
     <div class="wrapper">
-      {% if site.heading_navigator %}
+      {%- if site.heading_navigator -%}
+        {%- assign show_heading_navigator = site.heading_navigator.enabled -%}
+      {%- else -%}
+        {%- assign show_heading_navigator = true -%}
+      {%- endif -%}
+      {% if show_heading_navigator %}
         <nav>
           <ul></ul>
         </nav>
