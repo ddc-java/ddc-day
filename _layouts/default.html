@@ -104,7 +104,7 @@
     <div class="wrapper">
       {%- if page.heading_navigator -%}
         {%- assign show_heading_navigator = page.heading_navigator.enabled -%}
-      {%- elif site.heading_navigator -%}
+      {%- elsif site.heading_navigator -%}
         {%- assign show_heading_navigator = site.heading_navigator.enabled -%}
       {%- else -%}
         {%- assign show_heading_navigator = true -%}
