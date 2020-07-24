@@ -79,7 +79,9 @@
           {% endif %}
         {% endunless %}
 
-        {%- if site.page_navigator -%}
+        {%- if page.page_navigator -%}
+          {%- assign show_page_navigator = page.page_navigator.enabled -%}
+        {%- elsif site.page_navigator -%}
           {%- assign show_page_navigator = site.page_navigator.enabled -%}
         {%- else -%}
           {%- assign show_page_navigator = true -%}
@@ -100,7 +102,9 @@
       </div>
 
     <div class="wrapper">
-      {%- if site.heading_navigator -%}
+      {%- if page.heading_navigator -%}
+        {%- assign show_heading_navigator = page.heading_navigator.enabled -%}
+      {%- elif site.heading_navigator -%}
         {%- assign show_heading_navigator = site.heading_navigator.enabled -%}
       {%- else -%}
         {%- assign show_heading_navigator = true -%}
