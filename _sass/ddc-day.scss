@@ -193,6 +193,7 @@ header {
   -webkit-font-smoothing: antialiased;
 
   h1 {
+
     font-size: 36px;
     line-height: 48px;
     font-weight: 400;
@@ -203,6 +204,22 @@ header {
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     -ms-text-overflow: ellipsis;
+
+    a {
+      color: $base-light-color;
+
+      &:visited {
+        color: $base-light-color;
+      }
+
+      &:hover {
+        color: $medium-light-color;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+      }
+
+    }
+
   }
 
   p {
