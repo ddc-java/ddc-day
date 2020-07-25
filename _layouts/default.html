@@ -50,7 +50,16 @@
   <body>
 
       <header>
-        <h1><a href="{{ '/' | relative_url }}">{{ site.title | default: site.github.repository_name }}{% if page.title %}: {{ page.title }}{% endif %}</a></h1>
+        {%- if site.title and page.title -%}
+          {%- assign headline_text = site.title | append: ": " | append: page.title -%}
+        {%- elsif site.title -%}
+          {%- assign headline_text = site.title -%}
+        {%- elsif page.title -%}
+          {%- assign headline_text = page.title -%}
+        {%- else -%}
+          {%- assign headline_text = site.github.repository_name -%}
+        {%- endif -%}
+        <h1><a href="{{ '/' | relative_url }}">{{ headline_text }}</a></h1>
         <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
       </header>
 
