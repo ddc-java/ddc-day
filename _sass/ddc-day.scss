@@ -457,6 +457,10 @@ div.wrapper {
       color:#0060FF;
     }
 
+    h2 {
+      clear: both;
+    }
+    
     img {
     
       max-width: 100%;
@@ -468,21 +472,21 @@ div.wrapper {
       }
       
       &[alt^="screen"] {
-        width: 50%;
+        width: 45%;
         float: right;
         clear: right;
         margin: 10px 0 10px 10px;
       }
       
       &[alt^="dialog"] {
-        width: 40%;
+        width: 30%;
         float: right;
         clear: right;
         margin: 10px 0 10px 10px;
       }
 
       &[alt^="launcher"] {
-        width: 20%;
+        width: 15%;
         float: right;
         clear: right;
         margin: 10px 0 10px 10px;
