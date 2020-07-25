@@ -214,10 +214,7 @@ header {
 
       &:hover {
         color: $medium-light-color;
-        text-decoration-line: underline;
-        text-decoration-style: dotted;
-        text-decoration-width: 0.5px;
-        text-decoration-thickness: 0.5px;
+        text-decoration: none;
       }
 
     }
