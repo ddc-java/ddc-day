@@ -467,6 +467,24 @@ div.wrapper {
         margin-right: auto;
       }
       
+      &[alt^="screen"] {
+        width: 50%;
+        float: right;
+        margin: 10px 0 10px 10px;
+      }
+      
+      &[alt^="dialog"] {
+        width: 40%;
+        float: right;
+        margin: 10px 0 10px 10px;
+      }
+
+      &[alt^="launcher"] {
+        width: 20%;
+        float: right;
+        margin: 10px 0 10px 10px;
+      }
+
     }
 
     ol {
