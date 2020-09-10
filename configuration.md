@@ -7,9 +7,9 @@ description: "Enabling and configuring theme on a GitHub Pages site"
 
 ## Overview
 
-**DDC Day** is a GitHub Pages _remote theme_. In other words, it's not one of the standard dozen (or so) themes that can be selected in the GitHub Pages theme choosing; nonetheless, it can be selected as a theme for a GitHub Pages site, simply by making a change to the `_config.yml` file in the repository, committing the change, and---if the change was committed on a local clone---pushing the commit to GitHub. 
+**DDC Day** is a GitHub Pages _remote theme_. In other words, it's not one of the standard dozen (or so) themes that can be selected in the GitHub Pages theme choosing; nonetheless, it can be selected as a theme for a GitHub Pages site, simply by making a change to the `_config.yml` file in the repository, committing the change, and---if the change was committed to a local clone---pushing the commit to GitHub. 
 
-For any GitHub Pages site, `_config.yml` is not only used to specify a theme for a site, but also to set a number of site-level configuration properties.
+For any GitHub Pages site, `_config.yml` is not only used to specify a theme for a site, but also to set a number of site-level configuration properties. The properties supported in this theme are listed below.
 
 ## Configuration
 

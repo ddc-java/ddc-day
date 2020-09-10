@@ -70,3 +70,5 @@ will be rendered as
 * In most cases, `heading_navigator.enabled` should be set to `true` (the default) at the site level. 
 
 * As a rule, any page should have only a single level-1 heading. In this theme, the header at the top of every page includes an `<h1>` tag generated automatically using the page- and/or site-level `title` property; thus, none of the source pages (whether Markdown or HTML) should include another level-1 heading.
+
+* When `heading_navigator` is enabled, the text of the 
