@@ -1,21 +1,20 @@
 title: Curriculum Theme
 description: Theme for Deep Dive Coding Java + Android Bootcamp curricular content hosted on GitHub Pages.
+
 author: # Author information displayed/linked in the footer, alongside DDC link.
   name: Nick Bennett
-  email: nick@nickbenn.com
-
-# The following options are shown with their default values.
+  email: nick@nickbenn.com # Omit or leave blank if an e-mail link is not desired.
 
 icon: # Set a value to override the Deep Dive Coding dive helmet logo.
 favicon: # Set a value to override the Deep Dive Coding dive helmet logo
 
-repository_link:
+repository_link: # Omit for default value (true) of repository_link.enabled.
   enabled: true # Set this to false if repository link is not wanted on a public repository.
 
-heading_navigator:
+heading_navigator: # Omit for default value (true) of heading_navigator.enabled.
   enabled: true # Set this to false if intra-page navigator is not wanted.
 
-page_navigator:
+page_navigator: # Omit for default value (true) of page_navigator.enabled.
   enabled: true # Set this to false if an inter-page navigator is not wanted.
 
 google_analytics: # Tracking ID, e.g. "UA-000000-01"; ignore if Google Analytics not needed.
