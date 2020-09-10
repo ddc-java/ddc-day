@@ -19,6 +19,7 @@ The actual sections used in curriculum module site pages will vary greatly, depe
 
 ### Introductory content
 
+Most modules benefit from some kind of introductory content. However, there are subtle differences between an _introduction_, an _overview_, and a _summary_.
 
 #### Introduction<a name="inventory-introduction"></a>
 
@@ -28,11 +29,15 @@ This section should appear no more than once in a module (even if there are mult
 
 #### Overview<a name="inventory-overview"></a>
 
-The key difference between this section and an [introduction](#inventory-introduction) section is that an overview section may appear on multiple pages (though no more than once per page) in a module, always at or near the top. Its purpose is to provide a high-level introduction to the content that will be covered by the rest of the page.
+The key differences between this section and [Introduction](#inventory-introduction) is that the content in **Overview** should be re-presented (in more detail) later in the module, and an **Overview** section may appear on multiple pages (though no more than once per page) in a module, always at or near the top. Its purpose is to provide a high-level introduction to the content that will be covered by the rest of the page.
+
+If a module needs **Introduction** and **Overview** sections, they should not appear on the same page. In that case, it is sometimes best to make the site default page (`index.md` or `README.md`) an introduction page; if such a page contains only an introduction section, then leave the section heading out.
 
 #### Summary<a name="inventory-summary"></a>
 
-This section is very similar to [introduction](#inventory-introduction). In most cases, they can be used interchangeably; however, **Summary** should be favored when the section provides a high-level view of tasks to be performed---especially when those tasks are organized in a list.
+This section is very similar to [Overview](#inventory-overview), and the same guidelines apply. In most cases, they can be used interchangeably; however, **Summary** should be favored when the section provides a high-level view of tasks to be performed---especially when those tasks are organized in a list.
+
+Alternatively, **Summary** may be used at the end of a page or module, recapitulating the key elements covered previously in that page or module.
 
 ### Detailed content
 
@@ -61,18 +66,12 @@ If the module includes multiple `.pdf` or other attachments, include this sectio
 Any links to content outside the module should appear here, as well as inline (if appropriate). If there is more than one link, an ordered or unordered list should be used. In general, it's recommended not only to include a standard Markdown link (specified with the `[…](…)` syntax), but also display the URL as an _autolink_ (enclosed with `<…>`). For example,
 
 ```
-* [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](
-    https://github.com/ddc-java/ddc-day/) 
-    (<https://github.com/ddc-java/curriculum-template/>)
+* [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/) (<https://github.com/ddc-java/ddc-day/>)
 ```
 
 will be rendered as
 
-* [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](
-    https://github.com/ddc-java/ddc-day/) 
-    (<https://github.com/ddc-java/curriculum-template/>)
-
-(Note that the line breaks are used here only to make the example easier to read. It is neither necessary nor recommended to break lines in this fashion in Markdown.)
+* [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/) (<https://github.com/ddc-java/ddc-day/>)
 
 ## Guidelines
 
