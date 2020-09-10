@@ -1,15 +1,25 @@
 ---
 title: Mathematical Notation 
-menu: Mathematical Notation
+menu: Math
 order: 20
-description: "Using MathJax for LaTeX support."
+description: "Using MathJax for $\rm\LaTeX$ support."
 ---
+
+## Overview
+
+When the site content includes mathematical expressions, the choice of how to display them is largely a matter of aim: 
+
+* When the intention is to show a computation as expressed in code of a specific programming language, a fenced code block (or inline code statement) should be used.
+
+* If mathematical equations, derivations---or even simple, non-programming-language-specific computations---mathematical notation should be used. For this purposes, this theme supports the use of LaTeX expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the [MathJax](https://www.mathjax.org/) JavaScript library.
 
 ## Block
 
-If mathematical expressions are needed, use LaTeX syntax in `$$…$$` blocks;[^1] these will be rendered by MathJax in the browser. For example, we can write
+The LaTeX _display_ mode, where one or more LaTeX expressions are displayed on one or more lines, with no non-LaTeX content on those lines, is invoked by enclosing a block of LaTeX code between pairs of `$$` characters. The opening and closing pairs must each be on their own line. 
 
-```
+For example, to show the _quadratic equation_ in display mode, we might write
+
+```tex
 $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
@@ -23,7 +33,7 @@ $$
 
 ## Inline 
 
-Simple mathematical expressions may also be written inline, using `$…$`. For example, `$c^2 = a^2 + b^2$` will be rendered as $c^2 = a^2 + b^2$. Note that a number of LaTeX environments&mdash;particularly for arranging multiple expressions together&mdash;are not supported inline.
+Simple mathematical expressions may also be written inline, using `$…$`. For example, `$c^2 = a^2 + b^2$` will be rendered as $c^2 = a^2 + b^2$. Note that a number of LaTeX environments---particularly for arranging multiple expressions together---are not supported in inline mode.
 
 ## Equation numbering
 
@@ -31,12 +41,11 @@ Simple mathematical expressions may also be written inline, using `$…$`. For e
 
 The _equation_ environment can be used to generate equation numbers automatically, by enclosing an equation in `\begin{equation} … \end{equation}`. For example, we can write _Euler's formula_, using the LaTeX equation environment, as 
 
-```
+```tex
 $$
 \begin{equation} e^{ix} = \cos x + i \sin x \end{equation}
 $$
 ```
-
 
 This is rendered with an automatically generated equation number:
 
@@ -50,7 +59,7 @@ By default, numbering starts at 1 for the first use of `\begin{equation} … \en
 
 Use the `\tag{…}` macro to mark an equation with an explicity specified number or label. For example, we might write the _Euler's identity_ special case of [Euler's formula (above)](#mjx-eqn-1), where $x = \pi$, as 
 
-```
+```tex
 $$
 \tag{1a} e^{i\pi} + 1 = 0
 $$
@@ -66,7 +75,7 @@ $$
 
 To include a reference to a numbered or labeled equation in text, use the `\label{…}` macro to define a referenced equation, then `\eqref{…}` to reference it in text. Note that the references may precede or follow the definitions. For example, we could write the following combination of Markdown and LaTeX.
 
-```
+```tex
 The _logistic map_ equation, shown in $\eqref{logistic map}$, is one of the simplest examples of a non-linear dynamic equation.
 
 $$
@@ -91,7 +100,7 @@ If the `\label{…}` macro is used then the label forms the basis of the `id`; o
 
 The following Markdown text includes links to the 3 equations above.
 
-```
+```markdown
 * [Euler's formula](#mjx-eqn-1)
 * [Euler's identity](#mjx-eqn-1a)
 * [Logistic map](#mjx-eqn-logistic_map)
@@ -102,5 +111,3 @@ This is rendered as
 * [Euler's formula](#mjx-eqn-1)
 * [Euler's identity](#mjx-eqn-1a)
 * [Logistic map](#mjx-eqn-logistic_map)
-
-[^1]: When the intention is to show a computation as expressed in code, a code block (or inline code statement) should be used; otherwise, mathematical notation is preferred.

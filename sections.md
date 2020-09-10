@@ -1,7 +1,7 @@
 ---
 title: Sections
 menu: Sections
-order: 40
+order: 30
 description: "Typical sections included in assignments, tutorials, practical exam problems, etc."
 ---
 
