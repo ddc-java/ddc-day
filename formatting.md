@@ -55,7 +55,7 @@ In HTML, the `<pre>` block element and the `<code>` inline element---and less of
 
 #### Inline code
 
-Simple symbols, filenames, expressions, etc., that do not make up an entire statement, can be written as inline code, enclosed in backticks (`````). (Note that a backtick is not the same as an apostrophe or single quote character.) For example,
+Simple symbols, filenames, expressions, etc., that do not make up an entire statement, can be written as inline code, enclosed in backticks (```). (Note that a backtick is not the same as an apostrophe or single quote character.) For example,
 
 ```markdown
 The first class of the Java standard library that most beginning programmers encounter is the `String` class.
