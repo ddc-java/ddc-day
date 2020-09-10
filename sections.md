@@ -13,7 +13,17 @@ The kramdown parser used by default in this theme supports the usual Markdown he
 
 If the `heading_navigator.enabled` property is set to `true` at the site level, or at the page level for any given page, headings in the page content at levels 1--3 will become links in a section navigator sidebar (as seen in this page). **However**, as noted in ["Guidelines"](#guidelines), page content should not include any level-1 headings. Thus, for practical purposes, the section navigator sidebar will include level-2 and level-3 headings. 
 
-## Typical sections
+## General guidelines
+
+* In most cases, `heading_navigator.enabled` should be set to `true` (the default) at the site level. 
+
+* As a rule, any page should have only a single level-1 heading. In this theme, the header at the top of every page includes an `<h1>` tag generated automatically using the page- and/or site-level `title` property; thus, none of the source pages (whether Markdown or HTML) should include a level-1 heading in the page content. 
+
+* When `heading_navigator` is enabled, the text of headings appearing as links in the navigator should be kept short---usually 1--3 words. Be sure to review the published appearance of links in the navigator sidebar, and adjust heading text as necessary.
+
+* Items in the navigator sidebar are displayed as right-aligned items in an unordered list; however, only links to level-3 headings include a bullet character. Thus, when `heading_navigator` is enabled, the headings in a page should either _all_ be at level 3+, or all level-3 headings (if any) should be subheadings beneath one or more level-2 headings. Otherwise, you will end up with some bullet items nested below a non-bullet item, and other bullet items that are not nested.
+
+## Section-specific guidelines
 
 The actual sections used in curriculum module site pages will vary greatly, depending on the type of module (practical exam problem, homework assignment, extra-credit opportunity, guided tutorial, lecture notes, etc.). Nonetheless, consistency should be an aim; to that end, here are some typical section headings, with explanatory text for how each section might be used.
 
@@ -51,7 +61,7 @@ If the page specifies some deliverable task(s) the student is expected to perfor
 
 #### Assumptions<a name="inventory-assumptions"></a>
 
-This section may be used to expand on [requirements](#inventory-requirements), listing key assumptions that the student may make regarding inputs, environment, etc. 
+This section may be used to expand on [Requirements](#inventory-requirements), listing key assumptions that the student may make regarding inputs, environment, etc. 
 
 #### Hints
 
@@ -72,13 +82,3 @@ Any links to content outside the module should appear here, as well as inline (i
 will be rendered as
 
 * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/) (<https://github.com/ddc-java/ddc-day/>)
-
-## Guidelines
-
-* In most cases, `heading_navigator.enabled` should be set to `true` (the default) at the site level. 
-
-* As a rule, any page should have only a single level-1 heading. In this theme, the header at the top of every page includes an `<h1>` tag generated automatically using the page- and/or site-level `title` property; thus, none of the source pages (whether Markdown or HTML) should include a level-1 heading in the page content. 
-
-* When `heading_navigator` is enabled, the text of headings appearing as links in the navigator should be kept short---usually 1--3 words. Be sure to review the published appearance of links in the navigator sidebar, and adjust heading text as necessary.
-
-* Items in the navigator sidebar are displayed as right-aligned items in an unordered list; however, only links to level-3 headings include a bullet character. Thus, when `heading_navigator` is enabled, the headings in a page should either _all_ be at level 3+, or all level-3 headings (if any) should be subheadings beneath one or more level-2 headings. Otherwise, you will end up with some bullet items nested below a non-bullet item, and other bullet items that are not nested.

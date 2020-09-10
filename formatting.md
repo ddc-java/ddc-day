@@ -1,21 +1,86 @@
 ---
-title: Mathematical Notation 
-menu: Math
+title: Formatting content
+menu: Formatting
 order: 40
-description: "Using LaTeX for mathematical expressions."
+description: "How to format code fragments, pseudocode, mathematical expressions, etc."
 ---
 
 ## Overview
 
+It is assumed that the curriculum module author has significant Markdown experience already. Thus, the aim of this page is not to be a Markdown syntax reference. On the other hand, many types of content can be written in Markdown (or HTML) in a variety of ways---often with different outcomes in page layout and style. So the objective here is to present guidelines for several key content types, to encourage consistency across curriculum modules.
+
+## Code fragments
+
+### Typography
+
+When referenced, excerpted, or embedded in a module, virtually all specific instances of the following should be typographically distinct from the rest of the module text:
+
+* Java (and other programming languages)
+    * classes
+    * interfaces
+    * methods
+    * fields
+    * variables
+    * expressions
+    * statements
+    
+* Property files
+    * property names
+    * values
+    
+* XML &amp; HTML
+    * element names 
+    * attribute names and values
+
+* CSS
+    * selectors
+    * properties
+    * values
+    
+* Shell
+    * commands
+    * arguments
+    * options
+    
+* Filesystem
+    * volume names
+    * directory names
+    * file names
+
+Conventionally, all of the above are displayed in a fixed-width (aka monospace) typeface. Not coincidentally, such typefaces are also widely used in shell programs, programming text editors, IDEs, etc.
+
+### Elements 
+
+In HTML, the `<pre>` block element and the `<code>` inline element---and less often, the `<kbd>`, `<samp>`, `<var>`, and (now obsolete) `<tt>` elements---are used to display text in a fixed-width typeface. The first two may be written in Markdown using _code blocks_ and _inline code_.
+
+#### Inline code
+
+Simple symbols, filenames, expressions, etc., that do not make up an entire statement, can be written as inline code, enclosed in backticks (`````). (Note that a backtick is not the same as an apostrophe or single quote character.) For example,
+
+```markdown
+The first class of the Java standard library that most beginning programmers encounter is the `String` class.
+```
+
+is converted to HTML and rendered as
+
+> The first class of the Java standard library that most beginning programmers encounter is the `String` class.
+
+#### Code blocks
+
+
+## Mathematical expressions
+
 When the site content includes mathematical expressions, the choice of how to display them is largely a matter of aim: 
 
-* When the intention is to show a computation as expressed in code of a specific programming language, a fenced code block (or inline code statement) should be used.
+* When the intention is to show a computation as expressed in code of a specific programming language, a code block (or inline code statement) should be used.
 
 * If mathematical equations, formula derivations---or even simple but non-programming-language-specific computations---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the [MathJax](https://www.mathjax.org/) JavaScript library.
 
-## Modes
+In any case, mathematical expressions should rarely be written as plain text, without any typographical distinction from the rest of the content. In particular, mathematical symbols (e.g. Greek letters such as $\pi$ or $\Sigma$, or other symbols or operators such as $\infty$ or $\in$) should _mever_ be "spelled" out in English, unless that is done for the purpose of naming and explaining the symbols or operators.
 
-### Display
+### Modes
+
+#### Display (block)
 
 The LaTeX _display_ mode, where one or more LaTeX expressions are displayed on one or more lines, with no non-LaTeX content on those lines, is invoked by enclosing a block of LaTeX code between pairs of `$$` characters. The opening and closing pairs must each be on their own line. 
 
@@ -33,13 +98,13 @@ $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 
-### Inline 
+#### Inline 
 
 Simple mathematical expressions may also be written inline, using `$…$`. For example, `$c^2 = a^2 + b^2$` will be rendered as $c^2 = a^2 + b^2$. Note that a number of LaTeX environments---particularly for arranging multiple expressions together---are not supported in inline mode.
 
-## Equation numbering
+### Equation numbering
 
-### Automatic
+#### Automatic
 
 The _equation_ environment can be used to generate equation numbers automatically, by enclosing an equation in `\begin{equation} … \end{equation}`. For example, we can write _Euler's formula_, using the LaTeX equation environment, as 
 
@@ -57,7 +122,7 @@ $$
 
 By default, numbering starts at 1 for the first use of `\begin{equation} … \end{equation}` in a page.
 
-### Manual
+#### Manual
 
 Use the `\tag{…}` macro to mark an equation with an explicity specified number or label. For example, we might write the _Euler's identity_ special case of [Euler's formula (above)](#mjx-eqn-1), where $x = \pi$, as 
 
@@ -73,7 +138,7 @@ $$
 \tag{1a} e^{i\pi} + 1 = 0
 $$
 
-### Referencing
+#### Equation references/links
 
 To include a reference to a numbered or labeled equation in text, use the `\label{…}` macro to define a referenced equation, then `\eqref{…}` to reference it in text. Note that the references may precede or follow the definitions. For example, we could write the following combination of Markdown and LaTeX.
 
@@ -94,7 +159,7 @@ $$
 $$
 
 
-### Linking
+#### Markdown/HTML links to equations
 
 As seen above, the combination of `\label{…}` and `\eqref{…}` results in MathJax inserting a link to the labeled formula. However, the text of the link is always the autogenerated number or explicitly specified tag, enclosed in parentheses: `\eqref{…}` doesn't allow us to specify other text or image to be used in the link; to do that, we need to use HTML or Markdown links. Fortunately, numbered or tagged equations are automatically given HTML `id` attributes by the MathJax processor; this attribute can be used as (among other things) the anchor for intra- and inter-document links in Markdown or HTML.
 
