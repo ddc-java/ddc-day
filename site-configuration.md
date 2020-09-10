@@ -1,20 +1,10 @@
 ---
-title: Introduction
-menu: Introduction
-order: 10
-description: "A custom theme for curricular content used in the Deep Dive Coding Java+Android Bootcamp"
+title: Site Configuration
+menu: Site Configuration
+order: 15
+description: "Site-level configuration in `_config.yml`"
 layout: default
 ---
-
-## Overview
-
-**DDC Day** is a GitHub Pages theme, based on [Leap Day](https://pages-themes.github.io/leap-day/) by [Matt Graham](https://twitter.com/mattgraham), customized extensively by [Nick Bennett](mailto:nick@nickbenn.com). It is intended for use in the [Deep Dive Coding](https://deepdivecoding.com) Java + Android Bootcamp, in the publication and distribution of tutorials, lecture notes, homework assignments, practical exam problems, etc.
-
-## When to use
-
-## When not to use
-
-
 
 ## Usage
 
