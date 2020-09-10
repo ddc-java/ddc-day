@@ -1,8 +1,8 @@
 ---
-title: Configuration
-menu: Configuration
+title: Site
+menu: Site
 order: 10
-description: "Enabling and configuring theme"
+description: "Enabling and configuring theme on a GitHub Pages site"
 ---
 
 ## Usage
