@@ -373,14 +373,9 @@ div#banner {
           }
           
           &:not([href]) {
-          
+            color: #6c6f6f;
             text-decoration-line: underline;
-            text-decoration-style: solid;
-            
-            &:hover {
-              color: $base-dark-color;
-            }
-            
+            text-decoration-style: solid;            
           }
           
         }
