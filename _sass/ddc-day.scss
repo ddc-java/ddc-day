@@ -374,7 +374,8 @@ div#banner {
           
           &:not([href]) {
           
-            
+            text-decoration-line: underline;
+            text-decoration-style: solid;
             
             &:hover {
               color: $base-dark-color;
