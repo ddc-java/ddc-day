@@ -42,7 +42,7 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 : URL (absolute or site-relative) of graphic displayed at the right end of divider between the header and body content of the site's pages. If omitted or left blank, the Deep Dive Coding diving bell logo is used.
 
 `page_navigator.enabled`
-: This is a Boolean-valued property, used to control the generation of a navigator bar in the page header with links to all pages in the site that specify non-blank (and non-`false`) `menu` properties. If omitted, left without a value, or set to `false`, then the `menu` and `order` [page-level](#page) properties are ignored. On the other hand, if set to `true` (or another non-empty, non-`false` value), but if there are fewer than 2 pages with a `menu` property set, then the navigator bar will not be generated.
+: This is a Boolean-valued property, used to control the generation of a navigator bar in the page header with links to all pages in the site that specify non-blank (and non-`false`) `menu` properties. If omitted, left without a value, or set to `false`, the navigator bar will not be generated.
 : (This property may be overridden at the page level.)
 
 `repository_link.enabled`

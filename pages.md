@@ -1,6 +1,7 @@
 ---
 title: Pages
 menu: Pages
+order: 20
 description: "Defining and configuring one or more pages"
 ---
 
@@ -34,12 +35,13 @@ Page-level configuration is done in the front matter (a YAML block preceding the
 
 ### Example
 
-Of course, values of the above properties must be specified as properly formatted `YAML`. Here is an example `_config.yml` for a site based on this theme (note that several properties are not specified, and thus take their default values, or are specified at the page level, as described above):
+Of course, values of the above properties must be specified as properly formatted `YAML` in the page front matter. Here is an example page front matter, with some of the above properties set:
 
 ```yaml
-remote_theme: ddc-java/ddc-day
-title: Recursion
-author:
-  name: Nick Bennett
-  email: nick@nickbenn.com
+---
+title: Lists & links
+description: "Creating unordered lists and links in Markdown"
+menu: Lists & links
+order: 30
+---
 ```
