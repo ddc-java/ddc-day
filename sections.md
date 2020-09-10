@@ -3,7 +3,6 @@ title: Sections
 menu: Sections
 order: 40
 description: "Typical sections included in assignments, tutorials, practical exam problems, etc."
-layout: default
 ---
 
 A few example content sections (with explanatory text for how each section might be used) are shown below.

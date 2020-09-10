@@ -3,7 +3,6 @@ title: Mathematical Notation
 menu: Mathematical Notation
 order: 20
 description: "Using MathJax for LaTeX support."
-layout: default
 ---
 
 ## Block

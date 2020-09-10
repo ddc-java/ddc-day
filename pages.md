@@ -1,24 +1,19 @@
 ---
-title: Site Configuration
-menu: Site Configuration
-order: 15
-description: "Site-level configuration in `_config.yml`"
-layout: default
+title: Pages
+menu: Pages
+order: 20
+description: "Defining and configuring one or more pages"
 ---
 
-## Usage
+## Overview
 
-To use the **DDC Day** template, add the following line to the `_config.yml` file of a repository configured for GitHub Pages publication:
-
-```yaml
-remote_theme: ddc-java/ddc-day
-```
+This theme may be used for a site with a single page, or multiple pages. Optionally, a navigator bar containing links to one or more pages of the site may be displayed in the page header. 
 
 ## Configuration
 
 ### Properties
 
-Site-level configuration is done in `_config.yml`, and supports the following properties (listed in alphabetical order, not in order of importance):
+Page-level configuration is done in the front matter (a YAML block preceding the page content), and supports the following properties (listed in alphabetical order, not in order of importance):
 
 `author.email`
 : If a value is provided, it will be used in a `mailto` link, with `author.name` as the displayed text; if `author.name` is not specified, then this property is ignored.
