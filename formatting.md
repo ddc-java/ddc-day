@@ -154,7 +154,7 @@ $$
 
 To include a reference to a numbered or labeled equation in text, we can use the LaTeX `\label{…}` macro to define a referenced equation, then `\eqref{…}` to reference it in text. Note that the references may precede or follow the definitions. For example, we could write the following combination of Markdown and LaTeX.
 
-```markdown
+```tex
 The _logistic map_ equation, shown in $\eqref{logistic map}$, is one of the simplest examples of a non-linear dynamic equation.
 
 $$
@@ -164,11 +164,11 @@ $$
 
 This is rendered as
 
-The _logistic map_ equation, shown in $\eqref{logistic map}$, is one of the simplest examples of a non-linear dynamic equation.
-
-$$
-\begin{equation} x_{n + 1} = r x_n \left( 1 - x_n \right) \label{logistic map} \end{equation}
-$$
+> The _logistic map_ equation, shown in $\eqref{logistic map}$, is one of the simplest examples of a non-linear dynamic equation.
+> 
+> $$
+> \begin{equation} x_{n + 1} = r x_n \left( 1 - x_n \right) \label{logistic map} \end{equation}
+> $$
 
 
 #### Markdown
