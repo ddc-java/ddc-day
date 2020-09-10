@@ -63,17 +63,21 @@ If the page specifies some deliverable task(s) the student is expected to perfor
 
 This section may be used to expand on [Requirements](#inventory-requirements), listing key assumptions that the student may make regarding inputs, environment, etc. 
 
-#### Hints
+#### Hints<a name="inventory-hints"></a>
 
 If the module is for an assignment, practical exam problem, or extra-credit opportunity---particularly if it's especially challenging or requires an approach that's not very obvious---it may be a good idea to include some general tips.
 
-#### Attachments 
+#### Attachments<a name="inventory-attachments"></a>
 
 If the module includes multiple `.pdf` or other attachments, include this section near the bottom of the page, and link to the attachments here---as well as linking to them inline (in the text), if appropriate. These should be formatted as an ordered or unordered list. 
 
-#### Links 
+In a multi-page module, it is generally preferable to have a single **Attachments** section (e.g. on a resources page), rather than one or more page-specific **Attachments** sections.
+
+#### Links<a name="inventory-hints"></a>
 
 Any links to content outside the module should appear here, as well as inline (if appropriate). If there is more than one link, an ordered or unordered list should be used. In general, it's recommended not only to include a standard Markdown link (specified with the `[…](…)` syntax), but also display the URL as an _autolink_ (enclosed with `<…>`). For example,
+
+In a multi-page module, it is generally preferable to have a single **Links** section (e.g. on a resources page), rather than one or more page-specific **Links** sections.
 
 ```
 * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/) (<https://github.com/ddc-java/ddc-day/>)

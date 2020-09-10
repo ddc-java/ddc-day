@@ -77,6 +77,27 @@ is converted to HTML and rendered as
 
 #### Code blocks
 
+For classes, methods, or other multi-line code fragments---or even single-line fragments that comprise complete statements or complex expressions---use _fenced code blocks_, with language tags.
+
+A fenced code block begins with a line containing 3 backticks, optionally (and immediately) followed by a language tag; there must be nothing else on the line. Similarly, the block ends with a line containing 3 backticks _only_. 
+
+For example, here's a simple Java method, written in a fenced code block: 
+
+    ```java
+    public static void main(String[] args) {
+      System.out.println("Hello, world!");
+    }
+    ```
+
+This will be rendered as
+
+```java
+public static void main(String[] args) {
+  System.out.println("Hello, world!");
+}
+```
+
+Prior to the advent of the fenced code block in most Markdown dialects, there was another way to write a code block: If one or more lines of text is indented at least 4 spaces in from the current indent level (but without setting a new indent level via a list), that block would be converted to an HTML `<pre>` element. That approach still works; however, fenced code blocks should be used for this purpose whenever possible.
 
 ## Mathematical expressions
 
@@ -190,3 +211,11 @@ This is rendered as
 * [Euler's formula](#mjx-eqn-1)
 * [Euler's identity](#mjx-eqn-1a)
 * [Logistic map](#mjx-eqn-logistic_map)
+
+## Pseudocode
+
+Pseudocode included in a module should be formatted using an ordered (numbered) or unordered (bullet) list, with nested lists as appropriate. Use inline LaTeX and inline code as appropriate. Use LaTeX and code blocks, as well; however, when using LaTeX or code blocks, be sure to respect the current indentation of the enclosing list, so that the list structure isn't broken (e.g. the numbering in an ordered list restarted).
+
+## Test cases
+
+Test cases should be written using tables, with clear and concise column headers indicating inputs, expected outputs, and expected exceptions. Markdown tables are easy to write, and usually work well for this purpose. However, if a table cell must contain a block element, that is not supported directly in Markdown; HTML may be required, or a combination of Markdown, HTML, and kramdown options.
