@@ -48,6 +48,8 @@ order: 30
 
 ## Guidelines
 
+* On a multi-page site, page-level `title` property values should be set explicitly on all pages.
+
 * Most sites with multiple pages should have `page_navigator.enabled` set to `true` at the site level.
 
 * In a multi-page site with `page_navigator.enabled` set to `true` at the site level, all pages should have the `menu` and `order` properties set. 

@@ -5,6 +5,10 @@ order: 30
 description: "Typical sections included in assignments, tutorials, practical exam problems, etc."
 ---
 
+## Overview
+
+The content of most web pages (whether written originally in HTML, Markdown, or another markup language), is organized into sections, using one or more headings.
+
 A few example content sections (with explanatory text for how each section might be used) are shown below.
 
 ## Value
@@ -60,3 +64,9 @@ will be rendered as
     (<https://github.com/ddc-java/curriculum-template/>)
 
 (Note that the line breaks are used here only to make the example easier to read. It is neither necessary nor recommended to break lines in this fashion in Markdown.)
+
+## Guidelines
+
+* In most cases, `heading_navigator.enabled` should be set to `true` (the default) at the site level. 
+
+* As a rule, any page should have only a single level-1 heading. In this theme, the header at the top of every page includes an `<h1>` tag generated automatically using the page- and/or site-level `title` property; thus, none of the source pages (whether Markdown or HTML) should include another level-1 heading.

@@ -13,7 +13,9 @@ When the site content includes mathematical expressions, the choice of how to di
 
 * If mathematical equations, formula derivations---or even simple but non-programming-language-specific computations---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the [MathJax](https://www.mathjax.org/) JavaScript library.
 
-## Block
+## Modes
+
+### Display
 
 The LaTeX _display_ mode, where one or more LaTeX expressions are displayed on one or more lines, with no non-LaTeX content on those lines, is invoked by enclosing a block of LaTeX code between pairs of `$$` characters. The opening and closing pairs must each be on their own line. 
 
@@ -31,7 +33,7 @@ $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 
-## Inline 
+### Inline 
 
 Simple mathematical expressions may also be written inline, using `$…$`. For example, `$c^2 = a^2 + b^2$` will be rendered as $c^2 = a^2 + b^2$. Note that a number of LaTeX environments---particularly for arranging multiple expressions together---are not supported in inline mode.
 
