@@ -1,7 +1,6 @@
 ---
 title: Pages
 menu: Pages
-order: 20
 description: "Defining and configuring one or more pages"
 ---
 
@@ -15,40 +14,23 @@ This theme may be used for a site with a single page, or multiple pages. Optiona
 
 Page-level configuration is done in the front matter (a YAML block preceding the page content), and supports the following properties (listed in alphabetical order, not in order of importance):
 
-`author.email`
-: If a value is provided, it will be used in a `mailto` link, with `author.name` as the displayed text; if `author.name` is not specified, then this property is ignored.
-
-`author.name`
-: If a value is provided, it will be displayed in a "Written by" credit in the site's page footers.
-
 `description`
 : Description displayed under the page heading. Setting this property at the page level overrides the site-level setting. If not set at the site or page level, the GitHub repository description (if any) is displayed.
 
-`favicon`
-: URL (absolute or site-relative) of site icon displayed by the browser for bookmarks and tabs for the site's pages. If omitted or left blank, the Deep Dive Coding diving bell logo is used.
-
-`google_analytics`
-: If Google Analytics are to be used for tracking site/page visits, specify the tracking ID for this property; otherwise, it may be left blank or omitted altogether.
-
 `heading_navigator.enabled`
-: This is a Boolean-valued property, used to control the generation of a left sidebar navigator with links to all level 1--3 headings in the page body in the current page. If omitted, left without a value, or set to `false`, then the sidebar navigator will not be generated.
-: (This property may be overridden at the page level.)
+: This is a Boolean-valued property, used to control the generation of a left sidebar navigator with links to all level 1--3 headings in the page body. If omitted, left without a value, or set to `false`, then the sidebar navigator will not be generated. Set at the page level, this property overrides the site-level setting.
 
-`icon`
-: URL (absolute or site-relative) of graphic displayed at the right end of divider between the header and body content of the site's pages. If omitted or left blank, the Deep Dive Coding diving bell logo is used.
+`menu`
+: This is the text that is displayed in the page navigator bar (if `page_navigator.enabled` is `true`), for the current page. If omitted or left blank, the current page will not be listed in the page navigator.
+
+`order`
+: This is the sort order for pages listed in the page navigator. Pages with an empty value for this property (or with the property omitted altogether) are sorted at the start of the list.
 
 `page_navigator.enabled`
-: This is a Boolean-valued property, used to control the generation of a navigator bar in the page header with links to all pages in the site that specify non-blank (and non-`false`) `menu` properties. If omitted, left without a value, or set to `false`, then the `menu` and `order` [page-level](#page) properties are ignored. On the other hand, if set to `true` (or another non-empty, non-`false` value), but if there are fewer than 2 pages with a `menu` property set, then the navigator bar will not be generated.
-: (This property may be overridden at the page level.)
-
-`repository_link.enabled`
-: This is a Boolean-valued property, used to control the display of the GitHub logo as a link to the repository in GitHub. Note that even if the value is set to `true` (or something  other than `false` or empty), the logo &amp; link will not be displayed if the repository is private.
+: This is a Boolean-valued property, used to control the generation of a navigator bar in the page header with links to all pages in the site that specify non-blank (and non-`false`) `menu` properties. If omitted, left without a value, or set to `false`, the navigator bar will not be generated.Set at the page level, this property overrides the site-level setting.
 
 `title`
-: Site-wide title, included in the heading display of each page. If present, this will be concatenated with a page-level title (if present); if neither this nor a page-level title is set, then the repository name is used.
-
-`titles_from_headings.enabled`
-: This is a Boolean-valued property used by the Jekyll SEO plug-in. It is only relevant when there are one or more pages that do not specify a `title` property in the front matter, in which case the first heading in such a page will be used as the value of a generated `title` property. (For the intended purpose of this theme, it is recommended to specify `title` properties explicitly, or to disable this portion of the SEO plug-in functionality, by assigning a value of `false` to this property.)
+: Page title, included in the heading display. If present, this will be concatenated to the site-level title (if present); if neither this nor a site-level title is set, then the repository name is used. (Note that a page-level title may be set by the `titles_from_headings` option, described in [Configuration](configuration.md#titles-from-headings).)
 
 ### Example
 

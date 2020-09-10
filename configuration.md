@@ -49,9 +49,9 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 : This is a Boolean-valued property, used to control the display of the GitHub logo as a link to the repository in GitHub. Note that even if the value is set to `true` (or something  other than `false` or empty), the logo &amp; link will not be displayed if the repository is private.
 
 `title`
-: Site-wide title, included in the heading display of each page. If present, this will be concatenated with a page-level title (if present); if neither this nor a page-level title is set (note that a page-level title may be set by the `titles_from_headings` option, described below), then the repository name is used.
+: Site-wide title, included in the heading display of each page. If present, this will be concatenated with a page-level title (if present); if neither this nor a page-level title is set, the repository name is used. (Note that a page-level title may be set by the `titles_from_headings` option, described below.)
 
-`titles_from_headings.enabled`
+`titles_from_headings.enabled`<a name="titles-from-headings"></a>
 : This is a Boolean-valued property used by the Jekyll SEO plug-in. It is only relevant when there are one or more pages that do not specify a `title` property in the front matter, in which case the first heading in such a page will be used as the value of a generated `title` property. (For the intended purpose of this theme, it is recommended to specify page-level `title` properties explicitly.)
 
 ### Example

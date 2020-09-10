@@ -1,8 +1,8 @@
 ---
 title: Mathematical Notation 
 menu: Math
-order: 20
-description: "Using MathJax for $\rm\LaTeX$ support."
+order: 40
+description: "Using LaTeX for mathematical expressions."
 ---
 
 ## Overview
@@ -11,7 +11,7 @@ When the site content includes mathematical expressions, the choice of how to di
 
 * When the intention is to show a computation as expressed in code of a specific programming language, a fenced code block (or inline code statement) should be used.
 
-* If mathematical equations, derivations---or even simple, non-programming-language-specific computations---mathematical notation should be used. For this purposes, this theme supports the use of LaTeX expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the [MathJax](https://www.mathjax.org/) JavaScript library.
+* If mathematical equations, formula derivations---or even simple but non-programming-language-specific computations---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the [MathJax](https://www.mathjax.org/) JavaScript library.
 
 ## Block
 
