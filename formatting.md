@@ -238,55 +238,52 @@ What follows is pseudocode for a binary search of an array of integers. Since th
 
 **Given:**
 
-* $D$ is array to be searched,
+* $D$ is array to be searched, $D = (d_0, d_1, \ldots, d_{n - 1})$.
 
-    $$
-    D = (d_0, d_1, \ldots, d_{n - 1}).
-    $$
+    Also, $D$ is sorted---that is, $d_i \le d_j, \forall i < j$.
+    
+* $v$ is value to search for: 
 
-    Also, $D$ is sorted---that is, 
-    
-    $$
-    d_i \le d_j, \forall i < j.
-    $$
-    
-* $v$ is value to search for in $D$.
+    * If $v$ is in $D$, its position must be returned. 
+    * If $v$ is _not_ in $D$, $(-p - 1)$ must be returned, where insertion of $v$ at position $p$ would preserve the sort order.
 
 **To find $v$ in $D$:**
 
-* $l \gets 0$. 
+1. $l \gets 0$. 
 
     ($l$ is the lower inclusive bound of search range.)
 
-* $u \gets n$. 
+2. $u \gets n$. 
     
     ($l$ is the upper exclusive bound of search range.)
 
-* While $l < u$:
+3. While $l < u$:
 
-    * $m \gets \left \lfloor \frac{l + u}{2} \right \rfloor$. 
+    1. $m \gets \left \lfloor \frac{l + u}{2} \right \rfloor$. 
     
         ($m$ is the midpoint of search range.)
     
-    * If $d_m = v$,
+    2. If $d_m = v$,
     
-        * return $m$
+        * return $m$;
         
-            (done: $v$ is found at position $m$);
+            (Done: $v$ is found at position $m$.)
         
         otherwise, if $d_m > v$,
         
-        * $u \gets m$
+        * $u \gets m$;
         
-            ($d_m$ is too high, so updated search range should end at $m$);
+            ($d_m$ is too high, so updated search range should end at $m$.)
         
         otherwise,
         
-        * $l \gets m + 1$
+        * $l \gets m + 1$.
         
-            ($d_m$ is too low, so updated search range should start at $m + 1$).
+            ($d_m$ is too low, so updated search range should start at $m + 1$.)
         
-* **Return** $(-u - 1)$ ($v$ is not in $D$, but $(-u - 1)$ is the position where it could be inserted to preserve the sorted order).
+4. Return $(-u - 1)$.
+
+    ($v$ is not in $D$, but inserting $v$ at position $u$ would preserve the sorted order.)
 
 ## Test cases
 
