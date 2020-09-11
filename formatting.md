@@ -85,6 +85,8 @@ For classes, methods, or other multi-line code fragments---or even single-line f
 
 A fenced code block begins with a line containing 3 backticks, optionally (and immediately) followed by a language identifier; there must be nothing else on the line. Similarly, the block ends with a line containing 3 backticks _only_. 
 
+**Important**: Java code blocks must conform to the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). SQL code blocks must _either_ conform to Simon Holywell's [SQL Style Guide](https://www.sqlstyle.guide/), or be formatted using the IntelliJ code format command for the relevant dialect. XML and JSON code blocks should be formatted using the IntelliJ code format command.
+
 For example, here's a simple Java method, written in a fenced code block: 
 
     ```java
@@ -340,9 +342,11 @@ Now, the rendered output:
 
 ## Test cases
 
-### Tables
+### Tables &amp; inline code
 
-Test cases should be written using tables, with clear and concise column headers indicating inputs, expected outputs, and expected exceptions. Markdown tables are easy to write, and usually work well for this purpose. However, if a table cell needs to contain a block element, that's not directly supported in Markdown; HTML may be required, or a combination of Markdown, HTML, and kramdown options.
+Test cases should be written using tables, with clear and concise column headers indicating inputs, expected outputs, and expected exceptions. The guidelines for [code fragments](#code-fragments) apply here, and should include input and output values.
+
+Inline code Markdown tables are easy to write, and usually work well for this purpose. However, if a table cell needs to contain a block element, that's not directly supported in Markdown; HTML may be required, or a combination of Markdown, HTML, and kramdown options.
 
 ### Example
 
@@ -350,7 +354,7 @@ The following Markdown creates a table of test cases for one of the practical ex
 
 ```markdown
 | `hours` | `minutes` | Expected return value of `hourHandRadians( hours, minutes)` | Expected return value of `minuteHandRadians( minutes)` |
-|:-------:|:---------:|:----------------------------------:|:-----------------------------:|
+|:---:|:---:|:---------------:|:---------------:|
 | `0` | `0` | `1.57079632679` | `1.57079632679` |
 | `3` | `15` | `6.152285613280012` | `0` |
 | `12` | `30` | `1.3089969389957474` | `4.71238898038469` |
@@ -359,8 +363,8 @@ The following Markdown creates a table of test cases for one of the practical ex
 
 The above Markdown is rendered as
 
-> | `hours` | `minutes` | Expected return value of `hourHandRadians( hours, minutes)` | Expected return value of `minuteHandRadians( minutes)` |
-> |:-------:|:---------:|:----------------------------------:|:-----------------------------:|
+> | `hours` | `minutes` | Expected return value of `hourHandRadians(hours, minutes)` | Expected return value of `minuteHandRadians(minutes)` |
+> |:---:|:---:|:---------------:|:---------------:|
 > | `0` | `0` | `1.57079632679` | `1.57079632679` |
 > | `3` | `15` | `6.152285613280012` | `0` |
 > | `12` | `30` | `1.3089969389957474` | `4.71238898038469` |

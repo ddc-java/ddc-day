@@ -13,9 +13,9 @@ The published content of this site is intended not only to introduce the **DDC D
 
 ## Use cases
 
-This theme is well-suited to a site with 1--6 pages, where each page includes 0--12 headings at levels 1--3.[^1] Inline and block-level $\rm\LaTeX$ blocks may be included, as may extended Markdown features (such as definition lists) supported by the [kramdown](https://kramdown.gettalong.org/parser/kramdown.html) parser. Code highlighting is done by the [Rouge](http://rouge.jneen.net/) code higlighter; the current list of language identifiers recognized on fenced code blocks can be found [here](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers). Mathematical expression rendering is provided by the MathJax library.
+This theme is well-suited to a site with 1--6 pages, where each page includes 0--12 headings at levels 1--3.[^1] Markdown (including definition lists and other extensions) supported by the [kramdown](https://kramdown.gettalong.org/parser/kramdown.html) parser. Code highlighting is done by the [Rouge](http://rouge.jneen.net/) code higlighter; the current list of language identifiers recognized on fenced code blocks can be found [here](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers). Rendering of mathematical expressions written in $\rm\LaTeX$ is supported by the [MathJax](https://www.mathjax.org/) library.
 
-Given the practical limit on the number of pages of the recommended use cases, this theme should not be used for a site containing a large number of pages (more than 5 or 6). For example, if this theme is to be used for a curriculum module intended for multiple days of instruction, the content should generally be broken down into multiple repositories/sites.
+Given the practical limit on the number of pages supported by this theme's page navigation features, this theme should not be used for a site containing a large number of pages (more than 5 or 6). For example, if this theme is to be used for a curriculum module intended for multiple days of instruction, the content should generally be broken down into multiple repositories/sites.
 
 [^1]: More pages and headings may be included; however, displaying a large number of entries in the page navigator or heading navigator implemented in this theme doesn't give very &aelig;sthetically pleasing results.
 
@@ -33,6 +33,6 @@ Given the practical limit on the number of pages of the recommended use cases, t
 
 * [**Resources**](resources.md): Links to additional resources on Markdown, kramdown, $\LaTeX$, MathJax, etc. 
 
-** Notes
+## Notes
 
 * All examples of Markdown or LaTeX rendering are shown in blockquotes.
