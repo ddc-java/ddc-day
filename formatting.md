@@ -36,6 +36,10 @@ When referenced, excerpted, or embedded in a module, virtually all specific inst
     * selectors
     * properties
     * values
+
+* Markdown 
+    * block content
+    * inline content
     
 * Shell
     * commands
@@ -79,7 +83,7 @@ is converted to HTML and rendered as
 
 For classes, methods, or other multi-line code fragments---or even single-line fragments that comprise complete statements or complex expressions---use _fenced code blocks_, with language tags.
 
-A fenced code block begins with a line containing 3 backticks, optionally (and immediately) followed by a language tag; there must be nothing else on the line. Similarly, the block ends with a line containing 3 backticks _only_. 
+A fenced code block begins with a line containing 3 backticks, optionally (and immediately) followed by a language identifier; there must be nothing else on the line. Similarly, the block ends with a line containing 3 backticks _only_. 
 
 For example, here's a simple Java method, written in a fenced code block: 
 
@@ -97,7 +101,9 @@ public static void main(String[] args) {
 }
 ```
 
-Prior to the advent of the fenced code block in most Markdown dialects, there was another way to write a code block: If one or more lines of text is indented at least 4 spaces in from the current indent level (but without setting a new indent level via a list), that block would be converted to an HTML `<pre>` element. That approach still works; however, fenced code blocks should be used for this purpose whenever possible.
+Prior to the advent of the fenced code block in most Markdown dialects, there was another way to write a code block: If one or more lines of text is indented at least 4 spaces in from the current indent level (but without setting a new indent level via a list), that block would be converted to an HTML `<pre>` element. That approach still works; however, fenced code blocks with language identifiers should be used for this purpose whenever possible.
+
+
 
 ## Mathematical expressions
 
@@ -105,15 +111,21 @@ When the site content includes mathematical expressions, the choice of how to di
 
 * When the intention is to show a computation as expressed in code of a specific programming language, a code block (or inline code statement) should be used.
 
-* If mathematical equations, formula derivations---or even simple but non-programming-language-specific computations---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the [MathJax](https://www.mathjax.org/) JavaScript library.
+* If mathematical equations, formula derivations---or even simple but non-programming-language-specific computations---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ (LaTeX) expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the [MathJax](https://www.mathjax.org/) JavaScript library.
 
-In any case, mathematical expressions should rarely be written as plain text, without any typographical distinction from the rest of the content. In particular, mathematical symbols (e.g. Greek letters such as $\pi$ or $\Sigma$, or other symbols or operators such as $\infty$ or $\in$) should _mever_ be "spelled" out in English, unless that is done for the purpose of naming and explaining the symbols or operators.
+In any case, mathematical expressions should rarely be written as plain text, without any typographical distinction from the rest of the content. In particular, mathematical symbols (e.g. Greek letters such as $\pi$ or $\Sigma$, or other symbols or operators such as $\infty$ or $\infty$) should _never_ be "spelled" out in English in the text, unless one or more of these conditions hold:
+
+* It is done for the purpose of naming and explaining the individual symbols or operators (e.g. "$\Sigma$, the upper-case Greek letter sigma, is used to denote the sum of terms in a sequence.").
+
+* It's done to re-state a mathematical expression in words, to provide additional explanation. 
+
+* It's used as a programmatic symbol, in which case it should be in inline code or a code block (for example, `Math.PI`).
 
 ### Modes
 
 #### Display (block)
 
-The LaTeX _display_ mode, where one or more LaTeX expressions are displayed on one or more lines, with no non-LaTeX content on those lines, is invoked by enclosing a block of LaTeX code between pairs of `$$` characters. The opening and closing pairs must each be on their own line. 
+The LaTeX _display_ mode, where one or more LaTeX expressions are displayed on one or more lines, with no non-LaTeX content on those lines, is invoked by enclosing a block of LaTeX code between `$$` delimiters. The opening and closing `$$` must be on their own lines. 
 
 For example, to show the _quadratic equation_ in display mode, we might write
 
@@ -214,7 +226,35 @@ This is rendered as
 
 ## Pseudocode
 
-Pseudocode included in a module should be formatted using an ordered (numbered) or unordered (bullet) list, with nested lists as appropriate. Use inline LaTeX and inline code as appropriate. Use LaTeX and code blocks, as well; however, when using LaTeX or code blocks, be sure to respect the current indentation of the enclosing list, so that the list structure isn't broken (e.g. the numbering in an ordered list restarted).
+### Lists &amp; indentation
+
+Pseudocode included in a module should be formatted using an ordered (numbered) or unordered (bullet) list, with nested lists as appropriate. Use the indentation structure of lists to provide structure to the pseudocode!
+
+Use inline LaTeX, LaTeX blocks, inline code, and code blocks as appropriate. However, when using LaTeX or code blocks, be sure to respect the current indentation of the enclosing list, so that the list structure isn't broken (e.g. the numbering in an ordered list restarted). 
+
+### Example
+
+What follows is pseudocode for a binary search of an array of integers. Since the algorithm is not specific to Java, the pseudocode doesn't use Java code, but does use mathematical notation.
+
+**Given:**
+
+* $D$ is array to be searched,
+
+    $$
+    D = (d_0, d_1, \ldots, d_{n - 1}).
+    $$
+
+    Also, $D$ is sorted---that is, 
+    
+    $$
+    d_i \le = d_j, \forall i < j.
+    $$
+    
+* $v$ is value to search for in $D$.
+
+**To find $v$ in $D$:**
+
+
 
 ## Test cases
 
