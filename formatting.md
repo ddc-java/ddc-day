@@ -254,31 +254,39 @@ What follows is pseudocode for a binary search of an array of integers. Since th
 
 **To find $v$ in $D$:**
 
-* $l \gets 0$ ($l$ is lower inclusive bound of search range.)
+* $l \gets 0$. 
 
-* $u \gets n$ ($l$ is upper exclusive bound of search range.)
+    ($l$ is the lower inclusive bound of search range.)
+
+* $u \gets n$. 
+    
+    ($l$ is the upper exclusive bound of search range.)
 
 * While $l < u$:
 
-    * $m \gets \left \lfloor \frac{l + u}{2} \right \rfloor$ ($m$ is midpoint of search range.)
+    * $m \gets \left \lfloor \frac{l + u}{2} \right \rfloor$. 
+    
+        ($m$ is the midpoint of search range.)
     
     * If $d_m = v$,
     
-        * **return** $m$ as the position of $v$ in $D$;
+        * return $m$
+        
+            (done: $v$ is found at position $m$);
         
         otherwise, if $d_m > v$,
         
-        * $u \gets m$;
+        * $u \gets m$
         
-        otherwise, if $l = m$,
-        
-        * **return** $-(m + 1)$ ($v$ is not in $D$, but $-(m + 1)$ is the position where it could be inserted to preserve the sorted order);
+            ($d_m$ is too high, so updated search range should end at $m$);
         
         otherwise,
         
-        * $l \gets m.
+        * $l \gets m + 1$
         
-* **Return** $-(u + 1)$ ($v$ is not in $D$, but $-(u + 1)$ is the position where it could be inserted to preserve the sorted order).
+            ($d_m$ is too low, so updated search range should start at $m + 1$).
+        
+* **Return** $(-u - 1)$ ($v$ is not in $D$, but $(-u - 1)$ is the position where it could be inserted to preserve the sorted order).
 
 ## Test cases
 
