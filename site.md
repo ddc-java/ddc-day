@@ -11,6 +11,40 @@ description: "Enabling and configuring theme on a GitHub Pages site"
 
 For any GitHub Pages site, `_config.yml` is not only used to specify a theme for a site, but also to set a number of site-level configuration properties. The properties supported in this theme are listed below.
 
+## Structure
+
+The convention followed in this bootcamp is that repositories used for curriculum GitHub Pages sites follow a primary structure, with one alternative structure permitted.
+
+### Primary
+
+* `/` (repository root)
+    * `docs/`
+        * `assets/` (Include only if needed.)
+            * *{Subdirectories and files for repository-specific graphic assets, attachments, etc.}*
+        * `api/` (Include only if needed.)
+            * *{Subdirectories and files for generated Javadoc documentation.}*
+        * `_config.yml`
+        * `index.md`
+        * *{Additional Markdown or HTML files, as needed}*
+    * `README.md` (Not used in GitHub Pages website, but displayed in GitHub repository view.)
+    * *{Subdirectories and files containing Java code, resources, IntelliJ metadata, etc.}*
+
+In this structure, the `docs` directory must be specified as the GitHub Pages source directory in the GitHub repository settings.
+
+### Alternative
+
+For a repository which does not contain any Java code, but only the instructional content to be published via GitHub Pages, the structure may be simplified:
+
+* `/` (repository root)
+    * `assets/` (Include only if needed.)
+        * *{Subdirectories and files for repository-specific graphic assets, attachments, etc.}*
+    * `_config.yml`
+    * `index.md`
+    * `README.md` (Not used as default page in GitHub Pages website, but displayed in GitHub repository view.)
+    * *{Additional Markdown or HTML files, as needed}*
+
+Here, the repository root must be configured as the GitHub Pages source directory.
+
 ## Configuration
 
 ### Properties

@@ -1,5 +1,5 @@
 ---
-title: Formatting content
+title: Formatting Content
 menu: Formatting
 order: 40
 description: "How to format code fragments, pseudocode, mathematical expressions, etc."
@@ -95,15 +95,13 @@ For example, here's a simple Java method, written in a fenced code block:
 
 This will be rendered as
 
-```java
-public static void main(String[] args) {
-  System.out.println("Hello, world!");
-}
-```
+> ```java
+> public static void main(String[] args) {
+>   System.out.println("Hello, world!");
+> }
+> ```
 
 Prior to the advent of the fenced code block in most Markdown dialects, there was another way to write a code block: If one or more lines of text is indented at least 4 spaces in from the current indent level (but without setting a new indent level via a list), that block would be converted to an HTML `<pre>` element. That approach still works; however, fenced code blocks with language identifiers should be used for this purpose whenever possible.
-
-
 
 ## Mathematical expressions
 
@@ -137,9 +135,9 @@ $$
 
 which will be rendered as 
 
-$$
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-$$
+> $$
+> x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+> $$
 
 #### Inline 
 
@@ -159,9 +157,9 @@ $$
 
 This is rendered with an automatically generated equation number:
 
-$$
-\begin{equation} e^{ix} = \cos x + i \sin x \end{equation}
-$$
+> $$
+> \begin{equation} e^{ix} = \cos x + i \sin x \end{equation}
+> $$
 
 By default, numbering starts at 1 for the first use of `\begin{equation} … \end{equation}` in a page.
 
@@ -177,9 +175,9 @@ $$
 
 This will be rendered as
 
-$$
-\tag{1a} e^{i\pi} + 1 = 0
-$$
+> $$
+> \tag{1a} e^{i\pi} + 1 = 0
+> $$
 
 ### Links
 
@@ -220,9 +218,9 @@ The following Markdown text includes links to the 3 equations above.
 
 This is rendered as
 
-* [Euler's formula](#mjx-eqn-1)
-* [Euler's identity](#mjx-eqn-1a)
-* [Logistic map](#mjx-eqn-logistic_map)
+> * [Euler's formula](#mjx-eqn-1)
+> * [Euler's identity](#mjx-eqn-1a)
+> * [Logistic map](#mjx-eqn-logistic_map)
 
 ## Pseudocode
 
@@ -342,4 +340,28 @@ Now, the rendered output:
 
 ## Test cases
 
-Test cases should be written using tables, with clear and concise column headers indicating inputs, expected outputs, and expected exceptions. Markdown tables are easy to write, and usually work well for this purpose. However, if a table cell must contain a block element, that is not supported directly in Markdown; HTML may be required, or a combination of Markdown, HTML, and kramdown options.
+### Tables
+
+Test cases should be written using tables, with clear and concise column headers indicating inputs, expected outputs, and expected exceptions. Markdown tables are easy to write, and usually work well for this purpose. However, if a table cell needs to contain a block element, that's not directly supported in Markdown; HTML may be required, or a combination of Markdown, HTML, and kramdown options.
+
+### Example
+
+The following Markdown creates a table of test cases for one of the practical exam problems used in the bootcamp:
+
+```markdown
+| `hours` | `minutes` | Expected return value of `hourHandRadians( hours, minutes)` | Expected return value of `minuteHandRadians( minutes)` |
+|:-------:|:---------:|:----------------------------------:|:-----------------------------:|
+| `0` | `0` | `1.57079632679` | `1.57079632679` |
+| `3` | `15` | `6.152285613280012` | `0` |
+| `12` | `30` | `1.3089969389957474` | `4.71238898038469` |
+| `19` | `42` | `3.822271061867582` | `3.4557519189487724` |
+```
+
+The above Markdown is rendered as
+
+> | `hours` | `minutes` | Expected return value of `hourHandRadians( hours, minutes)` | Expected return value of `minuteHandRadians( minutes)` |
+> |:-------:|:---------:|:----------------------------------:|:-----------------------------:|
+> | `0` | `0` | `1.57079632679` | `1.57079632679` |
+> | `3` | `15` | `6.152285613280012` | `0` |
+> | `12` | `30` | `1.3089969389957474` | `4.71238898038469` |
+> | `19` | `42` | `3.822271061867582` | `3.4557519189487724` |

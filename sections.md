@@ -79,10 +79,10 @@ Any links to content outside the module should appear here, as well as inline (i
 
 In a multi-page module, it is generally preferable to have a single **Links** section (e.g. on a resources page), rather than one or more page-specific **Links** sections.
 
-```
+```markdown
 * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/) (<https://github.com/ddc-java/ddc-day/>)
 ```
 
 will be rendered as
 
-* [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/) (<https://github.com/ddc-java/ddc-day/>)
+> * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/) (<https://github.com/ddc-java/ddc-day/>)

@@ -132,7 +132,7 @@ pre {
   background: $base-dark-color;
   border: 1px solid $base-dark-color;
   border-radius: 3px;
-  overflow: auto;
+  overflow-x: auto;
   overflow-y: hidden;
 
   code {
