@@ -234,13 +234,16 @@ Use inline LaTeX, LaTeX blocks, inline code, and code blocks as appropriate. How
 
 ### Example
 
-What follows is pseudocode for a binary search of an array of integers. Since the algorithm is not specific to Java, the pseudocode doesn't use Java code, but does use mathematical notation.
+What follows is annotated pseudocode for a binary search of an array of integers. Since the algorithm is not specific to Java, the pseudocode doesn't use Java code, but does use mathematical notation.
 
+First, here is the Markdown code, with inline LaTex:
+
+```markdown
 **Given:**
 
 * $D$ is array to be searched, $D = (d_0, d_1, \ldots, d_{n - 1})$.
 
-    Also, $D$ is sorted---that is, $d_i \le d_j, \forall i < j$.
+* $D$ is in sorted order---that is, $d_i \le d_j, \forall i < j$.
     
 * $v$ is value to search for: 
 
@@ -284,6 +287,58 @@ What follows is pseudocode for a binary search of an array of integers. Since th
 4. Return $(-u - 1)$.
 
     ($v$ is not in $D$, but inserting $v$ at position $u$ would preserve the sorted order.)
+```
+
+Now, the rendered output:
+
+> **Given:**
+> 
+> * $D$ is array to be searched, $D = (d_0, d_1, \ldots, d_{n - 1})$.
+> 
+> * $D$ is in sorted order---that is, $d_i \le d_j, \forall i < j$.
+>     
+> * $v$ is value to search for: 
+> 
+>     * If $v$ is in $D$, its position must be returned. 
+>     * If $v$ is _not_ in $D$, $(-p - 1)$ must be returned, where insertion of $v$ at position $p$ would preserve the sort order.
+> 
+> **To find $v$ in $D$:**
+> 
+> 1. $l \gets 0$. 
+> 
+>     ($l$ is the lower inclusive bound of search range.)
+> 
+> 2. $u \gets n$. 
+>     
+>     ($l$ is the upper exclusive bound of search range.)
+> 
+> 3. While $l < u$:
+> 
+>     1. $m \gets \left \lfloor \frac{l + u}{2} \right \rfloor$. 
+>     
+>         ($m$ is the midpoint of search range.)
+>     
+>     2. If $d_m = v$,
+>     
+>         * return $m$;
+>         
+>             (Done: $v$ is found at position $m$.)
+>         
+>         otherwise, if $d_m > v$,
+>         
+>         * $u \gets m$;
+>         
+>             ($d_m$ is too high, so updated search range should end at $m$.)
+>         
+>         otherwise,
+>         
+>         * $l \gets m + 1$.
+>         
+>             ($d_m$ is too low, so updated search range should start at $m + 1$.)
+>         
+> 4. Return $(-u - 1)$.
+> 
+>     ($v$ is not in $D$, but inserting $v$ at position $u$ would preserve the sorted order.)
 
 ## Test cases
 
