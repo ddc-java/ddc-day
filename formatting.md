@@ -228,7 +228,7 @@ This is rendered as
 
 ### Lists &amp; indentation
 
-Pseudocode included in a module should be formatted using an ordered (numbered) or unordered (bullet) list, with nested lists as appropriate. Use the indentation structure of lists to provide structure to the pseudocode!
+Pseudocode included in a module should be formatted using an ordered (numbered) or unordered (bullet) list, with nested lists as appropriate. Use the indentation structure of nested lists to provide visual and logical structure to the pseudocode.
 
 Use inline LaTeX, LaTeX blocks, inline code, and code blocks as appropriate. However, when using LaTeX or code blocks, be sure to respect the current indentation of the enclosing list, so that the list structure isn't broken (e.g. the numbering in an ordered list restarted). 
 
@@ -247,14 +247,38 @@ What follows is pseudocode for a binary search of an array of integers. Since th
     Also, $D$ is sorted---that is, 
     
     $$
-    d_i \le = d_j, \forall i < j.
+    d_i \le d_j, \forall i < j.
     $$
     
 * $v$ is value to search for in $D$.
 
 **To find $v$ in $D$:**
 
+* $l \gets 0$ ($l$ is lower inclusive bound of search range.)
 
+* $u \gets n$ ($l$ is upper exclusive bound of search range.)
+
+* While $l < u$:
+
+    * $m \gets \left \lfloor \frac{l + u}{2} \right \rfloor$ ($m$ is midpoint of search range.)
+    
+    * If $d_m = v$,
+    
+        * **return** $m$ as the position of $v$ in $D$;
+        
+        otherwise, if $d_m > v$,
+        
+        * $u \gets m$;
+        
+        otherwise, if $l = m$,
+        
+        * **return** $-(m + 1)$ ($v$ is not in $D$, but $-(m + 1)$ is the position where it could be inserted to preserve the sorted order);
+        
+        otherwise,
+        
+        * $l \gets m.
+        
+* **Return** $-(u + 1)$ ($v$ is not in $D$, but $-(u + 1)$ is the position where it could be inserted to preserve the sorted order).
 
 ## Test cases
 
