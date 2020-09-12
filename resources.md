@@ -28,7 +28,7 @@ description: "Links to external documentation and examples"
 
 ### Mathematics
 
-* [$\rm\LaTeX$ (LaTeX)](https://www.latex-project.org/) (<https://www.latex-project.org/>)
+* [$\rm\LaTeX$](https://www.latex-project.org/) (<https://www.latex-project.org/>)
 * [$\rm\LaTeX 2_\epsilon$ for authors](https://www.latex-project.org/help/documentation/usrguide.pdf) (<https://www.latex-project.org/help/documentation/usrguide.pdf>)
 * [User’s Guide for the `amsmath` Package](https://www.latex-project.org/help/documentation/amsldoc.pdf) (<https://www.latex-project.org/help/documentation/amsldoc.pdf>)
 * [MathJax](https://www.mathjax.org/) (<https://www.mathjax.org/>)
