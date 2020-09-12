@@ -136,11 +136,17 @@ pre {
   overflow-y: hidden;
 
   code {
+    
     margin: 0;
     padding: 0;
     background-color: $base-dark-color;
     color: $medium-light-color;
     overflow-x: auto;
+    
+    span {
+      overflow-x: auto;
+    }
+    
   }
   
 }
