@@ -133,9 +133,9 @@
         {{ content }}
       </section>
       <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} <a href="https://cnmingenuity.org">CNM Ingenuity, Inc.</a>
-          {%if site.author.name %}Written by {%if site.author.email %}<a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>{% else %}{{ site.author.name }}{% endif %},{% else %}Maintained by{% endif %}
+        <p>{%if site.author.name %}Written by {%if site.author.email %}<a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>{% else %}{{ site.author.name }}{% endif %},{% else %}Maintained by{% endif %}
           <a href="https://deepdivecoding.com">Deep Dive Coding</a>.
+          &copy; {{ site.time | date: '%Y' }} <a href="https://cnmingenuity.org">CNM Ingenuity, Inc.</a> All rights reserved.
         </p>
       </footer>
     </div>

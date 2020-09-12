@@ -11,9 +11,15 @@ description: "Enabling and configuring theme on a GitHub Pages site"
 
 For any GitHub Pages site, `_config.yml` is not only used to specify a theme for a site, but also to set a number of site-level configuration properties. The properties supported in this theme are listed below.
 
+## Use cases
+
+This theme is well-suited to a site with 1--6 pages, where each page includes 0--12 headings at levels 1--3; in practice, the upper limits on pages and sections will depend on the lengths of page menu labels and section names. More pages and headings may be included; however, displaying a large number of entries in the page navigator or heading navigator implemented in this theme doesn't give very &aelig;sthetically pleasing results.
+
+Given the above, this theme should not be used for a site containing a large number of pages (more than 5 or 6). For example, if this theme is to be used for a curriculum module intended for multiple days of instruction, the content should generally be broken down into multiple repositories/sites.
+
 ## Structure
 
-The convention followed in this bootcamp is that repositories used for curriculum GitHub Pages sites follow a primary structure, with one alternative structure permitted.
+The convention followed in this bootcamp is that repositories used for curriculum GitHub Pages sites follow a specific primary structure, with one alternative structure permitted.
 
 ### Primary
 
@@ -108,3 +114,32 @@ heading_navigator:
 titles_from_headings:
   enabled: false
 ```
+
+## Repository
+
+### Documentation
+
+Each site repository must include a `README.md` file, containing:
+
+* A short summary of the subject of the site content.
+
+* A credits section, listing 
+
+    * author(s) of the instructional content;
+    * CNMI/DDC copyright assertion on instructional content, with all rights reserved;
+    * author(s) of any included source code (Java, Kotlin, Groovy, SQL, Python, XML, etc.);
+    * CNMI/DDC copyright assertion on code content (if any), with Apache 2.0 license.
+
+### License
+
+* Open source 
+
+If the repository includes any source code (apart, that is, from the Markdown sources of the site pages), the current DDC position is to permit use of the source code under the Apache 2.0 license. Thus, if there is any such source code in the repository, the Apache 2.0 license must be referenced in `README.md` (see above), and as a header comment in all source files; also, the full license text must be included in the repository in a `LICENSE` file.
+
+* Closed source
+
+For instructional content that isn't source code, CNMI reserves all rights, without any license granted. This copyright notice is automatically displayed in the footer of all pages using this theme. As noted above, it must also be included in `README.md`. Since no license is granted, there's no need to include an additional license file in the repository.
+
+### Settings
+
+In general, the visibility of any repository using this theme (in fact, of _any_ repository with CNMI curricular content other than programming source code) should be set to **private**, _unless_ the repository is being used as a fork source for student repositories.

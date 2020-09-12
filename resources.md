@@ -19,7 +19,7 @@ description: "Links to external documentation"
 * [kramdown](https://kramdown.gettalong.org/) (<https://kramdown.gettalong.org/>)
 * [kramdown Quick Reference](https://kramdown.gettalong.org/quickref.html) (<https://kramdown.gettalong.org/quickref.html>)
 
-## Mathematics
+### Mathematics
 
 * [$\rm\LaTeX$ (LaTeX)](https://www.latex-project.org/) (<https://www.latex-project.org/>)
 * [$\rm\LaTeX 2_\epsilon$ for authors](https://www.latex-project.org/help/documentation/usrguide.pdf) (<https://www.latex-project.org/help/documentation/usrguide.pdf>)
@@ -34,11 +34,11 @@ description: "Links to external documentation"
 
 ## Content
 
-### Pseudocode
-
-* [Introduction to Algorithms and Pseudocode](https://ddc-java.github.io/assets/pdf/Introduction%20to%20Algorithms%20and%20Pseudocode.pdf) (<https://ddc-java.github.io/assets/pdf/Introduction%20to%20Algorithms%20and%20Pseudocode.pdf>)
-
 ### Style Guides
 
 * [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) (<https://google.github.io/styleguide/javaguide.html>)
 * [SQL Style Guide](https://www.sqlstyle.guide/) (<https://www.sqlstyle.guide/>)
+
+### Pseudocode
+
+* [Introduction to Algorithms and Pseudocode](https://ddc-java.github.io/assets/pdf/Introduction%20to%20Algorithms%20and%20Pseudocode.pdf) (<https://ddc-java.github.io/assets/pdf/Introduction%20to%20Algorithms%20and%20Pseudocode.pdf>)
