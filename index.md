@@ -16,15 +16,10 @@ The published content of this site is intended not only to introduce the **DDC D
 ## Contents
 
 * **Introduction**: This page.
-
 * [**Site**](site.md): Site-level structure and configuration.
-
 * [**Pages**](pages.md): Configuration for multi-page sites and navigation, and content organization guidelines.
-
 * [**Sections**](sections.md): Configuration for section navigation within pages, and content organization guidelines.
-
 * [**Formatting**](formatting.md): Guidelines for writing different types of content (pseudocode, code fragments, test cases, mathematical expressions, etc.).
-
 * [**Resources**](resources.md): Links to additional resources on Markdown, kramdown, LaTeX, MathJax, etc. 
 
 ## Notes

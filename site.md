@@ -105,7 +105,7 @@ In this structure, the `docs` directory must be specified as the GitHub Pages so
 
 #### Alternative
 
-For a repository which does not contain any Java code, but only the instructional content to be published via GitHub Pages, the structure may be simplified:
+If a repository does not contain any Java code, but only the instructional content to be published via GitHub Pages, then this structure is permitted:
 
 * `/` (repository root)
     * `assets/` (Include only if needed.)
@@ -130,7 +130,7 @@ Each site repository must include a `README.md` file, containing:
     * author(s) of any included source code (Java, Kotlin, Groovy, SQL, Python, XML, etc.);
     * CNMI/DDC copyright assertion on code content (if any), with Apache 2.0 license.
 
-### Example
+#### Example
 
 This is the Markdown content of the `README.md` file in the [Recursion](https://ddc-java.github.io/recursion/basic-tasks.html) module (note that there is source code in the repository; thus, there is no Apache 2.0 license statement):
 

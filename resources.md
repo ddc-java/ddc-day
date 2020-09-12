@@ -2,7 +2,7 @@
 title: Additional Resources
 menu: Resources
 order: 50
-description: "Links to external documentation"
+description: "Links to external documentation and examples"
 ---
 
 ## Platform
@@ -42,3 +42,6 @@ description: "Links to external documentation"
 ### Pseudocode
 
 * [Introduction to Algorithms and Pseudocode](https://ddc-java.github.io/assets/pdf/Introduction%20to%20Algorithms%20and%20Pseudocode.pdf) (<https://ddc-java.github.io/assets/pdf/Introduction%20to%20Algorithms%20and%20Pseudocode.pdf>)
+
+### Examples
+
