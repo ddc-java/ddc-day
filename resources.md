@@ -9,6 +9,8 @@ description: "Links to external documentation and examples"
 
 * [GitHub Pages](https://pages.github.com/) (<https://pages.github.com/>)
 * [Working with GitHub Pages](https://docs.github.com/en/github/working-with-github-pages) (<https://docs.github.com/en/github/working-with-github-pages>)
+* [Jekyll](https://jekyllrb.com/) (<https://jekyllrb.com/>)
+* [Liquid](https://shopify.github.io/liquid/) (<https://shopify.github.io/liquid/>)
 
 ## Markup
 

@@ -35,6 +35,8 @@ Page-level configuration is done in the front matter (a YAML block preceding the
 : Page title, included in the heading display. If present, this will be concatenated to the site-level title (if present); if neither this nor a site-level title is set, then the repository name is used. (Note that a page-level title may be set by the `titles_from_headings` option, described in [Configuration](configuration.md#titles-from-headings).)
 : In general, this property should be set in every page.
 
+Additional properties may be defined in the front matter, and referenced (with the `page.` prefix) from Liquid expressions in the page.
+
 ### Example
 
 Of course, values of the above properties must be specified as properly formatted `YAML` in the page front matter. Here is an example page front matter, with some of the above properties set:

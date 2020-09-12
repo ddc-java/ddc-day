@@ -63,6 +63,8 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 `titles_from_headings.enabled`<a name="titles-from-headings"></a>
 : This is a Boolean-valued property used by the Jekyll SEO plug-in. It is only relevant when there are one or more pages that do not specify a `title` property in the front matter, in which case the first heading in such a page will be used as the value of a generated `title` property.
 
+Additional properties may be defined in `_config.yml`, and referenced (with the `site.` prefix) from [Liquid](https://shopify.github.io/liquid/) expressions in any page of the site. For example, in a module containing a practical exam problem, the GitHub Classroom assignment URL can be assigned to an `assignment_url` property in `_config.yml`. A Liquid conditional expression can then be used in a page to display a link if (and only if) a value has been assigned to `site.assignment_url`. 
+
 ### Example
 
 Of course, values of the above properties must be specified as properly formatted YAML. Below is an example `_config.yml` file for a site based on this theme. (Note that some properties are not specified, and thus take their default values, or are specified at the page level, as described above.)
