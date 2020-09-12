@@ -136,7 +136,7 @@ Each site repository must include a `README.md` file, containing:
 
 #### Example
 
-This is the Markdown content of the `README.md` file in the [Recursion](https://ddc-java.github.io/recursion/basic-tasks.html) module (note that there is source code in the repository; thus, there is no Apache 2.0 license statement):
+This is the Markdown content of the `README.md` file in the [Recursion](https://ddc-java.github.io/recursion/basic-tasks.html) module (note that since there is no source code in the repository, there is no Apache 2.0 license statement):
 
 ```markdown
 # Recursion
