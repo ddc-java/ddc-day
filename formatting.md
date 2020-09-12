@@ -75,7 +75,7 @@ When the site content includes mathematical expressions, the choice of how to di
 
 * If mathematical equations, formula derivations---or even simple but non-programming-language-specific computations---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ (LaTeX) expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the [MathJax](https://www.mathjax.org/) JavaScript library.
 
-In any case, mathematical expressions should rarely be written as plain text, without any typographical distinction from the rest of the content. In particular, mathematical symbols (e.g. Greek letters such as $\pi$ or $\Sigma$, or other symbols or operators such as $\in$ or $\infty$) should _never_ be "spelled" out in English in the text, unless one or more of these conditions hold:
+In any case, mathematical expressions should rarely be written as plain text, without any typographical distinction from the rest of the content. In particular, mathematical symbols (e.g. Greek letters such as $\pi$ or $\Sigma$, or other symbols or operators such as $\in$ or $\infty$) should _never_ be "spelled out" in English in the text, unless one or more of these conditions hold:
 
 * It is done for the purpose of naming and explaining the individual symbols or operators (e.g. "$\Sigma$, the upper-case Greek letter sigma, is used to denote the sum of terms in a sequence.").
 
