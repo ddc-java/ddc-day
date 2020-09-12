@@ -21,6 +21,11 @@ description: "Links to external documentation and examples"
 * [kramdown](https://kramdown.gettalong.org/) (<https://kramdown.gettalong.org/>)
 * [kramdown Quick Reference](https://kramdown.gettalong.org/quickref.html) (<https://kramdown.gettalong.org/quickref.html>)
 
+### Code
+
+* [Rouge](http://rouge.jneen.net/) (<http://rouge.jneen.net/>)
+* [Rouge: List of supported languages and lexers](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers) (<https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers>)
+
 ### Mathematics
 
 * [$\rm\LaTeX$ (LaTeX)](https://www.latex-project.org/) (<https://www.latex-project.org/>)
@@ -28,11 +33,6 @@ description: "Links to external documentation and examples"
 * [User’s Guide for the `amsmath` Package](https://www.latex-project.org/help/documentation/amsldoc.pdf) (<https://www.latex-project.org/help/documentation/amsldoc.pdf>)
 * [MathJax](https://www.mathjax.org/) (<https://www.mathjax.org/>)
 * [MathJax Documentation](http://docs.mathjax.org/en/latest/) (<http://docs.mathjax.org/en/latest/>)
-
-### Code
-
-* [Rouge](http://rouge.jneen.net/) (<http://rouge.jneen.net/>)
-* [Rouge: List of supported languages and lexers](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers) (<https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers>)
 
 ## Content
 
@@ -48,4 +48,4 @@ description: "Links to external documentation and examples"
 ### Examples
 
 * [Recursion](https://ddc-java.github.io/recursion/) (<https://ddc-java.github.io/recursion/>)
-* [Git/Markdown Tutorial](https://ddc-java.github.io/pre-work-git-markdown/) (<https://ddc-java.github.io/pre-work-git-markdown/>)
+* [Introduction to Git and Markdown](https://ddc-java.github.io/pre-work-git-markdown/) (<https://ddc-java.github.io/pre-work-git-markdown/>)
