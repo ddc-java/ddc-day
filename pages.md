@@ -52,7 +52,7 @@ order: 30
 
 ## Guidelines
 
-* On a multi-page site, page-level `title` property values should be set explicitly on all pages.
+* On a multi-page site, `title` and `description` property values should be set explicitly on all pages.
 
 * Single-page sites should have `page_navigator.enabled` set to `false` at the site level.
 
@@ -60,4 +60,4 @@ order: 30
 
 * In a multi-page site with `page_navigator.enabled` set to `true` at the site level, all pages should have the `menu` and `order` properties set. 
 
-    One permissible exception to this rule is the site default page (e.g. `index.md` or `README.md`): If the site has 5+ pages, and if the default page is just a short introduction, with little (if any) instructional content, it may be left out of the page navigator by omitting the `menu` property from the front matter. The default page will still be reachable from other pages on the site, by clicking on the main header text at the top of the page. 
+    One permissible exception to this rule is the site default page, `index.md`: If the site has 5+ pages, and if the default page is just a short introduction, with little (if any) instructional content, it may be left out of the page navigator by omitting the `menu` property from the front matter. The default page will still be reachable from other pages on the site, by clicking on the main header text at the top of the page. 
