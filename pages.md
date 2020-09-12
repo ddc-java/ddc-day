@@ -50,13 +50,9 @@ order: 30
 ---
 ```
 
-## Guidelines
+### Guidelines
 
 * On a multi-page site, `title` and `description` property values should be set explicitly on all pages.
-
-* Single-page sites should have `page_navigator.enabled` set to `false` at the site level.
-
-* Most sites with multiple pages should have `page_navigator.enabled` set to `true` at the site level.
 
 * In a multi-page site with `page_navigator.enabled` set to `true` at the site level, all pages should have the `menu` and `order` properties set. 
 

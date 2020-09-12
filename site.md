@@ -85,6 +85,12 @@ titles_from_headings:
   enabled: false
 ```
 
+### Guidelines
+
+* Single-page sites should have `page_navigator.enabled` set to `false` at the site level.
+
+* Sites with multiple pages should have `page_navigator.enabled` set to `true` (implicitly or explicitly) at the site level.
+
 ## Repository
 
 ### Structure
