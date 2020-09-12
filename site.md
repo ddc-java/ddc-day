@@ -17,40 +17,6 @@ This theme is well-suited to a site with 1--6 pages, where each page includes 0-
 
 Given the above, this theme should not be used for a site containing a large number of pages (more than 5 or 6). For example, if this theme is to be used for a curriculum module intended for multiple days of instruction, the content should generally be broken down into multiple repositories/sites.
 
-## Structure
-
-The convention followed in this bootcamp is that repositories used for curriculum GitHub Pages sites follow a specific primary structure, with one alternative structure permitted.
-
-### Primary
-
-* `/` (repository root)
-    * `docs/`
-        * `assets/` (Include only if needed.)
-            * *{Subdirectories and files for repository-specific graphic assets, attachments, etc.}*
-        * `api/` (Include only if needed.)
-            * *{Subdirectories and files for generated Javadoc documentation.}*
-        * `_config.yml`
-        * `index.md`
-        * *{Additional Markdown or HTML files, as needed}*
-    * `README.md` (Not used in GitHub Pages website, but displayed in GitHub repository view.)
-    * *{Subdirectories and files containing Java code, resources, IntelliJ metadata, etc.}*
-
-In this structure, the `docs` directory must be specified as the GitHub Pages source directory in the GitHub repository settings.
-
-### Alternative
-
-For a repository which does not contain any Java code, but only the instructional content to be published via GitHub Pages, the structure may be simplified:
-
-* `/` (repository root)
-    * `assets/` (Include only if needed.)
-        * *{Subdirectories and files for repository-specific graphic assets, attachments, etc.}*
-    * `_config.yml`
-    * `index.md`
-    * `README.md` (Not used as default page in GitHub Pages website, but displayed in GitHub repository view.)
-    * *{Additional Markdown or HTML files, as needed}*
-
-Here, the repository root must be configured as the GitHub Pages source directory.
-
 ## Configuration
 
 ### Properties
@@ -117,6 +83,40 @@ titles_from_headings:
 
 ## Repository
 
+### Structure
+
+Repositories used for curriculum GitHub Pages sites follow one primary structure, with an alternative structure permitted.
+
+#### Primary
+
+* `/` (repository root)
+    * `docs/`
+        * `assets/` (Include only if needed.)
+            * *{Subdirectories and files for repository-specific graphic assets, attachments, etc.}*
+        * `api/` (Include only if needed.)
+            * *{Subdirectories and files for generated Javadoc documentation.}*
+        * `_config.yml`
+        * `index.md`
+        * *{Additional Markdown or HTML files, as needed}*
+    * `README.md` (Not used in GitHub Pages website, but displayed in GitHub repository view.)
+    * *{Subdirectories and files containing Java code, resources, IntelliJ metadata, etc.}*
+
+In this structure, the `docs` directory must be specified as the GitHub Pages source directory in the GitHub repository settings.
+
+#### Alternative
+
+For a repository which does not contain any Java code, but only the instructional content to be published via GitHub Pages, the structure may be simplified:
+
+* `/` (repository root)
+    * `assets/` (Include only if needed.)
+        * *{Subdirectories and files for repository-specific graphic assets, attachments, etc.}*
+    * `_config.yml`
+    * `index.md`
+    * `README.md` (Not used as default page in GitHub Pages website, but displayed in GitHub repository view.)
+    * *{Additional Markdown or HTML files, as needed}*
+
+Here, the repository root must be configured as the GitHub Pages source directory.
+
 ### Documentation
 
 Each site repository must include a `README.md` file, containing:
@@ -130,16 +130,67 @@ Each site repository must include a `README.md` file, containing:
     * author(s) of any included source code (Java, Kotlin, Groovy, SQL, Python, XML, etc.);
     * CNMI/DDC copyright assertion on code content (if any), with Apache 2.0 license.
 
+### Example
+
+This is the Markdown content of the `README.md` file in the [Recursion](https://ddc-java.github.io/recursion/basic-tasks.html) module (note that there is source code in the repository; thus, there is no Apache 2.0 license statement):
+
+```markdown
+# Recursion
+
+## Overview
+
+An introduction to recursion in Java, using two well-known problems:
+
+* Computing factorials.
+
+* Testing strings to determine whether they are palindromes.
+
+For details, see [docs](docs/).
+
+This is a curriculum module of the [Deep Dive Coding](https://deepdivecoding.com/) [Java + Android bootcamp](https://deepdivecoding.com/java-android/).
+
+## Credits &amp; copyright
+
+This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
+
+Copyright 2020 Deep Dive Coding/CNM Ingenuity, Inc. All rights reserved.
+```
+
+When viewing the repository in GitHub, this is displayed as
+
+> # Recursion
+> 
+> ## Overview
+> 
+> An introduction to recursion in Java, using two well-known problems:
+> 
+> * Computing factorials.
+> 
+> * Testing strings to determine whether they are palindromes.
+> 
+> For details, see [docs](docs/).
+> 
+> This is a curriculum module of the [Deep Dive Coding](https://deepdivecoding.com/) [Java + Android bootcamp](https://deepdivecoding.com/java-android/).
+> 
+> ## Credits &amp; copyright
+> 
+> This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
+> 
+> Copyright 2020 Deep Dive Coding/CNM Ingenuity, Inc. All rights reserved.
+
 ### License
 
-* Open source 
+#### Open source 
 
 If the repository includes any source code (apart, that is, from the Markdown sources of the site pages), the current DDC position is to permit use of the source code under the Apache 2.0 license. Thus, if there is any such source code in the repository, the Apache 2.0 license must be referenced in `README.md` (see above), and as a header comment in all source files; also, the full license text must be included in the repository in a `LICENSE` file.
 
-* Closed source
+#### Closed source
 
 For instructional content that isn't source code, CNMI reserves all rights, without any license granted. This copyright notice is automatically displayed in the footer of all pages using this theme. As noted above, it must also be included in `README.md`. Since no license is granted, there's no need to include an additional license file in the repository.
 
 ### Settings
 
-In general, the visibility of any repository using this theme (in fact, of _any_ repository with CNMI curricular content other than programming source code) should be set to **private**, _unless_ the repository is being used as a fork source for student repositories.
+* In general, the visibility of any repository using this theme (in fact, of _any_ repository with CNMI curricular content other than programming source code) should be set to **private**, _unless_ the repository is being used as a fork source for student repositories.
+
+* The [site structure](#structure) dictates the GitHub Pages root of the repository.
+
