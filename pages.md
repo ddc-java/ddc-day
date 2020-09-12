@@ -17,6 +17,7 @@ Page-level configuration is done in the front matter (a YAML block preceding the
 
 `description`
 : Description displayed under the page heading. Setting this property at the page level overrides the site-level setting. If not set at the site or page level, the GitHub repository description (if any) is displayed.
+: For a single-page site (e.g. a practical exam problem), the description can be set at the page or site level---but it must be set, in any event. For a multi-page site, the description should be set in each page.
 
 `heading_navigator.enabled`
 : This is a Boolean-valued property, used to control the generation of a left sidebar navigator with links to all level 1--3 headings in the page body. If omitted, left without a value, or set to `false`, then the sidebar navigator will not be generated. Set at the page level, this property overrides the site-level setting.
@@ -32,6 +33,7 @@ Page-level configuration is done in the front matter (a YAML block preceding the
 
 `title`
 : Page title, included in the heading display. If present, this will be concatenated to the site-level title (if present); if neither this nor a site-level title is set, then the repository name is used. (Note that a page-level title may be set by the `titles_from_headings` option, described in [Configuration](configuration.md#titles-from-headings).)
+: In general, this property should be set in every page.
 
 ### Example
 

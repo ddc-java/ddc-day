@@ -11,8 +11,6 @@ It is assumed that the curriculum module author has significant Markdown experie
 
 ## Code fragments
 
-### Typography
-
 When referenced, excerpted, or embedded in an instruction module, virtually all references to programmatic, markup, configuration, shell, or filesystem tokens (names or symbols of operators, classes, interfaces, methods, fields, variables, tables, columns, directories, files, elements, attributes, properties, commands, arguments, options, selectors, etc.) must be typographically distinct from the rest of the module text. Conventionally, all of these are displayed in a fixed-width (aka monospace) typeface. Not coincidentally, such typefaces are also widely used in shell programs, programming text editors, IDEs, etc.
 
 Of course, knowing when to use a fixed-width font, and when not to, can be tricky, especially when we're writing curriculum for a programming course. A good rule of thumb is this:
@@ -188,13 +186,11 @@ This is rendered as
 
 ## Pseudocode
 
-### Lists &amp; indentation
-
 Pseudocode included in a module should be formatted using an ordered (numbered) or unordered (bullet) list, with nested lists as appropriate. Use the indentation structure of nested lists to provide visual and logical structure to the pseudocode.
 
 Use inline LaTeX, LaTeX blocks, inline code, and code blocks as appropriate. However, when using LaTeX or code blocks, be sure to respect the current indentation of the enclosing list, so that the list structure isn't broken (e.g. the numbering in an ordered list restarted). 
 
-### Example
+#### Example
 
 What follows is annotated pseudocode for a binary search of an array of integers. Since the algorithm is not specific to Java, the pseudocode doesn't use Java code, but does use mathematical notation.
 
@@ -304,13 +300,11 @@ Now, the rendered output:
 
 ## Test cases
 
-### Tables &amp; inline code
-
 Test cases should be written using tables, with clear and concise column headers indicating inputs, expected outputs, and expected exceptions. The guidelines for [code fragments](#code-fragments) apply here, and should include input and output values.
 
 Inline code Markdown tables are easy to write, and usually work well for this purpose. However, if a table cell needs to contain a block element, that's not directly supported in Markdown; HTML may be required, or a combination of Markdown, HTML, and kramdown options.
 
-### Example
+#### Example
 
 The following Markdown creates a table of test cases for one of the practical exam problems used in the bootcamp:
 
@@ -331,3 +325,65 @@ The above Markdown is rendered as
 > | `3` | `15` | `6.152285613280012` | `0` |
 > | `12` | `30` | `1.3089969389957474` | `4.71238898038469` |
 > | `19` | `42` | `3.822271061867582` | `3.4557519189487724` |
+
+## Glossary
+
+If a curriculum module introduces several new terms, it should include a glossary section (possibly in a resources page). This should be written as a definition list, which is intended for precisely this purpose. Glossary entries in a single list should always be in alphabetical order; however, it may be useful to have multiple glossary lists, organized by category or topic.
+
+The Markdown extensions supported by kramdown include support for definition lists. However, please note that the syntax for definition lists is quite different from that for ordered and unordered lists.
+
+#### Example
+
+A glossary of basic Git-related terms could be written as follows:
+
+```markdown
+Branch
+: A named sub-tree of revisions within a repository. Every non-empty repository includes at least one branch (usually `master`). Changes to content in one branch do not directly affect content in other branches, unless/until those branches are merged.
+
+Commit 
+: A timestamped record of a set of changes (new files, deleted files, modified files) recorded in a repository.
+
+Fork
+: A copy of a repository from one GitHub (or BitBucket, GitLab, etc.) account to another account.
+
+Git
+: A distributed version control system (DVCS), originally developed to help manage the source code of the Linux kernel.
+
+GitHub
+: A service that hosts repositories online, easing propagation of changes between collaborators and providing a web-based interface for repository management and making simple content changes. 
+
+Merge
+: The act of incorporating new changes (commits) from one clone of a repository into another clone of the same repository, one branch of a repository into another brach of the same repository, or one forked repository (or the source of the fork) into another fork of the same repository (or the source of the fork).
+
+Repository
+: A collection of files (source code, documents, etc.) related to your project, in which you create and manage content.
+
+Version control system (VCS)
+: A system that records changes to a file or set of files over time so that you can recall specific versions. 
+```
+
+The list above will be rendered as 
+
+> Branch
+> : A named sub-tree of revisions within a repository. Every non-empty repository includes at least one branch (usually `master`). Changes to content in one branch do not directly affect content in other branches, unless/until those branches are merged.
+> 
+> Commit 
+> : A timestamped record of a set of changes (new files, deleted files, modified files) recorded in a repository.
+> 
+> Fork
+> : A copy of a repository from one GitHub (or BitBucket, GitLab, etc.) account to another account.
+> 
+> Git
+> : A distributed version control system (DVCS), originally developed to help manage the source code of the Linux kernel.
+> 
+> GitHub
+> : A service that hosts repositories online, easing propagation of changes between collaborators and providing a web-based interface for repository management and making simple content changes. 
+> 
+> Merge
+> : The act of incorporating new changes (commits) from one clone of a repository into another clone of the same repository, one branch of a repository into another brach of the same repository, or one forked repository (or the source of the fork) into another fork of the same repository (or the source of the fork).
+> 
+> Repository
+> : A collection of files (source code, documents, etc.) related to your project, in which you create and manage content.
+> 
+> Version control system (VCS)
+> : A system that records changes to a file or set of files over time so that you can recall specific versions. 

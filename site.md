@@ -31,6 +31,7 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 
 `description`
 : Description displayed under the page heading. Setting this property at the page level overrides the site-level setting. If not set at the site or page level, the GitHub repository description (if any) is displayed.
+: For a single-page site (e.g. a practical exam problem), the description can be set at the page or site level---but it must be set, in any event. For a multi-page site, the description should be set in each page.
 
 `favicon`
 : URL (absolute or site-relative) of site icon displayed by the browser for bookmarks and tabs for the site's pages. If omitted or left blank, the Deep Dive Coding diving bell logo is used.
@@ -47,6 +48,7 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 
 `page_navigator.enabled`
 : This is a Boolean-valued property, used to control the generation of a navigator bar in the page header with links to all pages in the site that specify non-blank (and non-`false`) `menu` properties. If omitted, left without a value, or set to `false`, the navigator bar will not be generated.
+: For a single-page site (e.g. a practical exam problem), this should be set to `false`. For a multi-page site, this should be omitted (resulting in the default value of `true`), or explicitly set to `true`.
 : (This property may be overridden at the page level.)
 
 `remote_theme` (**required**)
@@ -193,4 +195,3 @@ For instructional content that isn't source code, CNMI reserves all rights, with
 * In general, the visibility of any repository using this theme (in fact, of _any_ repository with CNMI curricular content other than programming source code) should be set to **private**, _unless_ the repository is being used as a fork source for student repositories.
 
 * The [site structure](#structure) dictates the GitHub Pages root of the repository.
-
