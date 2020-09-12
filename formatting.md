@@ -2,7 +2,7 @@
 title: Formatting Content
 menu: Formatting
 order: 40
-description: "Formatting code, pseudocode, mathematical expressions, test cases, and glossaries."
+description: "Formatting code, mathematical expressions, pseudocode, test cases, and glossaries."
 ---
 
 ## Overview
@@ -22,8 +22,6 @@ For example, consider this sentence: "One Git command that is a major source of 
 > One Git command that is a major source of confusion---and potential disaster---is `git reset`.
 
 (Note that the period at the end of the sentence is part of the sentence itself, not part of the `git reset` command; thus, it is not in a fixed-width typeface.)
-
-### Elements 
 
 In HTML, the `<pre>` block element and the `<code>` inline element---and less often, the `<kbd>`, `<samp>`, `<var>`, and (now obsolete) `<tt>` elements---are used to display text in a fixed-width typeface. The first two may be written in Markdown using _code blocks_ and _inline code_.
 
