@@ -13,45 +13,7 @@ It is assumed that the curriculum module author has significant Markdown experie
 
 ### Typography
 
-When referenced, excerpted, or embedded in a module, virtually all specific instances of the following should be typographically distinct from the rest of the module text:
-
-* Java (and other programming languages)
-    * classes
-    * interfaces
-    * methods
-    * fields
-    * variables
-    * expressions
-    * statements
-    
-* Property files
-    * property names
-    * values
-    
-* XML &amp; HTML
-    * element names 
-    * attribute names and values
-
-* CSS
-    * selectors
-    * properties
-    * values
-
-* Markdown 
-    * block content
-    * inline content
-    
-* Shell
-    * commands
-    * arguments
-    * options
-    
-* Filesystem
-    * volume names
-    * directory names
-    * file names
-
-Conventionally, all of the above are displayed in a fixed-width (aka monospace) typeface. Not coincidentally, such typefaces are also widely used in shell programs, programming text editors, IDEs, etc.
+When referenced, excerpted, or embedded in an instruction module, virtually all references to programmatic, markup, configuration, shell, or filesystem tokens (names or symbols of operators, classes, interfaces, methods, fields, variables, tables, columns, directories, files, elements, attributes, properties, commands, arguments, options, selectors, etc.) must be typographically distinct from the rest of the module text Conventionally, all of these are displayed in a fixed-width (aka monospace) typeface. Not coincidentally, such typefaces are also widely used in shell programs, programming text editors, IDEs, etc.
 
 Of course, knowing when to use a fixed-width font, and when not to, can be tricky, especially when we're writing curriculum for a programming course. A good rule of thumb is this:
 
