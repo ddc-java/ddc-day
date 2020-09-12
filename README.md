@@ -10,4 +10,4 @@
 
 This theme was written by [Nick Bennett](mailto:nick@nickbenn.com), based on [Leap Day](https://pages-themes.github.io/leap-day/) by [Matt Graham](https://twitter.com/mattgraham).
 
-@copy; 2020 CNM Ingenuity, Inc. All rights reserved.
+&copy; 2020 CNM Ingenuity, Inc. All rights reserved.
