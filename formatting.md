@@ -2,7 +2,7 @@
 title: Formatting Content
 menu: Formatting
 order: 40
-description: "How to format code fragments, pseudocode, mathematical expressions, etc."
+description: "How to format code, pseudocode, mathematical expressions, test cases, glossaries."
 ---
 
 ## Overview
