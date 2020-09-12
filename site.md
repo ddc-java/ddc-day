@@ -153,7 +153,7 @@ This is a curriculum module of the [Deep Dive Coding](https://deepdivecoding.com
 
 This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
 
-Copyright 2020 Deep Dive Coding/CNM Ingenuity, Inc. All rights reserved.
+&copy; 2020 Deep Dive Coding/CNM Ingenuity, Inc. All rights reserved.
 ```
 
 When viewing the repository in GitHub, this is displayed as
@@ -176,7 +176,7 @@ When viewing the repository in GitHub, this is displayed as
 > 
 > This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
 > 
-> Copyright 2020 Deep Dive Coding/CNM Ingenuity, Inc. All rights reserved.
+> &copy; 2020 Deep Dive Coding/CNM Ingenuity, Inc. All rights reserved.
 
 ### License
 
