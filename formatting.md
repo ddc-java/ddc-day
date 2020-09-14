@@ -2,12 +2,26 @@
 title: Formatting Content
 menu: Formatting
 order: 40
-description: "Formatting code, mathematical expressions, pseudocode, test cases, and glossaries."
+description: "Formatting curriculum content (code, mathematical expressions, pseudocode, etc.)"
 ---
 
 ## Overview
 
 It is assumed that the curriculum module author has significant Markdown experience already. Thus, the aim of this page is not to be a Markdown syntax reference. On the other hand, many types of content can be written in Markdown (or HTML) in a variety of ways---often with different outcomes in page layout and style. So the objective here is to present guidelines for several key content types, to encourage consistency across curriculum modules.
+
+## UI controls
+
+When referencing UI controls (menu commands, window titles, button labels, field labels, etc.) in curriculum module text, the static labels/names of those controls should be shown in bold type. Additionally, hierachical commands (such as menus with submenus) should be written with a forward slash between the components. 
+
+For example, if the instructions you're writing direct the student to change the IntelliJ settings to use the non-model commit interface, you might write something like
+
+> 1. Use the **File/Settings** command to open the IntelliJ **Settings** window.
+>
+> 2. Select the **Version Control/Commit** settings from the left sidebar of the **Settings** window.
+> 
+> 3. Enable (by checking the corresponding checkbox) the **Use non-modal commit interface** setting.
+
+The use of screen captures (to clarify actions to be taken in a program's UI) is encouraged.
 
 ## Code fragments
 
