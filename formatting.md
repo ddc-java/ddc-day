@@ -15,6 +15,16 @@ When referencing UI controls (menu commands, window titles, button labels, field
 
 For example, if the instructions you're writing direct the student to change the IntelliJ settings to use the non-model commit interface, you might write something like
 
+```markup
+1. Use the **File/Settings** command to open the IntelliJ **Settings** window.
+
+2. Select the **Version Control/Commit** settings from the left sidebar of the **Settings** window.
+ 
+3. Enable (by checking the corresponding checkbox) the **Use non-modal commit interface** setting.
+```
+
+The above Markdown will be rendered as
+
 > 1. Use the **File/Settings** command to open the IntelliJ **Settings** window.
 >
 > 2. Select the **Version Control/Commit** settings from the left sidebar of the **Settings** window.
