@@ -9,6 +9,28 @@ description: "Formatting curriculum content (code, mathematical expressions, pse
 
 It is assumed that the curriculum module author has significant Markdown experience already. Thus, the aim of this page is not to be a Markdown syntax reference. On the other hand, many types of content can be written in Markdown (or HTML) in a variety of ways---often with different outcomes in page layout and style. So the objective here is to present guidelines for several key content types, to encourage consistency across curriculum modules.
 
+## Abbreviations
+
+All but the most widely known abbreviations (e.g. HTML) should be defined on first use, and kramdown abbreviation syntax should be used to associate the definition (as tooltip text) with the abbreviation. The kramdown abbreviation syntax is 
+
+```markdown
+*[abbreviation]: definition
+```
+
+For example, we could have this Markdown:
+
+```markdown
+*[MVC]: Model-View-Controller
+
+_Model-View-Controller_ (MVC) is a software design pattern in which a system's code is divided into 3 related sets of components, addressing 3 concerns: maintaining the internal state (model); presenting one or more representations of the state to an external observer (view); responding to external events, passing relevant updates to the model (controller).
+```
+
+The above will be rendered as
+
+*[MVC]: Model-View-Controller
+
+> _Model-View-Controller_ (MVC) is a software design pattern in which a system's code is divided into 3 related sets of components, > addressing 3 concerns: maintaining the internal state (model); presenting one or more representations of the state to an external observer (view); responding to external events, passing relevant updates to the model (controller).
+
 ## UI controls
 
 When referencing UI controls (menu commands, window titles, button labels, field labels, etc.) in curriculum module text, the static labels/names of those controls should be shown in bold type. Additionally, hierachical commands (such as menus with submenus) should be written with a forward slash between the components. 
