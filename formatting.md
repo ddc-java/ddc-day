@@ -13,23 +13,32 @@ It is assumed that the curriculum module author has significant Markdown experie
 
 All but the most widely known abbreviations (e.g. HTML) should be defined on first use, and kramdown abbreviation syntax should be used to associate the definition (as tooltip text) with the abbreviation. The kramdown abbreviation syntax is 
 
-```markdown
+```text
 *[abbreviation]: definition
 ```
 
 For example, we could have this Markdown:
 
-```markdown
+```text
 *[MVC]: Model-View-Controller
 
 _Model-View-Controller_ (MVC) is a software design pattern in which a system's code is divided into 3 related sets of components, addressing 3 concerns: maintaining the internal state (model); presenting one or more representations of the state to an external observer (view); responding to external events, passing relevant updates to the model (controller).
+
+*[SoC]: Separation of Concerns 
+
+MVC is a more specific form of the general principle, _separation of concerns_ (SoC).
 ```
 
 The above will be rendered as
 
-*[MVC]: Model-View-Controller
-
+> *[MVC]: Model-View-Controller
+> 
 > _Model-View-Controller_ (MVC) is a software design pattern in which a system's code is divided into 3 related sets of components, > addressing 3 concerns: maintaining the internal state (model); presenting one or more representations of the state to an external observer (view); responding to external events, passing relevant updates to the model (controller).
+> 
+> *[SoC]: Separation of Concerns 
+> 
+> MVC is a more specific form of the general principle, _separation of concerns_ (SoC).
+
 
 ## UI controls
 
