@@ -134,7 +134,7 @@ li a > img[alt=ZIP]:first-child, li a > img[alt=zip]:first-child {
 */
 
 a[href^="http" i][href$="pdf" i] {
-  background: url("../images/thumbnails/pdf.svg") no-repeat center right;
+  background: url("../images/thumbnails/pdf.svg") no-repeat center right/contain;
 }
 
 
