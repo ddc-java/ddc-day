@@ -101,52 +101,56 @@ a small {
   display:block;
 }
 
-section a[href^="http" i] {
+section a[href^="http" i]:not[.omit-thumbnail] {
 
   background-repeat: no-repeat;
   background-position-y: top;
-  background-position-x: right;
+  background-position-x: center;
   background-size: auto 90%;
   padding-right: 1.1em;
   background-image: url("../images/thumbnails/link.svg");
   
-  &[href$=".csv" i] {
+  &[href$=".csv" i], &[href*=".csv#" i], &[href*=".csv?" i] {
     background-image: url("../images/thumbnails/table.svg");
   }
   
-  &[href$=".doc" i], &[href$=".docx" i] {
+  &[href$=".doc" i], &[href*=".doc#" i], &[href*=".doc?" i], 
+  &[href$=".docx" i], &[href*=".doc#" i], &[href*=".doc?" i] {
     background-image: url("../images/thumbnails/doc.svg");
   }
   
-  &[href$=".html" i] {
+  &[href$=".htm" i], &[href*=".htm#" i], &[href*=".htm?" i],
+  &[href$=".html" i], &[href*=".html#" i], &[href*=".html?" i] {
     background-image: url("../images/thumbnails/html.svg");
   }
   
-  &[href$=".mp3" i] {
+  &[href$=".mp3" i], &[href*=".mp3#" i], &[href*=".mp3?" i] {
     background-image: url("../images/thumbnails/mp3.svg");
   }
   
-  &[href$=".pdf" i] {
+  &[href$=".pdf" i], &[href*=".pdf#" i], &[href*=".pdf?" i] {
     background-image: url("../images/thumbnails/pdf.svg");
   }
   
-  &[href$=".ppt" i], &[href$=".pptx" i] {
+  &[href$=".ppt" i], &[href*=".ppt#" i], &[href*=".ppt?" i], 
+  &[href$=".pptx" i], &[href*=".pptx#" i], &[href*=".pptx?" i] {
     background-image: url("../images/thumbnails/ppt.svg");
   }
   
-  &[href$=".tab" i] {
+  &[href$=".tab" i], &[href*=".tab#" i], &[href*=".tab?" i] {
     background-image: url("../images/thumbnails/table.svg");
   }
   
-  &[href$=".wav" i] {
+  &[href$=".wav" i], &[href*=".wav#" i], &[href*=".wav?" i] {
     background-image: url("../images/thumbnails/wav.svg");
   }
   
-  &[href$=".xls" i], &[href$=".xlsx" i] {
+  &[href$=".xls" i], &[href*=".xls#" i], &[href*=".xls?" i], 
+  &[href$=".xlsx" i], &[href*=".xlsx#" i], &[href*=".xlsx?" i] {
     background-image: url("../images/thumbnails/xls.svg");
   }
   
-  &[href$=".zip" i] {
+  &[href$=".zip" i], &[href*=".zip#" i], &[href*=".zip?" i] {
     background-image: url("../images/thumbnails/zip.svg");
   }
   

@@ -364,17 +364,33 @@ Now, the rendered output:
 
 The first reference to linked content (whether an attachment included in the module, another page in the module, or an external page or other resource) should use an inline Markdown link, with the `[text](URL)` or `[text](URL "name")` syntax. Subsequent references should not use inline links; however, a link to same content should appear in a dedicated **Links** or **Attachments** section.
 
-For external content, it's recommended to include not only a standard Markdown link (specified with the `[…](…)` syntax), but also an _autolink_ (enclosed with `<…>`), so that the destination URL is clearly displayed. For example,
+On external links, this theme automatically displays a thumbnail, corresponding to the extension portion (if any) of the link destination. If this thumbnail should not be displayed, use a kramdown span _inline attribute list_ (IAL) specifying the `omit-thumbnail` class. For example, this Markdown includes an internal link, an external link with an automatic thumbnail, and an external link with no thumbnail.
 
 ```markdown
-* [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/) (<https://github.com/ddc-java/ddc-day/>)
+* [Resources](resources.md) <!-- Internal link -->
+* [Deep Dive Coding](https://deepdivecoding.com/) <!-- External link with thumbnail -->
+* [CNM Ingenuity](https://cnmingenuity.org/){:.omit-thumbnail`} <!-- External link without thumbnail -->
+```
+
+The above is rendered as
+
+> * [Resources](resources.md) <!-- Internal link -->
+> * [Deep Dive Coding](https://deepdivecoding.com/) <!-- External link with thumbnail -->
+> * [CNM Ingenuity](https://cnmingenuity.org/){:.omit-thumbnail`} <!-- External link without thumbnail -->
+
+
+If the `omit-thumbnail` class is used on a link displayed in a list of links (e.g. in a **Links** section), it's recommended to include not only a standard Markdown link (specified with the `[…](…)` syntax), but also an _autolink_ (enclosed with `<…>`), so that the destination URL is clearly displayed. For example,
+
+```markdown
+* [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/){:.omit-thumbnail`} (<https://github.com/ddc-java/ddc-day/>{:.omit-thumbnail`})
 ```
 
 will be rendered as
 
-> * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/) (<https://github.com/ddc-java/ddc-day/>)
+> * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/){:.omit-thumbnail`} (<https://github.com/ddc-java/ddc-day/>{:.omit-thumbnail`})
 {:.render-example}
 
+Links to non-HTML content should include an embedded thumbnail along with the link text. This theme includes 3 pre-defined thumbnails, for PDF, ZIP, and audio
 
 ## Test cases
 
