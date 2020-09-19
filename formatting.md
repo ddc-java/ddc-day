@@ -61,6 +61,7 @@ The above Markdown will be rendered as
 > 2. Select the **Version Control/Commit** settings from the left sidebar of the **Settings** window.
 > 
 > 3. Enable (by checking the corresponding checkbox) the **Use non-modal commit interface** setting.
+{:.render-example}
 
 The use of screen captures (to clarify actions to be taken in a program's UI) is encouraged.
 
@@ -91,6 +92,7 @@ The first class of the Java standard library that most beginning programmers enc
 is converted to HTML and rendered as
 
 > The first class of the Java standard library that most beginning programmers encounter is the `String` class.
+{:.render-example}
 
 #### Code blocks
 
@@ -115,6 +117,7 @@ This will be rendered as
 >   System.out.println("Hello, world!");
 > }
 > ```
+{:.render-example}
 
 Prior to the advent of the fenced code block in most Markdown dialects, there was another way to write a code block: If one or more lines of text is indented at least 4 spaces in from the current indent level (but without setting a new indent level via a list), that block would be converted to an HTML `<pre>` element. That approach still works; however, fenced code blocks with language identifiers should be used for this purpose whenever possible.
 
@@ -153,6 +156,7 @@ which will be rendered as
 > $$
 > x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 > $$
+{:.render-example}
 
 #### Inline 
 
@@ -175,6 +179,7 @@ This is rendered with an automatically generated equation number:
 > $$
 > \begin{equation} e^{ix} = \cos x + i \sin x \end{equation}
 > $$
+{:.render-example}
 
 By default, numbering starts at 1 for the first use of `\begin{equation} … \end{equation}` in a page.
 
@@ -193,6 +198,7 @@ This will be rendered as
 > $$
 > \tag{1a} e^{i\pi} + 1 = 0
 > $$
+{:.render-example}
 
 ### Links
 
@@ -215,7 +221,7 @@ This is rendered as
 > $$
 > \begin{equation} x_{n + 1} = r x_n \left( 1 - x_n \right) \label{logistic map} \end{equation}
 > $$
-
+{:.render-example}
 
 #### Markdown
 
@@ -236,6 +242,7 @@ This is rendered as
 > * [Euler's formula](#mjx-eqn-1)
 > * [Euler's identity](#mjx-eqn-1a)
 > * [Logistic map](#mjx-eqn-logistic_map)
+{:.render-example}
 
 ## Pseudocode
 
@@ -350,6 +357,7 @@ Now, the rendered output:
 > 4. Return $(-u - 1)$.
 > 
 >     ($v$ is not in $D$, but inserting $v$ at position $u$ would preserve the sorted order.)
+{:.render-example}
 
 ## Test cases
 
@@ -378,6 +386,7 @@ The above Markdown is rendered as
 > | `3` | `15` | `6.152285613280012` | `0` |
 > | `12` | `30` | `1.3089969389957474` | `4.71238898038469` |
 > | `19` | `42` | `3.822271061867582` | `3.4557519189487724` |
+{:.render-example}
 
 ## Glossary
 
@@ -440,3 +449,4 @@ The list above will be rendered as
 > 
 > Version control system (VCS)
 > : A system that records changes to a file or set of files over time so that you can recall specific versions. 
+{:.render-example}

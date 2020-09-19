@@ -75,7 +75,7 @@ In a multi-page module, it is generally preferable to have a single **Attachment
 
 #### Links<a name="inventory-hints"></a>
 
-Any links to content outside the module should appear here, as well as inline (if appropriate). If there is more than one link, an ordered or unordered list should be used. In general, it's recommended not only to include a standard Markdown link (specified with the `[…](…)` syntax), but also display the URL as an _autolink_ (enclosed with `<…>`). For example,
+Any links to content outside the module should appear here, as well as inline (if appropriate). If there is more than one link, an ordered or unordered list should be used. In general, it's recommended to include not only a standard Markdown link (specified with the `[…](…)` syntax), but also an _autolink_ (enclosed with `<…>`), so that the destination URL is clearly displayed. For example,
 
 In a multi-page module, it is generally preferable to have a single **Links** section (e.g. on a resources page), rather than one or more page-specific **Links** sections.
 
@@ -86,3 +86,4 @@ In a multi-page module, it is generally preferable to have a single **Links** se
 will be rendered as
 
 > * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/) (<https://github.com/ddc-java/ddc-day/>)
+{:.render-example}

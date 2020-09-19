@@ -187,6 +187,7 @@ When viewing the repository in GitHub, this is displayed as
 > This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
 > 
 > &copy; 2020 Deep Dive Coding/CNM Ingenuity, Inc. All rights reserved.
+{:.render-example}
 
 ### License
 
