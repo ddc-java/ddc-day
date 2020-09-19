@@ -105,6 +105,11 @@ strong {
   font-weight: bold;
 }
 
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
 blockquote {
   border-left: 1px solid $deep-dive-yellow;
   margin: 0;
