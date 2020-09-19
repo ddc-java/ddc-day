@@ -101,6 +101,43 @@ a small {
   display:block;
 }
 
+/*
+a > img[alt=MP3], a > img[alt=mp3],
+a > img[alt=PDF], a > img[alt=pdf],
+a > img[alt=ZIP], a > img[alt=zip] {
+  float: right;
+  max-width: 32px;
+  padding: 0;
+  margin: 5px 0 10px 10px;
+}
+
+a > img[alt=MP3]:first-child, a > img[alt=mp3]:first-child,
+a > img[alt=PDF]:first-child, a > img[alt=pdf]:first-child,
+a > img[alt=ZIP]:first-child, a > img[alt=zip]:first-child {
+  padding-left: 0;
+}
+
+li a > img[alt=MP3], li a > img[alt=mp3],
+li a > img[alt=PDF], li a > img[alt=pdf],
+li a > img[alt=ZIP], li a > img[alt=zip] {
+  float: none;
+  max-width: 32px;
+  padding: 0;
+  margin: 5px 5px -5px 0px;
+}
+
+li a > img[alt=MP3]:first-child, li a > img[alt=mp3]:first-child,
+li a > img[alt=PDF]:first-child, li a > img[alt=pdf]:first-child,
+li a > img[alt=ZIP]:first-child, li a > img[alt=zip]:first-child {
+  padding-left: 0;
+}
+*/
+
+a[href^="http" i][href$="pdf" i] {
+  background: url("../images/thumbnails/pdf.svg") no-repeat center right;
+}
+
+
 ul {
   list-style: disc;
 }
