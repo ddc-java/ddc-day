@@ -101,7 +101,7 @@ a small {
   display:block;
 }
 
-section a[href^="http" i]:not[.omit-thumbnail] {
+section a[href^="http" i]:not(.omit-thumbnail) {
 
   background-repeat: no-repeat;
   background-position-y: top;
