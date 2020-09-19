@@ -29,6 +29,10 @@ $base-light-color: #f5f5f6;
 $medium-light-color: #e1e2e1;
 $deep-dive-yellow: #ffd007;
 
+.primary-color {
+  color: $deep-dive-yellow;
+}
+
 // TODO Define additional colors for links (incl. hover) and code blocks.
 
 body {
