@@ -107,11 +107,47 @@ a[href^="http" i] {
   background-position-y: center;
   background-position-x: right;
   background-size: contain;
-  padding-right: 1em;
-  background-image: url("../images/thumbnails/html.svg");
+  padding-right: 1.5em;
+  background-image: url("../images/thumbnails/link.svg");
   
-  &[href$="pdf" i] {
+  &[href$=".csv" i] {
+    background-image: url("../images/thumbnails/table.svg");
+  }
+  
+  &[href$=".doc" i], &[href$=".docx" i] {
+    background-image: url("../images/thumbnails/doc.svg");
+  }
+  
+  &[href$=".html" i] {
+    background-image: url("../images/thumbnails/html.svg");
+  }
+  
+  &[href$=".mp3" i] {
+    background-image: url("../images/thumbnails/mp3.svg");
+  }
+  
+  &[href$=".pdf" i] {
     background-image: url("../images/thumbnails/pdf.svg");
+  }
+  
+  &[href$=".ppt" i], &[href$=".pptx" i] {
+    background-image: url("../images/thumbnails/ppt.svg");
+  }
+  
+  &[href$=".tab" i] {
+    background-image: url("../images/thumbnails/table.svg");
+  }
+  
+  &[href$=".wav" i] {
+    background-image: url("../images/thumbnails/wav.svg");
+  }
+  
+  &[href$=".xls" i], &[href$=".xlsx" i] {
+    background-image: url("../images/thumbnails/xls.svg");
+  }
+  
+  &[href$=".zip" i] {
+    background-image: url("../images/thumbnails/zip.svg");
   }
   
 }
