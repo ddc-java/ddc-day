@@ -76,6 +76,7 @@ Of course, knowing when to use a fixed-width font, and when not to, can be trick
 For example, consider this sentence: "One Git command that is a major source of confusion---and potential disaster---is git reset." In that sentence, the capitalized "Git" is the name of the software, and not a command the user might type at some point (or even a fragment of such a command). However, "git reset" is a Git command/subcommand pair, and is in fact something that would be typed in a shell. So the preferred rendering of that sentence would be
 
 > One Git command that is a major source of confusion---and potential disaster---is `git reset`.
+{:.render-example}
 
 (Note that the period at the end of the sentence is part of the sentence itself, not part of the `git reset` command; thus, it is not in a fixed-width typeface.)
 
