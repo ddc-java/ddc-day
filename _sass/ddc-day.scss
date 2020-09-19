@@ -107,7 +107,8 @@ a[href^="http" i] {
   background-position-y: center;
   background-position-x: right;
   background-size: contain;
-  padding-right: 2em;
+  padding-right: 1em;
+  background-image: url("../images/thumbnails/html.svg");
   
   &[href$="pdf" i] {
     background-image: url("../images/thumbnails/pdf.svg");
