@@ -37,6 +37,7 @@ The above will be rendered as
 > 
 > MVC is a more specific form of the general principle, _separation of concerns_ (SoC).
 
+Note that the kramdown abbreviation syntax does not result in immediately rendered content; instead, defining a kramdown abbreviation results in a tooltip attached to subsequent uses of the abbreviation. 
 
 ## UI controls
 
