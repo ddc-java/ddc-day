@@ -104,10 +104,10 @@ a small {
 section a[href^="http" i] {
 
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position-y: top;
   background-position-x: right;
-  background-size: auto 50%;
-  padding-right: 1.25em;
+  background-size: auto 90%;
+  padding-right: 1em;
   background-image: url("../images/thumbnails/link.svg");
   
   &[href$=".csv" i] {
