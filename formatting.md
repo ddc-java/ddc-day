@@ -25,7 +25,7 @@ For example, we could have this Markdown:
 
 _Model-View-Controller_ (MVC) is a software design pattern in which a system's code is divided into 3 related sets of components, addressing 3 concerns: maintaining the internal state (model); presenting one or more representations of the state to an external observer (view); responding to external events, passing relevant updates to the model (controller).
 
-MVC is a more specific form of the general principle, _separation of concerns_ (SoC).
+MVC is a more specific form of the general principle of _separation of concerns_ (SoC).
 ```
 
 The above will be rendered as
@@ -36,6 +36,7 @@ The above will be rendered as
 > _Model-View-Controller_ (MVC) is a software design pattern in which a system's code is divided into 3 related sets of components, > addressing 3 concerns: maintaining the internal state (model); presenting one or more representations of the state to an external observer (view); responding to external events, passing relevant updates to the model (controller).
 > 
 > MVC is a more specific form of the general principle of _separation of concerns_ (SoC).
+{:.render-example}
 
 Note that the kramdown abbreviation syntax does not result in immediately rendered content; instead, defining a kramdown abbreviation results in a tooltip attached to subsequent uses of the abbreviation. 
 
