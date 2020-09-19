@@ -24,4 +24,4 @@ The content of this site is intended not only to introduce the **DDC Day** theme
 
 ## Notes
 
-* All examples of Markdown or LaTeX rendering are shown as blockquotes. These can be distinguished from normal blockquotes by the left border and padding: For actual blockquotes, this border is in "Deep Dive yellow", and there is `20px` of padding; for example renderings, the border is a dark gray, and the padding is only `10px`.
+* All examples of Markdown or LaTeX rendering are shown as blockquotes. These can be distinguished from normal blockquotes by the left border color: For actual blockquotes, this border is in "Deep Dive yellow"; for example renderings, it's dark gray.
