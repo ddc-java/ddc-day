@@ -69,12 +69,12 @@ If the module is for an assignment, practical exam problem, or extra-credit oppo
 
 #### Attachments
 
-If the module includes multiple `.pdf` or other attachments, include this section near the bottom of the page, and link to the attachments here---as well as on the first inline reference (if appropriate). These should be formatted as an ordered or unordered list. 
+If the module includes multiple `.pdf` or other attachments, include this section near the bottom of the page, and link to the attachments here---as well as in the first inline reference (if appropriate). These should be formatted as an ordered or unordered list. 
 
 In a multi-page module, it is generally preferable to have a single **Attachments** section (e.g. on a resources page), rather than one or more page-specific **Attachments** sections.
 
 #### Links
 
-Any links to content outside the module should appear here, as well as on the first inline reference (if appropriate). If there is more than one link, an ordered or unordered list should be used.
+Any links to content outside the module should appear here, as well as in the first inline reference (if appropriate). If there is more than one link, an ordered or unordered list should be used.
 
 In a multi-page module, it is generally preferable to have a single **Links** section (e.g. on a resources page), rather than one or more page-specific **Links** sections.
