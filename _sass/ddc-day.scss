@@ -135,7 +135,7 @@ section a {
     "html": "html" 
   );
 
-  &[href^=\"http\" i] {
+  &[href^="http" i] {
     
     &:not(.omit-thumbnail) {
       @extend %thumbnail;
