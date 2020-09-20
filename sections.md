@@ -11,7 +11,7 @@ The content of a typical web pages (whether written originally in HTML, Markdown
 
 The kramdown parser used by default in this theme supports the usual Markdown headings: lines starting with 1--6 hash chatacters (`#`), followed immediately by a space, then the heading text. In addition, the default kramdown configuration enables _auto IDs_: An HTML `id` attribute is automatically generated for each Markdown heading converted to HTML; the value of the `id` attribute is the "sluggified" form (converted to lower-case, with spaces replaced by `-`) of the heading text. This `id` may be included in the anchor portion of a link.
 
-If the `heading_navigator.enabled` property is set to `true` at the site level, or at the page level for any given page, headings in the page content at levels 1--3 will become links in a section navigator sidebar (as seen in this page). **However**, as noted in ["Guidelines"](#guidelines), page content should not include any level-1 headings. Thus, for practical purposes, the section navigator sidebar will include level-2 and level-3 headings. 
+If the `heading_navigator.enabled` property is set to `true` at the site level, or at the page level for any given page, headings in the page content at levels 1--3 will become links in a section navigator sidebar (as seen in this page). **However**, as noted in ["General guidelines"](#general-guidelines), page content should not include any level-1 headings. Thus, for practical purposes, the section navigator sidebar will include level-2 and level-3 headings. 
 
 ## General guidelines
 

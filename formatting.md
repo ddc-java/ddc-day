@@ -99,9 +99,9 @@ This will be rendered as
 
 Prior to the advent of the fenced code block in most Markdown dialects, there was another way to write a code block: If one or more lines of text is indented at least 4 spaces in from the current indent level (but without setting a new indent level via a list), that block would be converted to an HTML `<pre>` element. That approach still works; however, fenced code blocks with language identifiers should be used for this purpose whenever possible.
 
-## Footnotes &amp; endnotes
+## Footnotes
 
-Markdown syntax should be used for page-specific footnotes. For example,
+The extended Markdown syntax supported by kramdown can be used for page-specific footnotes. For example,
 
 ```markdown
 A link at the end of this sentence, displayed as a number (automatically generated), links to a footnote at the bottom of the page.[^footnote-example]
@@ -111,14 +111,14 @@ A link at the end of this sentence, displayed as a number (automatically generat
 
 will be displayed as
 
-* A link at the end of this sentence, displayed as a number (automatically generated), links to a footnote at the bottom of the page.[^footnote-example]
+> A link at the end of this sentence, displayed as a number (automatically generated), links to a footnote at the bottom of the page.[^footnote-example]
 {:.render-example}
 
 [^footnote-example]: A footnote is automatically displayed at the bottom of the page, no matter where the footnote definition appears.
 
 ## Glossary
 
-If a curriculum module introduces several new terms, it should include a glossary section (possibly in a resources page). This should be written as a definition list, which is intended for precisely this purpose. Glossary entries in a single list should always be in alphabetical order; however, it may be useful to have multiple glossary lists, organized by category or topic.
+If a curriculum module introduces several new terms, it should include a glossary section (possibly in a **Resources** page). This should be written as a definition list---an element intended for just this purpose. Glossary entries in a single list should always be in alphabetical order; however, it may be useful to have multiple glossary lists, organized by category or topic.
 
 Even if a module includes a glossary, terms (including abbreviations) should be defined on first use; however, the inline definition given with the first use should generally be shorter than the one in the glossary.
 
@@ -183,24 +183,32 @@ The list above will be rendered as
 
 ## Links
 
-The first reference to linked content (whether an attachment included in the module, another page in the module, or an external page or other resource) should use an inline Markdown link, with the `[text](URL)` or `[text](URL "name")` syntax. Subsequent references should not use inline links; however, a link to same content should appear in a dedicated **Links** or **Attachments** section.
+The first reference to linked content (whether an attachment included in the module, another page in the module, or an external page or other resource) should use an inline or reference Markdown link. Subsequent references to the same content should not be links, except in one of the following cases:
+
+* In a multi-page module with several references to external resources, there should either be a **Links** page, or a **Links** section on a **Resources** (or similarly named) page. Links to all external resources---whether previously linked or not---should be presented as a list here.
+
+* In a single-page module, where the single page is relatively long and contains several references to external resources, there should be a **Links** section near the bottom of the page. Links to all external resources---whether previously linked or not---should be presented as a list here.
 
 On internal links to non-HTML content (i.e. attachments) and all external links, this theme automatically displays a thumbnail, corresponding to the extension portion (if any) of the link destination. If this thumbnail should not be displayed, use a kramdown span _inline attribute list_ (IAL) specifying the `omit-thumbnail` class. For example, this Markdown includes an internal link to another page, an internal link to a non-HTML attachment, an external link with an automatic thumbnail, and an external link with the thumbnail omitted.
 
 ```markdown
-* [Resources](resources.md) <!-- Internal link to a page -->
-* [Deep Dive Coding logo](assets/images/ddc.png) <!-- Internal link to an attachment -->
-* [Deep Dive Coding](https://deepdivecoding.com/) <!-- External link with thumbnail -->
-* [CNM Ingenuity](https://cnmingenuity.org/){:.omit-thumbnail} <!-- External link without thumbnail -->
+* [Resources](resources.md) <!-- Inline link to internal HTML content, without thumbnail. -->
+* [Deep Dive Coding logo](assets/images/ddc.png) <!-- Inline link to internal non-HTML content, with thumbnail. -->
+* [Deep Dive Coding](https://deepdivecoding.com/) <!-- Inline link to external resource, with thumbnail. -->
+* [CNM Ingenuity][]{:.omit-thumbnail} <!-- Reference link to external resource, without thumbnail. -->
+
+[CNM Ingenuity]: https://cnmingenuity.org/ <!-- Definition of link reference. -->
 ```
 
 The above is rendered as
 
-> * [Resources](resources.md) <!-- Internal link to a page -->
-> * [Deep Dive Coding logo](assets/images/ddc.png) <!-- Internal link to an attachment -->
-> * [Deep Dive Coding](https://deepdivecoding.com/) <!-- External link with thumbnail -->
-> * [CNM Ingenuity](https://cnmingenuity.org/){:.omit-thumbnail} <!-- External link without thumbnail -->
+> * [Resources](resources.md) <!-- Inline link to internal HTML content, without thumbnail. -->
+> * [Deep Dive Coding logo](assets/images/ddc.png) <!-- Inline link to internal non-HTML content, with thumbnail. -->
+> * [Deep Dive Coding](https://deepdivecoding.com/) <!-- Inline link to external resource, with thumbnail. -->
+> * [CNM Ingenuity][]{:.omit-thumbnail} <!-- Reference link to external resource, without thumbnail. -->
 {:.render-example}
+
+[CNM Ingenuity]: https://cnmingenuity.org/ <!-- Definition of link reference. -->
 
 If the `omit-thumbnail` class is used on a link displayed in a list of links (e.g. in a **Links** section), it's recommended to include not only a standard Markdown link (specified with the `[…](…)` syntax), but also an _autolink_ (enclosed with `<…>`), so that the destination URL is clearly displayed. For example,
 

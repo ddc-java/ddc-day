@@ -32,7 +32,7 @@ Page-level configuration is done in the front matter (a YAML block preceding the
 : This is a Boolean-valued property, used to control the generation of a navigator bar in the page header with links to all pages in the site that specify non-blank (and non-`false`) `menu` properties. If omitted, left without a value, or set to `false`, the navigator bar will not be generated.Set at the page level, this property overrides the site-level setting.
 
 `title`
-: Page title, included in the heading display. If present, this will be concatenated to the site-level title (if present); if neither this nor a site-level title is set, then the repository name is used. (Note that a page-level title may be set by the `titles_from_headings` option, described in [Configuration](configuration.md#titles-from-headings).)
+: Page title, included in the heading display. If present, this will be concatenated to the site-level title (if present); if neither this nor a site-level title is set, then the repository name is used. (Note that a page-level title may be set by the `titles_from_headings` option, described in [Configuration](site.md#titles-from-headings).)
 : In general, this property should be set in every page.
 
 Additional properties may be defined in the front matter, and referenced (with the `page.` prefix) from Liquid expressions in the page.
