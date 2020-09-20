@@ -463,9 +463,9 @@ The above Markdown is rendered as
 
 When referencing UI controls (menu commands, window titles, button labels, field labels, etc.) in curriculum module text, the static labels/names of those controls should be shown in bold type. Additionally, hierachical commands (such as menus with submenus) should be written with a forward slash between the components. 
 
-For example, if the instructions you're writing direct the student to change the IntelliJ settings to use the non-model commit interface, you might write something like
+For example, if the instructions you're writing direct the student to change the IntelliJ settings to use the non-modal commit interface, you might write something like
 
-```markup
+```markdown
 1. Use the **File/Settings** command to open the IntelliJ **Settings** window.
 
 2. Select the **Version Control/Commit** settings from the left sidebar of the **Settings** window.
