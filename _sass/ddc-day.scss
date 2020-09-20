@@ -126,8 +126,6 @@ section a {
     "html": "html" 
   );
 
-  $external-link-selector: "&[href^=\"http\" i]:not(.omit-thumbnail)";
-
   %thumbnail {
     background-repeat: no-repeat;
     background-position-y: center;
@@ -137,7 +135,7 @@ section a {
     background-image: url("../images/thumbnails/link.svg"); 
   }
   
-  #{$external-link-selector} {
+  &[href^=\"http\" i]:not(.omit-thumbnail) {
     
     @extend %thumbnail;
     
@@ -150,10 +148,14 @@ section a {
   }
 
   @each $extension, $thumbnail-name in $extension-thumbnails {
-    &[href$=".#{$extension}" i], &[href*=".#{$extension}#" i], &[href*=".#{$extension}?" i] {
+  
+    &[href$=".#{$extension}" i]:not(.omit-thumbnail), 
+    &[href*=".#{$extension}#" i]:not(.omit-thumbnail), 
+    &[href*=".#{$extension}?" i]:not(.omit-thumbnail) {
       @extend %thumbnail;
       background-image: url("../images/thumbnails/#{$thumbnail-name}.svg");
     }
+    
   }
   
 }
