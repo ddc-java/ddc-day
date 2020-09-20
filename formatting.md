@@ -192,23 +192,23 @@ The first reference to linked content (whether an attachment included in the mod
 On internal links to non-HTML content (i.e. attachments) and all external links, this theme automatically displays a thumbnail, corresponding to the extension portion (if any) of the link destination. If this thumbnail should not be displayed, use a kramdown span _inline attribute list_ (IAL) specifying the `omit-thumbnail` class. For example, this Markdown includes an internal link to another page, an internal link to a non-HTML attachment, an external link with an automatic thumbnail, and an external link with the thumbnail omitted.
 
 ```markdown
-* [Resources](resources.md) <!-- Inline link to internal HTML content, without thumbnail. -->
-* [Deep Dive Coding logo](assets/images/ddc.png) <!-- Inline link to internal non-HTML content, with thumbnail. -->
-* [Deep Dive Coding](https://deepdivecoding.com/) <!-- Inline link to external resource, with thumbnail. -->
-* [CNM Ingenuity][]{:.omit-thumbnail} <!-- Reference link to external resource, without thumbnail. -->
+* [Resources](resources.md) <!-- Inline link to internal HTML content, w/o thumbnail. -->
+* [Deep Dive Coding logo](assets/images/ddc.png) <!-- Inline link to internal non-HTML content, w/ thumbnail. -->
+* [Deep Dive Coding](https://deepdivecoding.com/) <!-- Inline link to external resource, w/ thumbnail. -->
+* [CNM Ingenuity][]{:.omit-thumbnail} <!-- Reference link to external resource, w/o thumbnail. -->
 
-[CNM Ingenuity]: https://cnmingenuity.org/ <!-- Definition of link reference. -->
+[CNM Ingenuity]: https://cnmingenuity.org/
 ```
 
 The above is rendered as
 
-> * [Resources](resources.md) <!-- Inline link to internal HTML content, without thumbnail. -->
-> * [Deep Dive Coding logo](assets/images/ddc.png) <!-- Inline link to internal non-HTML content, with thumbnail. -->
-> * [Deep Dive Coding](https://deepdivecoding.com/) <!-- Inline link to external resource, with thumbnail. -->
-> * [CNM Ingenuity][]{:.omit-thumbnail} <!-- Reference link to external resource, without thumbnail. -->
+> * [Resources](resources.md) <!-- Inline link to internal HTML content, w/o thumbnail. -->
+> * [Deep Dive Coding logo](assets/images/ddc.png) <!-- Inline link to internal non-HTML content, w/ thumbnail. -->
+> * [Deep Dive Coding](https://deepdivecoding.com/) <!-- Inline link to external resource, w/ thumbnail. -->
+> * [CNM Ingenuity][]{:.omit-thumbnail} <!-- Reference link to external resource, w/o thumbnail. -->
 {:.render-example}
 
-[CNM Ingenuity]: https://cnmingenuity.org/ <!-- Definition of link reference. -->
+[CNM Ingenuity]: https://cnmingenuity.org/
 
 If the `omit-thumbnail` class is used on a link displayed in a list of links (e.g. in a **Links** section), it's recommended to include not only a standard Markdown link (specified with the `[…](…)` syntax), but also an _autolink_ (enclosed with `<…>`), so that the destination URL is clearly displayed. For example,
 
