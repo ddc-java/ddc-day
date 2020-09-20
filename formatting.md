@@ -28,6 +28,8 @@ _Model-View-Controller_ (MVC) is a software design pattern in which a system's c
 MVC is a more specific form of the general principle of _separation of concerns_ (SoC).
 ```
 
+(Note that unlike a list item, the asterisk at the start of an abbreviation is not followed by a space, but by the left bracket of the abbreviation.)
+
 The above will be rendered as
 
 > *[MVC]: Model-View-Controller
