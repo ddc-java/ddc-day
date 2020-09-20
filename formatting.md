@@ -40,30 +40,35 @@ The above will be rendered as
 
 Note that the kramdown abbreviation syntax does not result in immediately rendered content; instead, defining a kramdown abbreviation results in a tooltip attached to subsequent uses of the abbreviation. 
 
-## UI controls
+## Attachments &amp; links
 
-When referencing UI controls (menu commands, window titles, button labels, field labels, etc.) in curriculum module text, the static labels/names of those controls should be shown in bold type. Additionally, hierachical commands (such as menus with submenus) should be written with a forward slash between the components. 
+The first reference to linked content (whether an attachment included in the module, another page in the module, or an external page or other resource) should use an inline Markdown link, with the `[text](URL)` or `[text](URL "name")` syntax. Subsequent references should not use inline links; however, a link to same content should appear in a dedicated **Links** or **Attachments** section.
 
-For example, if the instructions you're writing direct the student to change the IntelliJ settings to use the non-model commit interface, you might write something like
+On external links, this theme automatically displays a thumbnail, corresponding to the extension portion (if any) of the link destination. If this thumbnail should not be displayed, use a kramdown span _inline attribute list_ (IAL) specifying the `omit-thumbnail` class. For example, this Markdown includes an internal link, an external link with an automatic thumbnail, and an external link with no thumbnail.
 
-```markup
-1. Use the **File/Settings** command to open the IntelliJ **Settings** window.
-
-2. Select the **Version Control/Commit** settings from the left sidebar of the **Settings** window.
- 
-3. Enable (by checking the corresponding checkbox) the **Use non-modal commit interface** setting.
+```markdown
+* [Resources](resources.md) <!-- Internal link -->
+* [Deep Dive Coding](https://deepdivecoding.com/) <!-- External link with thumbnail -->
+* [CNM Ingenuity](https://cnmingenuity.org/){:.omit-thumbnail} <!-- External link without thumbnail -->
 ```
 
-The above Markdown will be rendered as
+The above is rendered as
 
-> 1. Use the **File/Settings** command to open the IntelliJ **Settings** window.
->
-> 2. Select the **Version Control/Commit** settings from the left sidebar of the **Settings** window.
-> 
-> 3. Enable (by checking the corresponding checkbox) the **Use non-modal commit interface** setting.
+> * [Resources](resources.md) <!-- Internal link -->
+> * [Deep Dive Coding](https://deepdivecoding.com/) <!-- External link with thumbnail -->
+> * [CNM Ingenuity](https://cnmingenuity.org/){:.omit-thumbnail} <!-- External link without thumbnail -->
+
+
+If the `omit-thumbnail` class is used on a link displayed in a list of links (e.g. in a **Links** section), it's recommended to include not only a standard Markdown link (specified with the `[…](…)` syntax), but also an _autolink_ (enclosed with `<…>`), so that the destination URL is clearly displayed. For example,
+
+```markdown
+* [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/){:.omit-thumbnail} (<https://github.com/ddc-java/ddc-day/>{:.omit-thumbnail})
+```
+
+will be rendered as
+
+> * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/){:.omit-thumbnail} (<https://github.com/ddc-java/ddc-day/>{:.omit-thumbnail})
 {:.render-example}
-
-The use of screen captures (to clarify actions to be taken in a program's UI) is encouraged.
 
 ## Code fragments
 
@@ -122,6 +127,69 @@ This will be rendered as
 
 Prior to the advent of the fenced code block in most Markdown dialects, there was another way to write a code block: If one or more lines of text is indented at least 4 spaces in from the current indent level (but without setting a new indent level via a list), that block would be converted to an HTML `<pre>` element. That approach still works; however, fenced code blocks with language identifiers should be used for this purpose whenever possible.
 
+## Glossary
+
+If a curriculum module introduces several new terms, it should include a glossary section (possibly in a resources page). This should be written as a definition list, which is intended for precisely this purpose. Glossary entries in a single list should always be in alphabetical order; however, it may be useful to have multiple glossary lists, organized by category or topic.
+
+The Markdown extensions supported by kramdown include support for definition lists. However, please note that the syntax for definition lists is quite different from that for ordered and unordered lists.
+
+#### Example
+
+A glossary of basic Git-related terms could be written as follows:
+
+```markdown
+Branch
+: A named sub-tree of revisions within a repository. Every non-empty repository includes at least one branch (usually `master`). Changes to content in one branch do not directly affect content in other branches, unless/until those branches are merged.
+
+Commit 
+: A timestamped record of a set of changes (new files, deleted files, modified files) recorded in a repository.
+
+Fork
+: A copy of a repository from one GitHub (or BitBucket, GitLab, etc.) account to another account.
+
+Git
+: A distributed version control system (DVCS), originally developed to help manage the source code of the Linux kernel.
+
+GitHub
+: A service that hosts repositories online, easing propagation of changes between collaborators and providing a web-based interface for repository management and making simple content changes. 
+
+Merge
+: The act of incorporating new changes (commits) from one clone of a repository into another clone of the same repository, one branch of a repository into another brach of the same repository, or one forked repository (or the source of the fork) into another fork of the same repository (or the source of the fork).
+
+Repository
+: A collection of files (source code, documents, etc.) related to your project, in which you create and manage content.
+
+Version control system (VCS)
+: A system that records changes to a file or set of files over time so that you can recall specific versions. 
+```
+
+The list above will be rendered as 
+
+> Branch
+> : A named sub-tree of revisions within a repository. Every non-empty repository includes at least one branch (usually `master`). Changes to content in one branch do not directly affect content in other branches, unless/until those branches are merged.
+> 
+> Commit 
+> : A timestamped record of a set of changes (new files, deleted files, modified files) recorded in a repository.
+> 
+> Fork
+> : A copy of a repository from one GitHub (or BitBucket, GitLab, etc.) account to another account.
+> 
+> Git
+> : A distributed version control system (DVCS), originally developed to help manage the source code of the Linux kernel.
+> 
+> GitHub
+> : A service that hosts repositories online, easing propagation of changes between collaborators and providing a web-based interface for repository management and making simple content changes. 
+> 
+> Merge
+> : The act of incorporating new changes (commits) from one clone of a repository into another clone of the same repository, one branch of a repository into another brach of the same repository, or one forked repository (or the source of the fork) into another fork of the same repository (or the source of the fork).
+> 
+> Repository
+> : A collection of files (source code, documents, etc.) related to your project, in which you create and manage content.
+> 
+> Version control system (VCS)
+> : A system that records changes to a file or set of files over time so that you can recall specific versions. 
+{:.render-example}
+
 ## Mathematical expressions
 
 When the site content includes mathematical expressions, the choice of how to display them is largely a matter of aim: 
@@ -163,11 +231,11 @@ which will be rendered as
 
 Simple mathematical expressions may also be written inline, using `$…$`. For example, `$c^2 = a^2 + b^2$` will be rendered as $c^2 = a^2 + b^2$. Note that a number of LaTeX environments---particularly for arranging multiple expressions together---are not supported in inline mode.
 
-### Equation numbering
+### Labels
 
 #### Automatic
 
-The _equation_ environment can be used to generate equation numbers automatically, by enclosing an equation in `\begin{equation} … \end{equation}`. For example, we can write _Euler's formula_, using the LaTeX equation environment, as 
+The _equation_ environment can be used to generate equation numbers and use them to label mathematical expressions automatically, by enclosing an equation in `\begin{equation} … \end{equation}`. For example, we can write _Euler's formula_, using the LaTeX equation environment, as 
 
 ```tex
 $$
@@ -390,8 +458,6 @@ will be rendered as
 > * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/){:.omit-thumbnail} (<https://github.com/ddc-java/ddc-day/>{:.omit-thumbnail})
 {:.render-example}
 
-Links to non-HTML content should include an embedded thumbnail along with the link text. This theme includes 3 pre-defined thumbnails, for PDF, ZIP, and audio
-
 ## Test cases
 
 Test cases should be written using tables, with clear and concise column headers indicating inputs, expected outputs, and expected exceptions. The guidelines for [code fragments](#code-fragments) apply here, and should include input and output values.
@@ -421,65 +487,27 @@ The above Markdown is rendered as
 > | `19` | `42` | `3.822271061867582` | `3.4557519189487724` |
 {:.render-example}
 
-## Glossary
+## UI controls
 
-If a curriculum module introduces several new terms, it should include a glossary section (possibly in a resources page). This should be written as a definition list, which is intended for precisely this purpose. Glossary entries in a single list should always be in alphabetical order; however, it may be useful to have multiple glossary lists, organized by category or topic.
+When referencing UI controls (menu commands, window titles, button labels, field labels, etc.) in curriculum module text, the static labels/names of those controls should be shown in bold type. Additionally, hierachical commands (such as menus with submenus) should be written with a forward slash between the components. 
 
-The Markdown extensions supported by kramdown include support for definition lists. However, please note that the syntax for definition lists is quite different from that for ordered and unordered lists.
+For example, if the instructions you're writing direct the student to change the IntelliJ settings to use the non-model commit interface, you might write something like
 
-#### Example
+```markup
+1. Use the **File/Settings** command to open the IntelliJ **Settings** window.
 
-A glossary of basic Git-related terms could be written as follows:
-
-```markdown
-Branch
-: A named sub-tree of revisions within a repository. Every non-empty repository includes at least one branch (usually `master`). Changes to content in one branch do not directly affect content in other branches, unless/until those branches are merged.
-
-Commit 
-: A timestamped record of a set of changes (new files, deleted files, modified files) recorded in a repository.
-
-Fork
-: A copy of a repository from one GitHub (or BitBucket, GitLab, etc.) account to another account.
-
-Git
-: A distributed version control system (DVCS), originally developed to help manage the source code of the Linux kernel.
-
-GitHub
-: A service that hosts repositories online, easing propagation of changes between collaborators and providing a web-based interface for repository management and making simple content changes. 
-
-Merge
-: The act of incorporating new changes (commits) from one clone of a repository into another clone of the same repository, one branch of a repository into another brach of the same repository, or one forked repository (or the source of the fork) into another fork of the same repository (or the source of the fork).
-
-Repository
-: A collection of files (source code, documents, etc.) related to your project, in which you create and manage content.
-
-Version control system (VCS)
-: A system that records changes to a file or set of files over time so that you can recall specific versions. 
+2. Select the **Version Control/Commit** settings from the left sidebar of the **Settings** window.
+ 
+3. Enable (by checking the corresponding checkbox) the **Use non-modal commit interface** setting.
 ```
 
-The list above will be rendered as 
+The above Markdown will be rendered as
 
-> Branch
-> : A named sub-tree of revisions within a repository. Every non-empty repository includes at least one branch (usually `master`). Changes to content in one branch do not directly affect content in other branches, unless/until those branches are merged.
+> 1. Use the **File/Settings** command to open the IntelliJ **Settings** window.
+>
+> 2. Select the **Version Control/Commit** settings from the left sidebar of the **Settings** window.
 > 
-> Commit 
-> : A timestamped record of a set of changes (new files, deleted files, modified files) recorded in a repository.
-> 
-> Fork
-> : A copy of a repository from one GitHub (or BitBucket, GitLab, etc.) account to another account.
-> 
-> Git
-> : A distributed version control system (DVCS), originally developed to help manage the source code of the Linux kernel.
-> 
-> GitHub
-> : A service that hosts repositories online, easing propagation of changes between collaborators and providing a web-based interface for repository management and making simple content changes. 
-> 
-> Merge
-> : The act of incorporating new changes (commits) from one clone of a repository into another clone of the same repository, one branch of a repository into another brach of the same repository, or one forked repository (or the source of the fork) into another fork of the same repository (or the source of the fork).
-> 
-> Repository
-> : A collection of files (source code, documents, etc.) related to your project, in which you create and manage content.
-> 
-> Version control system (VCS)
-> : A system that records changes to a file or set of files over time so that you can recall specific versions. 
+> 3. Enable (by checking the corresponding checkbox) the **Use non-modal commit interface** setting.
 {:.render-example}
+
+The use of screen captures (to clarify actions to be taken in a program's UI) is encouraged.
