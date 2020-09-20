@@ -163,6 +163,11 @@ section a {
     
   }
   
+  &.superscript {
+    vertical-align: super;
+    font-size: smaller;
+  }
+  
 }
 
 ul {
