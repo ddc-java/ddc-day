@@ -60,7 +60,7 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 `title`
 : Site-wide title, included in the heading display of each page. If present, this will be concatenated with a page-level title (if present); if neither this nor a page-level title is set, the repository name is used. (Note that a page-level title may be set by the `titles_from_headings` option, described below.)
 
-`titles_from_headings.enabled`<a name="titles-from-headings"></a>
+{:#titles-from-headings} `titles_from_headings.enabled`
 : This is a Boolean-valued property used by the Jekyll SEO plug-in. It is only relevant when there are one or more pages that do not specify a `title` property in the front matter, in which case the first heading in such a page will be used as the value of a generated `title` property.
 
 Additional properties may be defined in `_config.yml`, and referenced (with the `site.` prefix) from [Liquid](https://shopify.github.io/liquid/) expressions in any page of the site. For example, in a module containing a practical exam problem, the GitHub Classroom assignment URL can be assigned to an `assignment_url` property in `_config.yml`. A Liquid conditional expression can then be used in a page to display a link if (and only if) a value has been assigned to `site.assignment_url`. 
