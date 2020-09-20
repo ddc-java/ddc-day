@@ -387,7 +387,7 @@ If the `omit-thumbnail` class is used on a link displayed in a list of links (e.
 
 will be rendered as
 
-> * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/){:.omit-thumbnail`} (<https://github.com/ddc-java/ddc-day/>{:.omit-thumbnail`})
+> * [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/){:.omit-thumbnail} (<https://github.com/ddc-java/ddc-day/>{:.omit-thumbnail})
 {:.render-example}
 
 Links to non-HTML content should include an embedded thumbnail along with the link text. This theme includes 3 pre-defined thumbnails, for PDF, ZIP, and audio
