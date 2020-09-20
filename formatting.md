@@ -198,7 +198,7 @@ When the site content includes mathematical expressions, the choice of how to di
 
 * When the intention is to show a computation as expressed in code of a specific programming language, a code block (or inline code statement) should be used.
 
-* If mathematical equations, formula derivations---or even simple but non-programming-language-specific computations---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ (LaTeX) expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the [MathJax](https://www.mathjax.org/) JavaScript library.
+* If mathematical equations, formula derivations---or even simple but non-programming-language-specific computations---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ (LaTeX) expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the MathJax JavaScript library.
 
 In any case, mathematical expressions should rarely be written as plain text, without any typographical distinction from the rest of the content. In particular, mathematical symbols (e.g. Greek letters such as $\pi$ or $\Sigma$, or other symbols or operators such as $\in$ or $\infty$) should _never_ be "spelled out" in English in the text, unless one or more of these conditions hold:
 
@@ -237,7 +237,7 @@ Simple mathematical expressions may also be written inline, using `$…$`. For e
 
 #### Automatic
 
-The _equation_ environment can be used to generate equation numbers and use them to label mathematical expressions automatically, by enclosing an equation in `\begin{equation} … \end{equation}`. For example, we can write _Euler's formula_, using the LaTeX equation environment, as 
+The _equation_ environment can be used to generate equation numbers and use them to label mathematical expressions automatically, by enclosing an expression with `\begin{equation} … \end{equation}`. For example, we can write _Euler's formula_, using the LaTeX equation environment, as 
 
 ```tex
 $$
@@ -432,7 +432,7 @@ Now, the rendered output:
 
 ## Test cases
 
-Test cases should be written using tables, with clear and concise column headers indicating inputs, expected outputs, and expected exceptions. The guidelines for [code fragments](#code-fragments) apply here, and should include input and output values.
+Test cases should be written using tables, with clear and concise column headers indicating inputs, expected outputs, and expected exceptions. The guidelines for [code fragments](#code-fragments) apply here: input and output values should be formatted as Java expressions, using inline code.
 
 Inline code Markdown tables are easy to write, and usually work well for this purpose. However, if a table cell needs to contain a block element, that's not directly supported in Markdown; HTML may be required, or a combination of Markdown, HTML, and kramdown options.
 
