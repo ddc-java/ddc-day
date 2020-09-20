@@ -31,19 +31,19 @@ The actual sections used in curriculum module site pages will vary greatly, depe
 
 Most modules benefit from some kind of introductory content. However, there are subtle differences between an _introduction_, an _overview_, and a _summary_.
 
-#### Introduction<a name="inventory-introduction"></a>
+#### Introduction
 
 This is most relevant to a tutorial or homework assignment. It should include only general information, without any in-depth instructional content; if there's content the student will be expected to recall for an exam or exercise later, it should not be in this section. 
 
 This section should appear no more than once in a module (even if there are multiple pages), and it should not be very long: 1--3 paragraphs is usually enough.
 
-#### Overview<a name="inventory-overview"></a>
+#### Overview {#inventory-overview}
 
-The key differences between this section and [Introduction](#inventory-introduction) is that the content in **Overview** should be re-presented (in more detail) later in the module, and an **Overview** section may appear on multiple pages (though no more than once per page) in a module, always at or near the top. Its purpose is to provide a high-level introduction to the content that will be covered by the rest of the page.
+The key differences between this section and [Introduction](#introduction) is that the content in **Overview** should be re-presented (in more detail) later in the module, and an **Overview** section may appear on multiple pages (though no more than once per page) in a module, always at or near the top. Its purpose is to provide a high-level introduction to the content that will be covered by the rest of the page.
 
 If a module needs **Introduction** and **Overview** sections, they should not appear on the same page. In that case, it is sometimes best to make the site default page (`index.md` or `README.md`) an introduction page; if such a page contains only an introduction section, then leave the section heading out.
 
-#### Summary {#inventory-summary}
+#### Summary
 
 This section is very similar to [Overview](#inventory-overview), and the same guidelines apply. In most cases, they can be used interchangeably; however, **Summary** should be favored when the section provides a high-level view of tasks to be performed---especially when those tasks are organized in a list.
 
@@ -51,30 +51,30 @@ Alternatively, **Summary** may be used at the end of a page or module, recapitul
 
 ### Detailed content
 
-#### Value<a name="inventory-value"></a>
+#### Value
 
-If the module is an assignment, practical exam problem, or extra-credit problem, this section (at or near the top---usually even above an [overview](#inventory-overview) or [summary](#inventory-summary)) should show the point value---broken down into separate components, if appropriate.
+If the module is an assignment, practical exam problem, or extra-credit problem, this section (at or near the top---usually even above an [overview](#inventory-overview) or [summary](#summary)) should show the point value---broken down into separate components, if appropriate.
 
-#### Requirements<a name="inventory-requirements"></a>
+#### Requirements
 
 If the page specifies some deliverable task(s) the student is expected to perform, include functional and technical requirements in a clearly identified section. Include code fragments and test cases in this section, as appropriate.
 
-#### Assumptions<a name="inventory-assumptions"></a>
+#### Assumptions
 
-This section may be used to expand on [Requirements](#inventory-requirements), listing key assumptions that the student may make regarding inputs, environment, etc. 
+This section may be used to expand on [Requirements](#requirements), listing key assumptions that the student may make regarding inputs, environment, etc. 
 
-#### Hints<a name="inventory-hints"></a>
+#### Hints
 
 If the module is for an assignment, practical exam problem, or extra-credit opportunity---particularly if it's especially challenging or requires an approach that's not very obvious---it may be a good idea to include some general tips.
 
-#### Attachments<a name="inventory-attachments"></a>
+#### Attachments
 
-If the module includes multiple `.pdf` or other attachments, include this section near the bottom of the page, and link to the attachments here---as well as linking to them inline (in the text), if appropriate. These should be formatted as an ordered or unordered list. 
+If the module includes multiple `.pdf` or other attachments, include this section near the bottom of the page, and link to the attachments here---as well as on the first inline reference (if appropriate). These should be formatted as an ordered or unordered list. 
 
 In a multi-page module, it is generally preferable to have a single **Attachments** section (e.g. on a resources page), rather than one or more page-specific **Attachments** sections.
 
-#### Links<a name="inventory-hints"></a>
+#### Links
 
-Any links to content outside the module should appear here, as well as inline (if appropriate). If there is more than one link, an ordered or unordered list should be used.
+Any links to content outside the module should appear here, as well as on the first inline reference (if appropriate). If there is more than one link, an ordered or unordered list should be used.
 
 In a multi-page module, it is generally preferable to have a single **Links** section (e.g. on a resources page), rather than one or more page-specific **Links** sections.
