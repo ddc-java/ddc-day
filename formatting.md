@@ -11,13 +11,13 @@ It is assumed that the curriculum module author has significant Markdown experie
 
 ## Abbreviations
 
-All but the most widely known abbreviations (e.g. HTML) should be defined on first use, with the definition in italics. In addition, kramdown abbreviation syntax should be used to associate the definition (as tooltip text) with the abbreviation. The kramdown abbreviation syntax is 
+All but the most widely known abbreviations (e.g. HTML) should be defined _on first use,_ with the definition in italics; this definition should only appear once in the module, unless the module includes a glossary. In addition, a Markdown abbreviation should be defined, in every page that uses the abbreviation, to associate the definition (as tooltip text) with the abbreviation. The abbreviation syntax supported by the kramdown parser is 
 
 ```text
 *[abbreviation]: definition
 ```
 
-For example, we could have this Markdown:
+For example, we could write this Markdown:
 
 ```text
 *[MVC]: Model-View-Controller
@@ -38,7 +38,7 @@ The above will be rendered as
 > MVC is a more specific form of the general principle of _separation of concerns_ (SoC).
 {:.render-example}
 
-Note that the kramdown abbreviation syntax does not result in immediately rendered content; instead, defining a kramdown abbreviation results in a tooltip attached to subsequent uses of the abbreviation. 
+Note that the kramdown abbreviation syntax does not result in immediately rendered content; instead, defining a kramdown abbreviation results in the automatic attachment of a tooltip to every use of the abbreviation in the page. 
 
 ## Code fragments
 
