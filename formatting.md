@@ -28,7 +28,7 @@ _Model-View-Controller_ (MVC) is a software design pattern in which a system's c
 MVC is a more specific form of the general principle of _separation of concerns_ (SoC).
 ```
 
-(Note that unlike a list item, the asterisk at the start of an abbreviation is not followed by a space, but by the left bracket of the abbreviation.)
+(Note that unlike a list item, the asterisk at the start of an abbreviation is not followed immediately by a space, but by the left bracket of the abbreviation.)
 
 The above will be rendered as
 
@@ -99,9 +99,28 @@ This will be rendered as
 
 Prior to the advent of the fenced code block in most Markdown dialects, there was another way to write a code block: If one or more lines of text is indented at least 4 spaces in from the current indent level (but without setting a new indent level via a list), that block would be converted to an HTML `<pre>` element. That approach still works; however, fenced code blocks with language identifiers should be used for this purpose whenever possible.
 
+## Footnotes &amp; endnotes
+
+Markdown syntax should be used for page-specific footnotes. For example,
+
+```markdown
+A link at the end of this sentence, displayed as a number (automatically generated), links to a footnote at the bottom of the page.[^footnote-example]
+
+[^footnote-example]: A footnote is automatically displayed at the bottom of the page, no matter where the footnote definition appears.
+```
+
+will be displayed as
+
+* A link at the end of this sentence, displayed as a number (automatically generated), links to a footnote at the bottom of the page.[^footnote-example]
+{:.render-example}
+
+[^footnote-example]: A footnote is automatically displayed at the bottom of the page, no matter where the footnote definition appears.
+
 ## Glossary
 
 If a curriculum module introduces several new terms, it should include a glossary section (possibly in a resources page). This should be written as a definition list, which is intended for precisely this purpose. Glossary entries in a single list should always be in alphabetical order; however, it may be useful to have multiple glossary lists, organized by category or topic.
+
+Even if a module includes a glossary, terms (including abbreviations) should be defined on first use; however, the inline definition given with the first use should generally be shorter than the one in the glossary.
 
 The Markdown extensions supported by kramdown include support for definition lists. However, please note that the syntax for definition lists is quite different from that for ordered and unordered lists.
 
