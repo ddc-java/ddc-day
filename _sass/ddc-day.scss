@@ -101,35 +101,46 @@ a small {
   display:block;
 }
 
-$extension-thumbnails:  (
-  "csv": "csv", 
-  "doc": "doc", 
-  "docx": "doc",  
-  "htm": "html", 
-  "html": "html", 
-  "mp3": "mp3", 
-  "pdf": "pdf", 
-  "ppt": "ppt", 
-  "pptx": "ppt", 
-  "tab": "table",
-  "wav": "wav", 
-  "xls": "xls", 
-  "xlsx": "xls", 
-  "zip": "zip"
-);
-
-
 section a {
+
+  $extension-thumbnails:  (
+    "csv": "csv", 
+    "doc": "doc", 
+    "docx": "doc",  
+    "mp3": "mp3", 
+    "pdf": "pdf", 
+    "ppt": "ppt", 
+    "pptx": "ppt", 
+    "tab": "table",
+    "wav": "wav", 
+    "xls": "xls", 
+    "xlsx": "xls", 
+    "zip": "zip"
+  );
+
+  $external-extension-thumbnails:  (
+    "htm": "html", 
+    "html": "html" 
+  );
 
   $external-link-selector: "&[href^=\"http\" i]:not(.omit-thumbnail)";
 
   #{$external-link-selector}, %thumbnail {
+  
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: right;
     background-size: auto 90%;
     padding-right: 1.1em;
     background-image: url("../images/thumbnails/link.svg"); 
+  
+    @each $extension, $thumbnail-name in $external-extension-thumbnails {
+      &[href$=".#{$extension}" i], &[href*=".#{$extension}#" i], &[href*=".#{$extension}?" i] {
+        @extend %thumbnail;
+        background-image: url("../images/thumbnails/#{$thumbnail-name}.svg");
+      }
+    }
+    
   }
 
   @each $extension, $thumbnail-name in $extension-thumbnails {
