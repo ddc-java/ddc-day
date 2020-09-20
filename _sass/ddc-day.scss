@@ -104,8 +104,8 @@ a small {
 section a[href^="http" i]:not(.omit-thumbnail) {
 
   background-repeat: no-repeat;
-  background-position-y: top;
-  background-position-x: center;
+  background-position-y: center;
+  background-position-x: right;
   background-size: auto 90%;
   padding-right: 1.1em;
   background-image: url("../images/thumbnails/link.svg");
