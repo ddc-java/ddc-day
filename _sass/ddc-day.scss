@@ -101,61 +101,45 @@ a small {
   display:block;
 }
 
-section a[href^="http" i]:not(.omit-thumbnail) {
+$extension-thumbnails:  (
+  "csv": "csv", 
+  "doc": "doc", 
+  "docx": "doc",  
+  "htm": "html", 
+  "html": "html", 
+  "mp3": "mp3", 
+  "pdf": "pdf", 
+  "ppt": "ppt", 
+  "pptx": "ppt", 
+  "tab": "table",
+  "wav": "wav", 
+  "xls": "xls", 
+  "xlsx": "xls", 
+  "zip", "zip"
+);
 
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: right;
-  background-size: auto 90%;
-  padding-right: 1.1em;
-  background-image: url("../images/thumbnails/link.svg");
-  
-  &[href$=".csv" i], &[href*=".csv#" i], &[href*=".csv?" i] {
-    background-image: url("../images/thumbnails/table.svg");
+
+section a {
+
+  $external-link-selector: "&[href^=\"http\" i]:not(.omit-thumbnail)";
+
+  #{$external-link-selector}, %thumbnail {
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    background-size: auto 90%;
+    padding-right: 1.1em;
+    background-image: url("../images/thumbnails/link.svg"); 
   }
-  
-  &[href$=".doc" i], &[href*=".doc#" i], &[href*=".doc?" i], 
-  &[href$=".docx" i], &[href*=".doc#" i], &[href*=".doc?" i] {
-    background-image: url("../images/thumbnails/doc.svg");
-  }
-  
-  &[href$=".htm" i], &[href*=".htm#" i], &[href*=".htm?" i],
-  &[href$=".html" i], &[href*=".html#" i], &[href*=".html?" i] {
-    background-image: url("../images/thumbnails/html.svg");
-  }
-  
-  &[href$=".mp3" i], &[href*=".mp3#" i], &[href*=".mp3?" i] {
-    background-image: url("../images/thumbnails/mp3.svg");
-  }
-  
-  &[href$=".pdf" i], &[href*=".pdf#" i], &[href*=".pdf?" i] {
-    background-image: url("../images/thumbnails/pdf.svg");
-  }
-  
-  &[href$=".ppt" i], &[href*=".ppt#" i], &[href*=".ppt?" i], 
-  &[href$=".pptx" i], &[href*=".pptx#" i], &[href*=".pptx?" i] {
-    background-image: url("../images/thumbnails/ppt.svg");
-  }
-  
-  &[href$=".tab" i], &[href*=".tab#" i], &[href*=".tab?" i] {
-    background-image: url("../images/thumbnails/table.svg");
-  }
-  
-  &[href$=".wav" i], &[href*=".wav#" i], &[href*=".wav?" i] {
-    background-image: url("../images/thumbnails/wav.svg");
-  }
-  
-  &[href$=".xls" i], &[href*=".xls#" i], &[href*=".xls?" i], 
-  &[href$=".xlsx" i], &[href*=".xlsx#" i], &[href*=".xlsx?" i] {
-    background-image: url("../images/thumbnails/xls.svg");
-  }
-  
-  &[href$=".zip" i], &[href*=".zip#" i], &[href*=".zip?" i] {
-    background-image: url("../images/thumbnails/zip.svg");
+
+  @each $extension, $thumbnail-name in $extension-thumbnails {
+    &[href$=".#{$extension}" i], &[href*=".#{$extension}#" i], &[href*=".#{$extension}?" i] {
+      @extend %thumbnail;
+      background-image: url("../images/thumbnails/#{$thumbnail-name}.svg");
+    }
   }
   
 }
-
 
 ul {
   list-style: disc;
