@@ -101,6 +101,15 @@ a small {
   display:block;
 }
 
+%thumbnail {
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+  background-size: auto 90%;
+  padding-right: 1.1em;
+  background-image: url("../images/thumbnails/link.svg"); 
+}
+
 section a {
 
   $extension-thumbnails:  (
@@ -126,15 +135,6 @@ section a {
     "html": "html" 
   );
 
-  %thumbnail {
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: right;
-    background-size: auto 90%;
-    padding-right: 1.1em;
-    background-image: url("../images/thumbnails/link.svg"); 
-  }
-  
   &[href^=\"http\" i]:not(.omit-thumbnail) {
     
     @extend %thumbnail;
