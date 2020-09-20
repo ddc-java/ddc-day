@@ -369,20 +369,20 @@ On external links, this theme automatically displays a thumbnail, corresponding 
 ```markdown
 * [Resources](resources.md) <!-- Internal link -->
 * [Deep Dive Coding](https://deepdivecoding.com/) <!-- External link with thumbnail -->
-* [CNM Ingenuity](https://cnmingenuity.org/){:.omit-thumbnail`} <!-- External link without thumbnail -->
+* [CNM Ingenuity](https://cnmingenuity.org/){:.omit-thumbnail} <!-- External link without thumbnail -->
 ```
 
 The above is rendered as
 
 > * [Resources](resources.md) <!-- Internal link -->
 > * [Deep Dive Coding](https://deepdivecoding.com/) <!-- External link with thumbnail -->
-> * [CNM Ingenuity](https://cnmingenuity.org/){:.omit-thumbnail`} <!-- External link without thumbnail -->
+> * [CNM Ingenuity](https://cnmingenuity.org/){:.omit-thumbnail} <!-- External link without thumbnail -->
 
 
 If the `omit-thumbnail` class is used on a link displayed in a list of links (e.g. in a **Links** section), it's recommended to include not only a standard Markdown link (specified with the `[…](…)` syntax), but also an _autolink_ (enclosed with `<…>`), so that the destination URL is clearly displayed. For example,
 
 ```markdown
-* [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/){:.omit-thumbnail`} (<https://github.com/ddc-java/ddc-day/>{:.omit-thumbnail`})
+* [Deep Dive Coding Java+Android Bootcamp Curriculum Theme](https://github.com/ddc-java/ddc-day/){:.omit-thumbnail} (<https://github.com/ddc-java/ddc-day/>{:.omit-thumbnail})
 ```
 
 will be rendered as
