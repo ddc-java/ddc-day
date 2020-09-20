@@ -43,7 +43,7 @@ The key differences between this section and [Introduction](#inventory-introduct
 
 If a module needs **Introduction** and **Overview** sections, they should not appear on the same page. In that case, it is sometimes best to make the site default page (`index.md` or `README.md`) an introduction page; if such a page contains only an introduction section, then leave the section heading out.
 
-#### Summary<a name="inventory-summary"></a>
+#### Summary {#inventory-summary}
 
 This section is very similar to [Overview](#inventory-overview), and the same guidelines apply. In most cases, they can be used interchangeably; however, **Summary** should be favored when the section provides a high-level view of tasks to be performed---especially when those tasks are organized in a list.
 
