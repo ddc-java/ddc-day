@@ -135,12 +135,17 @@ section a {
     "html": "html" 
   );
 
-  &[href^=\"http\" i]:not(.omit-thumbnail) {
+  &[href^=\"http\" i] {
     
-    @extend %thumbnail;
+    &:not(.omit-thumbnail) {
+      @extend %thumbnail;
+      background-image: url("../images/thumbnails/link.svg");
+    }
     
     @each $extension, $thumbnail-name in $external-extension-thumbnails {
-      &[href$=".#{$extension}" i], &[href*=".#{$extension}#" i], &[href*=".#{$extension}?" i] {
+      &[href$=".#{$extension}" i]:not(.omit-thumbnail), 
+      &[href*=".#{$extension}#" i]:not(.omit-thumbnail), 
+      &[href*=".#{$extension}?" i]:not(.omit-thumbnail) {
         background-image: url("../images/thumbnails/#{$thumbnail-name}.svg");
       }
     }
