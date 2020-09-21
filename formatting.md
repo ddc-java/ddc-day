@@ -9,6 +9,10 @@ description: "Formatting curriculum content (code, mathematical expressions, pse
 
 It is assumed that the curriculum module author has significant Markdown experience already. Thus, the aim of this page is not to be a Markdown syntax reference. On the other hand, many types of content can be written in Markdown (or HTML) in a variety of ways---often with different outcomes in page layout and style. So the objective here is to present guidelines for several key content types, to encourage consistency across curriculum modules.
 
+One general guideline, applicable to all of the rules that follow, is this:
+
+> If an identical (and desirable) formatting result can be produced with both Markdown and HTML, the former should be used. In other words, content should be written using Markdown when possible, mixed Markdown &amp; HTML when necessary, and pure HTML as a last resort.
+
 ## Abbreviations
 
 All but the most widely known abbreviations (e.g. HTML) should be defined _on first use,_ with the definition in italics; this definition should only appear once in the module, unless the module includes a glossary. In addition, a Markdown abbreviation should be defined, in every page that uses the abbreviation, to associate the definition (as tooltip text) with the abbreviation. The abbreviation syntax supported by the kramdown parser is 
