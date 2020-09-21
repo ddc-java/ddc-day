@@ -116,7 +116,7 @@ will be displayed as
 
 [^footnote-example]: A footnote is automatically displayed at the bottom of the page, no matter where the footnote definition appears.
 
-## Glossary
+## Glossaries
 
 If a curriculum module introduces several new terms, it should include a glossary section (possibly in a **Resources** page). This should be written as a definition list---an element intended for just this purpose. Glossary entries in a single list should always be in alphabetical order; however, it may be useful to have multiple glossary lists, organized by category or topic.
 

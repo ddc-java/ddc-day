@@ -257,8 +257,14 @@ td {
 }
 
 dt {
+  
   color: $base-dark-color;
   font-weight: 700;
+  
+  &.title {
+    font-family: "Aleo", "Copse", serif;
+  }
+  
 }
 
 small {
@@ -318,6 +324,7 @@ header {
   }
   
 }
+
 
 div#banner {
 
@@ -448,7 +455,7 @@ div#banner {
   
       li {
       
-        margin: 0 4%;
+        margin: 0 3%;
         font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
         white-space: nowrap;
         
