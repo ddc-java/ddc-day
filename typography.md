@@ -27,10 +27,10 @@ sans-serif bold
 `monospaced`{:.normal-weight}
 
 : 
-    * Code fragments.    
+    * Code fragments (in any programming/scripting, markup, or data interchange language).
     * References to code symbols.
-    * Shell commands, arguments, and options.    
-    * Console output.    
+    * Shell commands, arguments, and options.
+    * Console output.
     * File and directory names.
     
 $\text{serif roman and }italic$
