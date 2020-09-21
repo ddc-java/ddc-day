@@ -1,7 +1,7 @@
 ---
 title: Formatting Content
 menu: Formatting
-order: 40
+order: 50
 description: "Formatting curriculum content (code, mathematical expressions, pseudocode, etc.)"
 ---
 

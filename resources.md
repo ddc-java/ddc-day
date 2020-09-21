@@ -1,7 +1,7 @@
 ---
 title: Additional Resources
 menu: Resources
-order: 50
+order: 60
 description: "Links to external documentation and examples"
 ---
 
