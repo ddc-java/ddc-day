@@ -55,7 +55,7 @@ Note that this list does not include mathematical symbols. These should be typed
 
 : An ellipsis is used to indicate an omitted section of text, or an omitted portion of a list or sequence. (In conversational-style writing, it's also used to indicate a long pause---often in the middle of a sentence---or an incomplete thought or statement.) It's common to type 3 periods in place of an ellipsis (some style guides even prefer 3 periods---especially when using a fixed-width font); however, most modern fonts include an ellipsis character, with a width equal to that of the "M" character in that font.
 
-: Conveniently, the substitute character sequence that kramdown translates to the ellipsis is, in fact, 3 consecutive periods (`...`). Note that the only reason to have more than 3 periods in a row is if the omitted text is preceded or followed by a period marking the end of the previous or same sentence. (If the omitted text consists of 1 or more complete sentences, the ellipsis is generally assumed to include the closing period.)
+: Conveniently, the substitute character sequence that kramdown translates to the ellipsis is, in fact, 3 consecutive periods (`...`). In general, avoid using more than 3 periods in a row, with no intervening spaces. For example, if the omitted text immediately follows a complete sentence, that sentence would end with a period (or other terminal punctuation), followed by a space, and then the ellipsis.
 
 --- (em dash)
 
