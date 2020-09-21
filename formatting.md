@@ -11,7 +11,7 @@ It is assumed that the curriculum module author has significant Markdown experie
 
 One general guideline, applicable to all of the rules that follow, is this:
 
-> If an identical (and desirable) formatting result can be produced with both Markdown and HTML, the former should be used. In other words, content should be written using Markdown when possible, mixed Markdown &amp; HTML when necessary, and pure HTML as a last resort.
+> If an identical (and desirable) formatting result can be produced with either Markdown or HTML, the former should be used. In other words, content should be written using Markdown when possible, mixed Markdown &amp; HTML when necessary, and pure HTML as a last resort.
 
 ## Abbreviations
 

@@ -197,7 +197,7 @@ blockquote.render-example {
 code {
 
   font-family: Consolas, ‘Andale Mono WT’, ‘Andale Mono’, ‘Lucida Console’, ‘Lucida Sans Typewriter’, ‘DejaVu Sans Mono’, ‘Bitstream Vera Sans Mono’, ‘Liberation Mono’, ‘Nimbus Mono L’, Monaco, ‘Courier New’, Courier, monospace;
-  font-size:13px;
+  font-size: 13px;
   background-color: $medium-light-color;
   color: $base-dark-color;
   text-shadow: none;
@@ -205,6 +205,10 @@ code {
   padding: 2px;
   border-radius: 2px;
   white-space: pre-wrap;
+  
+  &.normal-weight {
+    font-weight: normal;
+  }
 
 }
 
@@ -265,9 +269,14 @@ dt {
     font-family: "Aleo", "Copse", serif;
   }
   
-  &.plain {
-    font-weight: 400;
+  &.normal-weight {
+    font-weight: normal;
   }  
+  
+  &.emphasized {
+    font-style: italic;
+  }  
+  
   
 }
 
