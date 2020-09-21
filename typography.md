@@ -5,7 +5,7 @@ order: 35
 description: "Font groups and styles used in curriculum."
 ---
 
-For the most part, this theme is responsible for the specific typefaces and styles used in curriculum module web pages. However, the general font characteristics are selected based on the block and span formatting elements included in the content by the author. Thus, it's important that the curriculum author understand the general typographical characteristics for different content types, to help them better understand and use the [formatting guidelines](formatting.md).
+For the most part, the DDC Day theme is responsible for the specific typefaces and styles used in curriculum module web pages. However, the general font characteristics are selected based on the block and span formatting elements included in the content by the curriculum author. Thus, it's important that the author understand the general typographical characteristics for different content types, to help them better understand and use the [formatting guidelines](formatting.md).
 
 {:.normal-weight.title}slab-serif
 
