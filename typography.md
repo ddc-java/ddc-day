@@ -47,7 +47,7 @@ $\text{serif roman and }italic$
 
 There are a handful of characters that occur quite frequently in printed English that are not easily typed on the keyboard. Some word processing programs automatically translate to these special characters from common substitutes that are more easily typed; however, most text editors don't do that. So it is often the case that in e-mail or SMS messages, or even web pages, more easily typed (but incorrect) characters are used in place of the appropriate symbols. 
 
-Fortunately, most dialects of Markdown (including that supported by the kramdown parser) include some automatic translations to a few special symbols from substitute character sequences. These are listed below, along with use cases for the symbols. Whenever possible, the correct characters should be used---whether through these Markdown translations, HTML entities, or other means.
+Fortunately, most dialects of Markdown (including that supported by the kramdown parser) include some automatic translations to a few special symbols from substitute character sequences. These are listed below, along with use cases for the symbols. Whenever possible, the correct symbols should be used---whether through these Markdown translations, HTML entities, or other means.
 
 Note that this list does not include mathematical symbols. These should be typed using $\rm\LaTeX$, as described in ["Mathematical expressions"](formatting.md#mathematical-expressions).
 
