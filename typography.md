@@ -24,7 +24,7 @@ sans-serif bold
     * First use of a term defined in the text, e.g. "_Hypertext Transfer Protocol_ (HTTP) is the primary protocol used by web traffic."
     * Emphasis (use this sparingly).
     
-`monospaced`{:.normal-weight}
+`highlighted fixed-width`{:.normal-weight}
 
 : 
     * Code fragments (in any programming/scripting, markup, or data interchange language).
