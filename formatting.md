@@ -48,7 +48,7 @@ Note that the kramdown abbreviation syntax does not result in immediately render
 
 ## Code fragments
 
-When referenced, excerpted, or embedded in an instruction module, virtually all references to programmatic, markup, configuration, shell, or filesystem tokens (names or symbols of operators, classes, interfaces, methods, fields, variables, tables, columns, directories, files, elements, attributes, properties, commands, arguments, options, selectors, etc.) must be typographically distinct from the rest of the module text. Conventionally, all of these are displayed in a fixed-width (aka monospace) typeface. Not coincidentally, such typefaces are also widely used in shell programs, programming text editors, IDEs, etc.
+When referenced, excerpted, or embedded in an instruction module, virtually all references to programmatic, markup, configuration, shell, or filesystem tokens (names or symbols of operators, classes, interfaces, methods, fields, variables, tables, columns, directories, files, elements, attributes, properties, commands, arguments, options, selectors, etc.) must be typographically distinct from the rest of the module text. Following widely used conventions, all of these should be displayed in a fixed-width (aka monospace) typeface. Not coincidentally, such typefaces are also widely used in shell programs, programming text editors, IDEs, etc.
 
 Of course, knowing when to use a fixed-width font, and when not to, can be tricky, especially when we're writing curriculum for a programming course. A good rule of thumb is this:
 
@@ -61,7 +61,7 @@ For example, consider this sentence: "One Git command that is a major source of 
 
 (Note that the period at the end of the sentence is part of the sentence itself, not part of the `git reset` command; thus, it is not in a fixed-width typeface.)
 
-In HTML, the `<pre>` block element and the `<code>` inline element---and less often, the `<kbd>`, `<samp>`, `<var>`, and (now obsolete) `<tt>` elements---are used to display text in a fixed-width typeface. The first two may be written in Markdown using _code blocks_ and _inline code_.
+THe proper way to format these monospaced fragments is with Markdown [_code blocks_](#code-blocks) and [_inline code_](#inline-code); these are generally converted to HTML `<pre>` and `<code>` elements.
 
 #### Inline code
 
@@ -82,7 +82,7 @@ For classes, methods, or other multi-line code fragments---or even single-line f
 
 A fenced code block begins with a line containing 3 backticks, optionally (and immediately) followed by a language identifier; there must be nothing else on the line. Similarly, the block ends with a line containing 3 backticks _only_. 
 
-**Important**: Java code blocks must conform to the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). SQL code blocks must _either_ conform to Simon Holywell's [SQL Style Guide](https://www.sqlstyle.guide/), or be formatted using the IntelliJ code format command for the relevant dialect. XML and JSON code blocks should be formatted using the IntelliJ code format command.
+**Important**: Java code blocks must conform to the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). SQL code blocks must either conform to Simon Holywell's [SQL Style Guide](https://www.sqlstyle.guide/), or be formatted using the IntelliJ code format command for the relevant dialect. XML and JSON code blocks should be formatted using the IntelliJ code format command. (Of course, if the code block is presenting an example of undesirable naming or formatting, then this rule does not apply.)
 
 For example, here's a simple Java method, written in a fenced code block: 
 
@@ -130,7 +130,7 @@ The Markdown extensions supported by kramdown include support for definition lis
 
 #### Example
 
-A glossary of basic Git-related terms could be written as follows:
+A portion of a glossary of basic Git-related terms could be written as follows:
 
 ```markdown
 Branch
@@ -155,7 +155,7 @@ Repository
 : A collection of files (source code, documents, etc.) related to your project, in which you create and manage content.
 
 Version control system (VCS)
-: A system that records changes to a file or set of files over time so that you can recall specific versions. 
+: A system that records a history of changes to a file or set of files over time so that specific changes/versions can be reviewed and retrieved. 
 ```
 
 The list above will be rendered as 
@@ -182,7 +182,7 @@ The list above will be rendered as
 > : A collection of files (source code, documents, etc.) related to your project, in which you create and manage content.
 > 
 > Version control system (VCS)
-> : A system that records changes to a file or set of files over time so that you can recall specific versions. 
+> : A system that records a history of changes to a file or set of files over time so that specific changes/versions can be reviewed and retrieved. 
 {:.render-example}
 
 ## Links
@@ -227,13 +227,13 @@ will be rendered as
 
 ## Mathematical expressions
 
-When the site content includes mathematical expressions, the choice of how to display them is largely a matter of aim: 
+When the site content includes mathematical expressions, the approach used for displaying them is largely a matter of aim: 
 
 * When the intention is to show a computation as expressed in code of a specific programming language, a code block (or inline code statement) should be used.
 
 * If mathematical equations, formula derivations---or even simple but non-programming-language-specific computations---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ (LaTeX) expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the MathJax JavaScript library.
 
-In any case, mathematical expressions should rarely be written as plain text, without any typographical distinction from the rest of the content. In particular, mathematical symbols (e.g. Greek letters such as $\pi$ or $\Sigma$, or other symbols or operators such as $\in$ or $\infty$) should _never_ be "spelled out" in English in the text, unless one or more of these conditions hold:
+In any case, mathematical expressions should not be written as plain text, without any typographical distinction from the rest of the content. In particular, mathematical symbols (e.g. Greek letters such as $\pi$ or $\Sigma$, or other symbols or operators such as $\in$ or $\infty$) must not be "spelled out" in English in the text, unless one or more of these conditions hold:
 
 * It is done for the purpose of naming and explaining the individual symbols or operators (e.g. "$\Sigma$, the upper-case Greek letter sigma, is used to denote the sum of terms in a sequence.").
 

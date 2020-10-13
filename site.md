@@ -47,7 +47,17 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 
 `heading_navigator.enabled`
 
-: This is a Boolean-valued property, used to control the generation of a left sidebar navigator with links to all level 1--3 headings in the page body in the current page. If omitted, left without a value, or set to `false`, then the sidebar navigator will not be generated.
+: This is a Boolean-valued property, used to control the generation of a left sidebar navigator with links to headings in the page body in the current page. If omitted, left without a value, or set to `false`, then the sidebar navigator will not be generated.
+
+: (This property may be overridden at the page level.)
+
+`heading_navigator.from`
+: This is a numeric-valued property, used to specify the minimum heading level included in the heading navigator. The default value is 2, corresponding to `##` (`<h2>`) headings.
+
+: (This property may be overridden at the page level.)
+
+`heading_navigator.to`
+: This is a numeric-valued property, used to specify the maximum heading level included in the heading navigator. Set at the page level, this property overrides the site-level setting. The default value is 3, corresponding to `###` (`<h3>`) headings.
 
 : (This property may be overridden at the page level.)
 

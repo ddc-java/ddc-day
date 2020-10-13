@@ -20,7 +20,13 @@ Page-level configuration is done in the front matter (a YAML block preceding the
 : For a single-page site (e.g. a practical exam problem), the description can be set at the page or site level---but it must be set, in any event. For a multi-page site, the description should be set in each page.
 
 `heading_navigator.enabled`
-: This is a Boolean-valued property, used to control the generation of a left sidebar navigator with links to all level 1--3 headings in the page body. If omitted, left without a value, or set to `false`, then the sidebar navigator will not be generated. Set at the page level, this property overrides the site-level setting.
+: This is a Boolean-valued property, used to control the generation of a left sidebar navigator with links to headings in the page body. If omitted, left without a value, or set to `false`, then the sidebar navigator will not be generated. Set at the page level, this property overrides the site-level setting.
+
+`heading_navigator.from`
+: This is a numeric-valued property, used to specify the minimum heading level included in the heading navigator. Set at the page level, this property overrides the site-level setting.
+
+`heading_navigator.to`
+: This is a numeric-valued property, used to specify the maximum heading level included in the heading navigator. Set at the page level, this property overrides the site-level setting.
 
 `menu`
 : This is the text that is displayed in the page navigator bar (if `page_navigator.enabled` is `true`), for the current page. If omitted or left blank, the current page will not be listed in the page navigator.

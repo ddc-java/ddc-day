@@ -13,6 +13,8 @@ repository_link: # Omit for default value (true) of repository_link.enabled.
 
 heading_navigator: # Omit for default value (true) of heading_navigator.enabled.
   enabled: true # Set this to false if intra-page navigator is not wanted.
+  from: # Set this to an explicit value if the navigator should start at a heading level other than 2 (inclusive).
+  to: # Set this to an explicit value if the navigator should end at a heading level other than 3 (inclusive).
 
 page_navigator: # Omit for default value (true) of page_navigator.enabled.
   enabled: true # Set this to false if an inter-page navigator is not wanted.

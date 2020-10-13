@@ -19,9 +19,13 @@ If the `heading_navigator.enabled` property is set to `true` at the site level, 
 
 * As a rule, any page should have only a single level-1 heading. In this theme, the header at the top of every page includes an `<h1>` tag generated automatically using the page- and/or site-level `title` property; thus, none of the source pages (whether Markdown or HTML) should include a level-1 heading in the page content. 
 
+* Related to the above, `heading_navigator.from` should generally be left at the default value of 2.
+
 * When `heading_navigator` is enabled, the text of headings appearing as links in the navigator should be kept short---usually 1--3 words. Be sure to review the published appearance of links in the navigator sidebar, and adjust heading text as necessary.
 
-* Items in the navigator sidebar are displayed as right-aligned items in an unordered list; however, only links to level-3 headings include a bullet character. Thus, when `heading_navigator` is enabled, the headings in a page should either _all_ be at level 3+, or all level-3 headings (if any) should be subheadings beneath one or more level-2 headings. Otherwise, you will end up with some bullet items nested below a non-bullet item, and other bullet items that are not nested.
+* Items in the navigator sidebar are displayed as right-aligned items in an unordered list; however, only links to level-3 headings include a bullet character. Thus, when `heading_navigator` is enabled, and the range from `heading_navigator.from` to `heading_navigator.to` (inclusive) includes 3, the headings in a page should either _all_ be at level 3+, or all level-3 headings (if any) should be subheadings beneath one or more level-2 headings. Otherwise, you will end up with some bullet items nested below a non-bullet item, and other bullet items that are not nested.
+
+* If a simple heading navigator---including only level-2 headings---is desired, `heading_navigator.to` should be set to 2 at the site or page level.
 
 ## Section-specific guidelines
 
