@@ -162,9 +162,9 @@ Each site repository must include a `README.md` file, containing:
 * A credits section, listing 
 
     * author(s) of the instructional content;
-    * CNMI/DDC copyright assertion on instructional content, with all rights reserved;
+    * CNMI copyright assertion on instructional content, with all rights reserved;
     * author(s) of any included source code (Java, Kotlin, Groovy, SQL, Python, XML, etc.);
-    * CNMI/DDC copyright assertion on code content (if any), with Apache 2.0 license.
+    * CNMI copyright assertion on code content (if any), with Apache 2.0 license.
 
 #### Example
 
@@ -189,7 +189,7 @@ This is a curriculum module of the [Deep Dive Coding](https://deepdivecoding.com
 
 This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
 
-&copy; 2020 Deep Dive Coding/CNM Ingenuity, Inc. All rights reserved.
+&copy; 2020 CNM Ingenuity, Inc. All rights reserved.
 ```
 
 When viewing the repository in GitHub, this is displayed as
@@ -212,7 +212,7 @@ When viewing the repository in GitHub, this is displayed as
 > 
 > This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
 > 
-> &copy; 2020 Deep Dive Coding/CNM Ingenuity, Inc. All rights reserved.
+> &copy; 2020 CNM Ingenuity, Inc. All rights reserved.
 {:.render-example}
 
 ### License
