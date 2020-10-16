@@ -82,7 +82,7 @@ For classes, methods, or other multi-line code fragments---or even single-line f
 
 A fenced code block begins with a line containing 3 backticks, optionally (and immediately) followed by a language identifier; there must be nothing else on the line. Similarly, the block ends with a line containing 3 backticks _only_. 
 
-**Important**: Java code blocks must conform to the [DDC Java+Android Style Guide](//ddc-java.github.io/style-guide/). SQL code blocks must either conform to Simon Holywell's [SQL Style Guide](https://www.sqlstyle.guide/), or be formatted using the IntelliJ code format command for the relevant dialect. XML and JSON code blocks should be formatted using the IntelliJ code format command. (Of course, if the code block is presenting an example of undesirable naming or formatting, then this rule does not apply.)
+**Important**: Java, SQL, XML, and JSON code blocks must conform to the [DDC Java+Android Style Guide](//ddc-java.github.io/style-guide/). In general, code should be written in IntelliJ code files and then---after running the **Code/Reformat Code** command, with IntelliJ configured to use the `intellij-java-google-style.xml` scheme from the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) [repository](https://github.com/google/styleguide)---copied & pasted into the relevant Markdown code blocks. (Of course, if the code block is presenting an example of undesirable naming or formatting, then this rule does not apply.)
 
 For example, here's a simple Java method, written in a fenced code block: 
 

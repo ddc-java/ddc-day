@@ -39,6 +39,7 @@ description: "Links to external documentation and examples"
 ### Style Guides
 
 * [DDC Java+Android Style Guide](//ddc-java.github.io/style-guide/)
+* [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 * [SQL Style Guide](https://www.sqlstyle.guide/)
 
 ### Pseudocode
