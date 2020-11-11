@@ -3,6 +3,8 @@ title: Formatting Content
 menu: Formatting
 order: 50
 description: "Formatting curriculum content (code, mathematical expressions, pseudocode, etc.)"
+heading_navigator:
+  to: 2
 ---
 
 ## Overview
