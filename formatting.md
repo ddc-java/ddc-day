@@ -4,6 +4,7 @@ menu: Formatting
 order: 50
 description: "Formatting curriculum content (code, mathematical expressions, pseudocode, etc.)"
 heading_navigator:
+  enabled: true
   to: 2
 ---
 
