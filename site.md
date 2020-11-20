@@ -57,7 +57,7 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 : (This property may be overridden at the page level.)
 
 `heading_navigator.to`
-: This is a numeric-valued property, used to specify the maximum heading level included in the heading navigator. Set at the page level, this property overrides the site-level setting. The default value is 3, corresponding to `###` (`<h3>`) headings.
+: This is a numeric-valued property, used to specify the maximum heading level included in the heading navigator. Set at the page level, this property overrides the site-level setting. The default value is 2, corresponding to `##` (`<h3>`) headings.
 
 : (This property may be overridden at the page level.)
 

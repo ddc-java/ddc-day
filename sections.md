@@ -11,21 +11,21 @@ The content of a typical web pages (whether written originally in HTML, Markdown
 
 The kramdown parser used by default in this theme supports the usual Markdown headings: lines starting with 1--6 hash chatacters (`#`), followed immediately by a space, then the heading text. In addition, the default kramdown configuration enables _auto IDs_: An HTML `id` attribute is automatically generated for each Markdown heading converted to HTML; the value of the `id` attribute is the "sluggified" form (converted to lower-case, with spaces replaced by `-`) of the heading text. This `id` may be included in the anchor portion of a link.
 
-If the `heading_navigator.enabled` property is set to `true` at the site level, or at the page level for any given page, headings in the page content at levels 1--3 will become links in a section navigator sidebar (as seen in this page). **However**, as noted in ["General guidelines"](#general-guidelines), page content should not include any level-1 headings. Thus, for practical purposes, the section navigator sidebar will include level-2 and level-3 headings. 
+If the `heading_navigator.enabled` property is set to `true` at the site level, or at the page level for any given page, headings in the page content at level 2 (by default) will become links in a section navigator sidebar (as seen in this page).
 
 ## General guidelines
 
 * In most cases, `heading_navigator.enabled` should be set to `true` (the default) at the site level. 
 
-* As a rule, any page should have only a single level-1 heading. In this theme, the header at the top of every page includes an `<h1>` tag generated automatically using the page- and/or site-level `title` property; thus, none of the source pages (whether Markdown or HTML) should include a level-1 heading in the page content. 
+* As a rule, any page should have only a single level-1 heading. In this theme, the header at the top of every page includes an `<h1>` tag generated automatically using the page- and/or site-level `title` property; thus, _none_ of the source pages (whether Markdown or HTML) should include a level-1 heading in the page content. 
 
-* Related to the above, `heading_navigator.from` should generally be left at the default value of 2.
+* Related to the above, `heading_navigator.from` should generally be left at the default value of 2. heading_navigator.to` should generally be left at the default value of 2, but may be increased to 3.
 
 * When `heading_navigator` is enabled, the text of headings appearing as links in the navigator should be kept short---usually 1--3 words. Be sure to review the published appearance of links in the navigator sidebar, and adjust heading text as necessary.
 
 * Items in the navigator sidebar are displayed as right-aligned items in an unordered list; however, only links to level-3 headings include a bullet character. Thus, when `heading_navigator` is enabled, and the range from `heading_navigator.from` to `heading_navigator.to` (inclusive) includes 3, the headings in a page should either _all_ be at level 3+, or all level-3 headings (if any) should be subheadings beneath one or more level-2 headings. Otherwise, you will end up with some bullet items nested below a non-bullet item, and other bullet items that are not nested.
 
-* If a simple heading navigator---including only level-2 headings---is desired, `heading_navigator.to` should be set to 2 at the site or page level.
+* The text of headings used in the navigator sidebar must be distinct, or the links will not work as expected.
 
 ## Section-specific guidelines
 
