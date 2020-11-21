@@ -207,6 +207,10 @@ code {
   &.normal-weight {
     font-weight: normal;
   }
+  
+  * {
+    font-family: $code-fonts;
+  }
 
 }
 
@@ -221,6 +225,7 @@ pre {
 
   code {
     
+    font-family: $code-fonts;
     margin: 0;
     padding: 0;
     background-color: $base-dark-color;
@@ -228,6 +233,7 @@ pre {
     overflow-x: auto;
     
     span {
+      font-family: $code-fonts;
       overflow-x: auto;
     }
     
@@ -576,7 +582,7 @@ div.wrapper {
         }
 
         span.no-nav {
-            display: none;
+          display: none;
         }
 
       }
@@ -602,6 +608,7 @@ div.wrapper {
     }
 
     a code {
+      font-family: $code-fonts;
       color:#0060FF;
     }
 
