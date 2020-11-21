@@ -11,12 +11,14 @@ For the most part, the DDC Day theme is responsible for the specific typefaces a
 
 {:.normal-weight.title}slab-serif
 
-: Page, section, and subsection titles---In practice, this means that headings declared with `##` and `###` (or directly in HTML with `<h2>` and `<h3>`) will use fonts of this general type. (Page content should not include any `#` or `<h1>` headings, since there's already an `<h1>` displayed automatically at the top of the page, and since there should only be 1 such level-1 heading in any page.)
+: 
+    * Page, section, and subsection titles.
+    * Navigator link text.
 
 sans-serif bold
 
 : 
-    * Category titles (`###`, `####`, `#####`, and `######` headings).
+    * Glossary (definition list) titles.
     * Strong emphasis (use this very sparingly).
     * UI control labels (e.g. window titles, button labels, menu item text, field labels).
 
