@@ -59,7 +59,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-fonts!important;
+  font-family: $heading-fonts;
   color: $medium-dark-color;
   margin:0 0 10px 0;
 }
@@ -313,6 +313,7 @@ header {
 
     a {
 
+      font-family: $heading-fonts;
       color: $base-light-color;
 
       &:visited {
@@ -484,8 +485,8 @@ div#banner {
 
         a {
         
+          font-family: $heading-fonts;
           color: $base-dark-color;
-          font-weight: bold;
           
           &:hover {
             color: #6c6f6f;
@@ -542,7 +543,7 @@ div.wrapper {
 
         a {
 
-          font-weight: bold;
+          font-family: $heading-fonts;
           color: $base-dark-color;
           
           &:hover {
