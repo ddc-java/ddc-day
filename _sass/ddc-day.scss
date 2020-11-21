@@ -59,11 +59,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin:0 0 10px;
-}
-
-h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-fonts!important;
   color: $medium-dark-color;
+  margin:0 0 10px 0;
 }
 
 
@@ -87,10 +85,6 @@ h3 {
   font-size: 18px;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-fonts;
-}
 
 a {
   color:#3399cc;
@@ -318,6 +312,7 @@ header {
     -ms-text-overflow: ellipsis;
 
     a {
+
       color: $base-light-color;
 
       &:visited {
