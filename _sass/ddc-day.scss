@@ -29,14 +29,22 @@ $base-light-color: #f5f5f6;
 $medium-light-color: #e1e2e1;
 $deep-dive-yellow: #ffd007;
 
+$heading-fonts: 'Roboto Slab', Rockwell, serif;
+$body-fonts: Roboto, Tahoma, sans-serif;
+$code-fonts: 'Roboto Mono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+$navigator-fonts: $heading-fonts;
+
 .theme-color {
   color: $deep-dive-yellow;
 }
 
 // TODO Define additional colors for links (incl. hover) and code blocks.
 
+* {
+  font-family: $body-fonts;
+}
+
 body {
-  font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: $base-dark-color;
@@ -80,12 +88,8 @@ h3 {
 }
 
 
-h1, h2, h3 {
-  font-family: "Aleo", "Copse", serif;
-}
-
-h4, h5, h6 {
-  font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-fonts;
 }
 
 a {
@@ -196,7 +200,7 @@ blockquote.render-example {
 
 code {
 
-  font-family: Consolas, ‘Andale Mono WT’, ‘Andale Mono’, ‘Lucida Console’, ‘Lucida Sans Typewriter’, ‘DejaVu Sans Mono’, ‘Bitstream Vera Sans Mono’, ‘Liberation Mono’, ‘Nimbus Mono L’, Monaco, ‘Courier New’, Courier, monospace;
+  font-family: $code-fonts;
   font-size: 13px;
   background-color: $medium-light-color;
   color: $base-dark-color;
@@ -266,7 +270,7 @@ dt {
   font-weight: 700;
   
   &.title {
-    font-family: "Aleo", "Copse", serif;
+    font-family: $heading-fonts;
   }
   
   &.normal-weight {
@@ -330,7 +334,7 @@ header {
   }
 
   p {
-    font-family: "Aleo", "Copse", serif;
+    font-family: $heading-fonts;
     color: $base-light-color;
     font-size: 18px;
     margin: 0;
@@ -472,7 +476,7 @@ div#banner {
         margin-right: 3%;
         margin-bottom: 0;
         margin-left: 3%;
-        font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+        font-family: $navigator-fonts;
         white-space: nowrap;
         
         &:first-child {
@@ -536,7 +540,7 @@ div.wrapper {
 
       li {
 
-        font-family: "Roboto", "Franklin Gothic Medium", Tahoma, sans-serif;
+        font-family: $navigator-fonts;
         padding: 0;
         line-height: 1.05;
         margin-top: 1em;
