@@ -614,9 +614,17 @@ div.wrapper {
       max-width: 100%;
       
       &[alt^="Figure"] {
+        
         display: block;
         margin-left: auto;
         margin-right: auto;
+        
+        p + & {
+          text-align: center;
+          font-style: italic;
+          font-size: smaller;
+        }
+        
       }
       
       &[alt^="screen"] {
