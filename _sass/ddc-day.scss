@@ -630,21 +630,24 @@ div.wrapper {
       }
       
       &[alt^="screen"] {
-        width: 45%;
+        width: 25%;
+        min-width: 160px;
         float: right;
         clear: right;
         margin: 10px 0 10px 10px;
       }
       
       &[alt^="dialog"] {
-        width: 30%;
+        width: 20%;
+        min-width: 128px;
         float: right;
         clear: right;
         margin: 10px 0 10px 10px;
       }
 
       &[alt^="launcher"] {
-        width: 15%;
+        width: 10%;
+        min-width: 64px;
         float: right;
         clear: right;
         margin: 10px 0 10px 10px;
