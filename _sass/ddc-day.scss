@@ -95,16 +95,16 @@ h3 {
 
 
 a {
-  color:#3399cc;
-  font-weight:400;
-  text-decoration:none;
+  color: #3399cc;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 a small {
-  font-size:11px;
-  color:#666;
-  margin-top:-0.6em;
-  display:block;
+  font-size: 11px;
+  color: #666;
+  margin-top: -0.6em;
+  display: block;
 }
 
 %thumbnail {
@@ -499,7 +499,7 @@ div#banner {
         a {
         
           font-family: $heading-fonts;
-          font-weight: 400;
+          font-weight: 500;
           color: $base-dark-color;
           
           &:hover {
@@ -558,7 +558,7 @@ div.wrapper {
         a {
 
           font-family: $heading-fonts;
-          font-weight: 400;
+          font-weight: 500;
           color: $base-dark-color;
           
           &:hover {
