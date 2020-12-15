@@ -30,7 +30,7 @@ $medium-light-color: #e1e2e1;
 $deep-dive-yellow: #ffd007;
 
 $title-fonts: 'Roboto Slab', Rockwell, serif;
-$heading-fonts: Lato, $title-fonts;
+$heading-fonts: $title-fonts;
 $body-fonts: Roboto, Tahoma, sans-serif;
 $code-fonts: 'Roboto Mono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
 $navigator-fonts: $heading-fonts;
@@ -62,7 +62,7 @@ body {
 h2, h3, h4, h5, h6 {
   font-family: $heading-fonts;
   color: $medium-dark-color;
-  font-weight: 700;
+  font-weight: 400;
   margin:0 0 10px 0;
 }
 
@@ -275,7 +275,7 @@ td {
 dt {
   
   color: $base-dark-color;
-  font-weight: 700;
+  font-weight: 400;
   
   &.title {
     font-family: $heading-fonts;
@@ -499,7 +499,7 @@ div#banner {
         a {
         
           font-family: $heading-fonts;
-          font-weight: 700;
+          font-weight: 400;
           color: $base-dark-color;
           
           &:hover {
@@ -558,7 +558,7 @@ div.wrapper {
         a {
 
           font-family: $heading-fonts;
-          font-weight: 700;
+          font-weight: 400;
           color: $base-dark-color;
           
           &:hover {
