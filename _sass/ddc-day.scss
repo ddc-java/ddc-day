@@ -62,14 +62,14 @@ body {
 h2, h3, h4, h5, h6 {
   font-family: $heading-fonts;
   color: $medium-dark-color;
-  font-weight: 500;
+  font-weight: 700;
   margin:0 0 10px 0;
 }
 
 h1 {
   font-family: $title-fonts;
   color: $medium-dark-color;
-  font-weight: 500;
+  font-weight: 400;
   margin:0 0 10px 0;
 }
 
@@ -316,7 +316,6 @@ header {
 
     font-size: 36px;
     line-height: 48px;
-    font-weight: 400;
     color: $base-light-color;
     margin: 0;
     white-space: nowrap;
