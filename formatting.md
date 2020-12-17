@@ -14,7 +14,7 @@ It is assumed that the curriculum module author has significant Markdown experie
 
 One general guideline, applicable to all of the rules that follow, is this:
 
-> If an identical (and desirable) formatting result can be produced with either Markdown or HTML, the former should be used. In other words, content should be written using Markdown when possible, mixed Markdown &amp; HTML when necessary, and pure HTML as a last resort.
+> If an identical (and desirable) formatting result can be produced with either Markdown or HTML, the former should be used. In other words, content should be written using Markdown when possible, mixed Markdown & HTML when necessary, and pure HTML as a last resort.
 
 ## Abbreviations
 
@@ -57,7 +57,14 @@ Of course, knowing when to use a fixed-width font, and when not to, can be trick
 
 > If the content in question is something that the user might type in a shell or a source code file, or if it is something that is expected to be displayed in a shell or console, it should be displayed in a fixed-width typeface, using (if feasible) syntax highlighting.
 
-For example, consider this sentence: "One Git command that is a major source of confusion---and potential disaster---is git reset." In that sentence, the capitalized "Git" is the name of the software, and not a command the user might type at some point (or even a fragment of such a command). However, "git reset" is a Git command/subcommand pair, and is in fact something that would be typed in a shell. So the preferred rendering of that sentence would be
+For example, consider this sentence: "One Git command that is a major source of confusion---and potential disaster---is git reset." In that sentence, the capitalized "Git" is the name of the software, and not a command the user might type at some point (or even a fragment of such a command). However, "git reset" is a Git command/subcommand pair, and is in fact something that would be typed in a shell. So this sentence should be written as
+
+```markdown
+One Git command that is a major source of confusion---and potential disaster---is `git reset`.
+
+```
+
+and rendered as
 
 > One Git command that is a major source of confusion---and potential disaster---is `git reset`.
 {:.render-example}
