@@ -57,7 +57,7 @@ Of course, knowing when to use a fixed-width font, and when not to, can be trick
 
 > If the content in question is something that the user might type in a shell or a source code file, or if it is something that is expected to be displayed in a shell or console, it should be displayed in a fixed-width typeface, using (if feasible) syntax highlighting.
 
-For example, consider this sentence: "One Git command that is a major source of confusion---and potential disaster---is git reset." In that sentence, the capitalized "Git" is the name of the software, and not a command the user might type at some point (or even a fragment of such a command). However, "git reset" is a Git command/subcommand pair, and is in fact something that would be typed in a shell. So this sentence should be written to appears as
+For example, consider this sentence: "One Git command that is a major source of confusion---and potential disaster---is git reset." In that sentence, the capitalized "Git" is the name of the software, and not a command the user might type at some point (or even a fragment of such a command). However, "git reset" is a Git command/subcommand pair, and is in fact something that would be typed in a shell. So this sentence should be written to appear as
 
 > One Git command that is a major source of confusion---and potential disaster---is `git reset`.
 {:.render-example}
@@ -234,7 +234,7 @@ When the site content includes mathematical expressions, the approach used for d
 
 * When the intention is to show a computation as expressed in code of a specific programming language, a code block (or inline code statement) should be used.
 
-* If mathematical equations, formula derivations---or even simple but non-programming-language-specific computations---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ (LaTeX) expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the MathJax JavaScript library.
+* If mathematical equations, formula derivations---or even simple but non-programming-language-specific computational expressions---are needed, mathematical notation should be used. For this purposes, this theme supports the use of $\rm\LaTeX$ (LaTeX) expressions embedded in Markdown or HTML content. These will be interpreted and rendered in the browser by the MathJax JavaScript library.
 
 In any case, mathematical expressions should not be written as plain text, without any typographical distinction from the rest of the content. In particular, mathematical symbols (e.g. Greek letters such as $\pi$ or $\Sigma$, or other symbols or operators such as $\in$ or $\infty$) must not be "spelled out" in English in the text, unless one or more of these conditions hold:
 
