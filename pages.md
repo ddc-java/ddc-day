@@ -29,7 +29,7 @@ Page-level configuration is done in the front matter (a YAML block preceding the
 : This is a numeric-valued property, used to specify the maximum heading level included in the heading navigator. Set at the page level, this property overrides the site-level setting.
 
 `menu`
-: This is the text that is displayed in the page navigator bar (if `page_navigator.enabled` is `true`), for the current page. If omitted or left blank, the current page will not be listed in the page navigator.
+: This is the text that is displayed in the page navigator bar (if `page_navigator.enabled` is `true`), for the current page. If omitted or left blank, the current page will not be listed in the page navigator. This text should be kept short---1--3 words, and with the ampersand (&) substituting for "and". Be sure to review the published appearance of links in the page navigator, and adjust `menu` as necessary.
 
 `order`
 : This is the sort order for pages listed in the page navigator. Pages with an empty value for this property (or with the property omitted altogether) are sorted at the start of the list.

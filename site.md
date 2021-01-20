@@ -13,9 +13,9 @@ For any GitHub Pages site, `_config.yml` is not only used to specify a theme for
 
 ## Use cases
 
-This theme is well-suited to a site with 1--6 pages, where each page includes 0--12 headings at levels 1--3; in practice, the upper limits on pages and sections will depend on the lengths of page menu labels and section names. More pages and headings may be included; however, displaying a large number of entries in the page navigator or heading navigator implemented in this theme doesn't give very &aelig;sthetically pleasing results.
+This theme is well-suited to a site with 1--6 pages, where each page includes 0--12 headings in the sidebar heading navigator; in practice, the upper limits on pages and sections will depend on the lengths of page menu labels and headings. More pages and headings may be included; however, displaying a large number of entries in the page navigator or heading navigator implemented in this theme doesn't give very &aelig;sthetically pleasing results.
 
-Given the above, this theme should not be used for a site containing a large number of pages (more than 5 or 6). For example, if this theme is to be used for a curriculum module intended for multiple days of instruction, the content should generally be broken down into multiple repositories/sites.
+Given the above, this theme should not be used for a site containing a large number of pages (more than 6 or 7). For example, if this theme is to be used for a curriculum module intended for multiple days of instruction, the content should generally be broken down into multiple repositories/sites.
 
 ## Configuration
 
