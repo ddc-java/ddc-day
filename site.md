@@ -7,7 +7,7 @@ description: "Enabling and configuring theme on a GitHub Pages site"
 
 ## Overview
 
-DDC Day is a GitHub Pages _remote theme_. In other words, it's not one of the standard dozen (or so) themes that can be selected in the GitHub Pages theme choosing; nonetheless, it can be selected as a theme for a GitHub Pages site, simply by making a change to the `_config.yml` file in the repository, committing the change, and---if the change was committed to a local clone---pushing the commit to GitHub. 
+DDC Day is a GitHub Pages _remote theme_. In other words, it's not one of the standard dozen (or so) themes that can be selected in the GitHub Pages theme chooser; nonetheless, it can be selected as a theme for a GitHub Pages site, simply by making a change to the `_config.yml` file in the repository, committing the change, and---if the change was committed to a local clone---pushing the commit to GitHub. 
 
 For any GitHub Pages site, `_config.yml` is not only used to specify a theme for a site, but also to set a number of site-level configuration properties. The properties supported in this theme are listed below.
 
@@ -79,7 +79,7 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 
 `repository_link.enabled`
 
-: This is a Boolean-valued property, used to control the display of the GitHub logo as a link to the repository in GitHub. Note that even if the value is set to `true` (or something  other than `false` or empty), the logo &amp; link will not be displayed if the repository is private.
+: This is a Boolean-valued property, used to control the display of the GitHub logo as a link to the repository in GitHub. Note that even if the value is set to `true` (or something  other than `false` or empty), the logo & link will not be displayed if the repository is private.
 
 `title`
 
@@ -185,7 +185,7 @@ For details, see [docs](docs/).
 
 This is a curriculum module of the [Deep Dive Coding](https://deepdivecoding.com/) [Java + Android bootcamp](https://deepdivecoding.com/java-android/).
 
-## Credits &amp; copyright
+## Credits & copyright
 
 This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
 
@@ -208,7 +208,7 @@ When viewing the repository in GitHub, this is displayed as
 > 
 > This is a curriculum module of the [Deep Dive Coding](https://deepdivecoding.com/) [Java + Android bootcamp](https://deepdivecoding.com/java-android/).
 > 
-> ## Credits &amp; copyright
+> ## Credits & copyright
 > 
 > This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
 > 

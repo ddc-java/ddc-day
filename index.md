@@ -20,7 +20,7 @@ The content of this site is intended not only to introduce the DDC Day theme, bu
 * [**Pages**](pages.md): Configuration for multi-page sites and navigation, and content organization guidelines.
 * [**Sections**](sections.md): Configuration for section navigation within pages, and content organization guidelines.
 * [**Typography**](typography.md): Typographic characteristics of the main content elements.
-* [**Formatting**](formatting.md): Guidelines for writing &amp; formatting different instructional components.
+* [**Formatting**](formatting.md): Guidelines for writing & formatting different instructional components.
 * [**Resources**](resources.md): Links to examples and additional resources on GitHub Pages, Markdown, LaTeX, and pseudocode. 
 
 ## Notes
