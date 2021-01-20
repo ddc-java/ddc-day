@@ -11,7 +11,7 @@ DDC Day is a GitHub Pages theme by [Nick Bennett](mailto:nick@nickbenn.com), cus
 
 Markdown content is supported by the [kramdown](https://kramdown.gettalong.org/parser/kramdown.html) parser. Code highlighting is done by the [Rouge](http://rouge.jneen.net/) code highlighter; the current list of language identifiers recognized on fenced code blocks can be found [here](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers). Rendering of mathematical expressions written in $\rm\LaTeX$ is supported by the [MathJax](https://www.mathjax.org/) library.
 
-The content of this site is intended not only to introduce the DDC Day theme, but also to present a basic set of guidelines for writing curricula that will be published in GitHub Pages using this theme. In other words, these pages present a curriculum style guide, supported by the DDC Day theme, for the DDC Java + Android bootcamp.
+The content of this site is intended not only to introduce the DDC Day theme, but also to present a basic set of guidelines for writing curricula that will be published in GitHub Pages using this theme. In other words, these pages present a curriculum style guide, supported by the DDC Day theme, for the DDC Java + Android bootcamp. Please note, however, that this site is intended as a style guide for writing code; that is the role of the [DDC Java+Android Style Guide](/style-guide/).
 
 ## Contents
 
