@@ -9,13 +9,13 @@ description: "Fonts, styles, and symbols"
 
 For the most part, the DDC Day theme is responsible for the specific typefaces and styles used in curriculum module web pages. However, the general font characteristics are selected based on the block and span formatting elements included in the content by the curriculum author. Thus, it's important that the author understand the general typographical characteristics for different content types, to better understand and use the [formatting guidelines](formatting.md).
 
-{:.normal-weight.title}slab-serif
+{:.title}slab-serif
 
 : 
     * Page, section, and subsection titles.
     * Navigator link text.
 
-sans-serif bold
+**sans-serif bold**
 
 : 
     * Glossary (definition list) titles.
