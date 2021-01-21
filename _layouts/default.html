@@ -71,7 +71,7 @@
 
       <div id="banner">
         {%- assign icon_url = site.icon | default: '/assets/images/ddc.png' | relative_url -%}
-        <span id="logo" style="background-image: url('{{ icon_url }}');"></span>
+        <a href="https://deepdivecoding.com/"><span id="logo" style="background-image: url('{{ icon_url }}');"></span></a>
 
         {% unless site.github.private %}
           {%- if site.repository_link -%}
