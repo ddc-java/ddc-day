@@ -23,17 +23,9 @@ Given the above, this theme should not be used for a site containing a large num
 
 Site-level configuration is done in `_config.yml`, and supports the following properties (listed in alphabetical order, not in order of importance):
 
-`author.copyright`
-
-: If a "truthy" value is provided for this property, then it will be assumed that CNM Ingenuity is not the owner of the copyright on the repository content. **Important**: If this property is set to a truthy value, then `author.name` **must** be set as well, because the value of that property will be rendered as the copyright holder in the copyright notice.
-
 `author.email`
 
 : If a value is provided, it will be used in a `mailto` link, with `author.name` as the displayed text; if `author.name` is not specified, then this property is ignored.
-
-`author.href`
-
-: This property is used in conjunction with `author.copyright`. If this property is set, then the value of `author.name`included in the copyright notice will be rendered as a link with an `href` attribute set to the value of this property; otherwise, the value of `author.name` will be included in the copyright notice, but not as a link.
 
 `author.name`
 
@@ -47,7 +39,7 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 
 `favicon`
 
-: URL (absolute or site-relative) of site icon displayed by the browser for bookmarks and tabs for the site's pages. If omitted or left blank, the Deep Dive Coding diving helmet logo is used.
+: URL (absolute or site-relative) of site icon displayed by the browser for bookmarks and tabs for the site's pages. If omitted or left blank, the Deep Dive Coding diving bell logo is used.
 
 `google_analytics`
 
