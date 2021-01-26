@@ -25,7 +25,7 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 
 `author.copyright`
 
-: This is a "truthy" flag. If a value is provided, then it will be assumed that CNM Ingenuity is not the owner of the copyright on the repository content. **Important**: If this property is set, then `author.name` **must** be set as well, because the value of that property will be rendered as the copyright holder in the copyright notice.
+: If a "truthy" value is provided for this property, then it will be assumed that CNM Ingenuity is not the owner of the copyright on the repository content. **Important**: If this property is set to a truthy value, then `author.name` **must** be set as well, because the value of that property will be rendered as the copyright holder in the copyright notice.
 
 `author.email`
 
