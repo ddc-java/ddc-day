@@ -47,7 +47,7 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 
 `favicon`
 
-: URL (absolute or site-relative) of site icon displayed by the browser for bookmarks and tabs for the site's pages. If omitted or left blank, the Deep Dive Coding diving bell logo is used.
+: URL (absolute or site-relative) of site icon displayed by the browser for bookmarks and tabs for the site's pages. If omitted or left blank, the Deep Dive Coding diving helmet logo is used.
 
 `google_analytics`
 
