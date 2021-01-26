@@ -138,6 +138,26 @@
       <section>
         {{ content }}
       </section>
+      <footer>
+        <p>
+          {%- if site.author.copyright -%}
+            &copy; {{ site.time | date: '%Y' }}
+            {% if site.author.href -%}
+              <a href="{{ site.author.href }}">{{ site.author.name }}</a>
+            {%- else -%}
+              {{ site.author.name }}
+            {%- endif %}.
+            All rights reserved.
+          {%- else -%}
+            {%- if site.author.name -%}
+              Written by {%if site.author.email %}<a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>{% else %}{{ site.author.name }}{% endif %},
+            {%- else %}
+              Maintained by
+            {% endif %}
+            <a href="https://deepdivecoding.com">Deep Dive Coding</a>. &copy; {{ site.time | date: '%Y' }} <a href="https://cnmingenuity.org">CNM Ingenuity, Inc.</a> All rights reserved.
+          {%- endif -%}
+        </p>
+      </footer>
     </div>
 
     {% if site.google_analytics %}
