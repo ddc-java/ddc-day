@@ -56,7 +56,6 @@ The DDC Day theme has a predefined list of abbreviations. These can be used in a
 {% raw %}
 ```liquid
 {% include ddc-abbreviations.md %}
-
 ```
 {% endraw %}
 
