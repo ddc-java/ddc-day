@@ -53,10 +53,12 @@ Note that the kramdown abbreviation syntax does not result in immediately render
 
 The DDC Day theme has a predefined list of abbreviations. These can be used in any Markdown page that uses the theme, by including this statement at the top of the content (after the front matter):
 
+{% raw %}
 ```liquid
 {% include ddc-abbreviations.md %}
 
 ```
+{% endraw %}
 
 The contents of this list can be viewed at <https://raw.githubusercontent.com/ddc-java/ddc-day/master/_includes/ddc-abbreviations.md>. If you want to override some of these abbreviations in a module you're writing, simply use the syntax above to define (or redefine) one or more of them in any pages where the modified definition is needed.
 
