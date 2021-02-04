@@ -1,5 +1,6 @@
 *[API]: Application Programming Interface
 *[AWT]: Abstract Window Toolkit
+*[CSS]: Cascading Style Sheets
 *[GJSG]: Google Java Style Guide
 *[CRUD]: Create-Read-Update-Delete
 *[DRY]: Don't Reinvent Yourself
@@ -42,6 +43,7 @@
 *[SQL]: Structured Query Language
 *[SSG]: SQL Style Guide
 *[SVG]: Scalable Vector Graphics
+*[TeX]: Typesetting system invented by Donald Knuth, used for formatting complex or technical content, such as mathematical formulas.
 *[VCS]: Version Control System
 *[XML]: eXtensible Markup Language
 *[YAGNI]: You Ain't Gonna Need It 

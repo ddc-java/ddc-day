@@ -47,7 +47,18 @@ The above will be rendered as
 > MVC is a more specific form of the general principle of _separation of concerns_ (SoC).
 {:.render-example}
 
-Note that the kramdown abbreviation syntax does not result in immediately rendered content; instead, defining a kramdown abbreviation results in the automatic attachment of a tooltip to every use of the abbreviation in the page. 
+Note that the kramdown abbreviation syntax does not result in immediately rendered content; instead, defining a kramdown abbreviation results in the automatic attachment of a tooltip to every use of the abbreviation in the page. One consequence of this is that we _don't_ have to define the same abbreviation multiple times in the same page.
+
+### Predefined abbreviations
+
+The DDC Day theme has a predefined list of abbreviations. These can be used in any Markdown page that uses the theme, by including this statement at the top of the content (after the front matter):
+
+```liquid
+{% include ddc-abbreviations.md %}
+
+```
+
+The contents of this list can be viewed at <https://raw.githubusercontent.com/ddc-java/ddc-day/master/_includes/ddc-abbreviations.md>. If you want to override some of these abbreviations in a module you're writing, simply use the syntax above to define (or redefine) one or more of them in any pages where the modified definition is needed.
 
 ## Code fragments
 
