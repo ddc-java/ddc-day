@@ -23,16 +23,21 @@
 *[JSE]: Java Standard Edition
 *[JSON]: JavaScript Object Notation
 *[JVM]: Java Virtual Machine
+*[KISS]: Keep It Simple, Stupid
 *[MPEG]: Motion Picture Experts Group
 *[mp3]: MPEG audio layer III
 *[mp4]: MPEG-4 with audio & video
 *[mpa]: MPEG-4 with audio only
+*[MVC]: Model-View-Controller
+*[MVP]: Model-View-Presenter
+*[MVVM]: Model-View-ViewModel
 *[OOP]: Object-Oriented Programming
 *[ORM]: Object-Relational Mapping
 *[PNG]: Portable Network Graphics
 *[RDBMS]: Relational DataBase Management System
 *[REPL]: Read-Evaluate-Print Loop
 *[SDK]: Software Development Kit
+*[SoC]: Separation of Concerns 
 *[SOLID]: Single-responsibility principle; Open-closed principle; Liskov substitution principle; Interface segregation principle; Dependency inversion principle.
 *[SQL]: Structured Query Language
 *[SSG]: SQL Style Guide
