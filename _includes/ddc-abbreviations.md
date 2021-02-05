@@ -21,7 +21,7 @@
 *[JME]: Java Micro Edition
 *[JNI]: Java Native Interface
 *[JPEG]: Joint Photographic Experts Group
-*[JPG]: Joint Photographic Experts Group (3-character variation of JPEG)
+*[JPG]: Joint Photographic Experts Group (3-character variation of JPEG, used as a file extension)
 *[JRE]: Java Runtime Environment
 *[JSE]: Java Standard Edition
 *[JSON]: JavaScript Object Notation
@@ -49,4 +49,8 @@
 *[VCS]: Version Control System
 *[WAR]: Web application ARchive
 *[XML]: eXtensible Markup Language
+*[XSL]: eXtensible Stylesheet Language
+*[XSLT]: XSL Transformations
 *[YAGNI]: You Ain't Gonna Need It 
+*[YAML]: Yaml Ain't Markup Language (originally, Yet Another Markup Language)
+*[yml]: 3-character variation of YAML, used as a file extension
