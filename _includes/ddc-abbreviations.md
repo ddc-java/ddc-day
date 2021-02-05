@@ -5,11 +5,13 @@
 *[CRUD]: Create-Read-Update-Delete
 *[DRY]: Don't Reinvent Yourself
 *[DVCS]: Distributed Version Control System
+*[EAR]: Enterprise ARchive
 *[GC]: Garbage Collection (or Garbage Collector)
 *[GIF]: Graphics Interchange Format
 *[HTML]: HyperText Markup Language
 *[IDE]: Integrated Development Environment
 *[IoC]: Inversion of Control
+*[JAR]: Java ARchive
 *[JCL]: Java Class Library
 *[JDK]: Java Development Kit
 *[J2EE]: Java 2 Enterprise Edition
@@ -45,5 +47,6 @@
 *[SVG]: Scalable Vector Graphics
 *[TeX]: Typesetting system invented by Donald Knuth, used for formatting complex or technical content, such as mathematical formulas.
 *[VCS]: Version Control System
+*[WAR]: Web application ARchive
 *[XML]: eXtensible Markup Language
 *[YAGNI]: You Ain't Gonna Need It 
