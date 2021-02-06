@@ -958,6 +958,16 @@ div.wrapper {
 
     top: 62px;
 
+    div.page-navigator {
+      ul {
+        li {
+          &.optional {
+            display: none;
+          }
+        }
+      }
+    }
+    
   }
 
   div.wrapper {

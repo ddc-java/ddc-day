@@ -2,6 +2,7 @@
 title: Introduction
 menu: Introduction
 icon: home
+optional: true
 order: 0
 description: "A custom theme for curricular content used in the Deep Dive Coding Java+Android Bootcamp"
 ---
