@@ -1,7 +1,7 @@
 ---
 title: Additional Resources
 menu: Resources
-icon: book
+icon: info-circle
 order: 60
 description: "Links to external documentation and examples"
 ---
