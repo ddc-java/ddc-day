@@ -125,6 +125,11 @@ a small {
   background-image: url("../images/thumbnails/link.svg"); 
 }
 
+.fas {
+  font-family: FontAwesome;
+  font-size: 1.5em;
+}
+
 section a {
 
   $extension-thumbnails:  (
