@@ -533,6 +533,10 @@ div#banner {
               color: $base-dark-color;
             }
             
+            &.fas {
+              text-decoration: none;
+            }
+            
           }
           
         }
