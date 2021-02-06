@@ -111,13 +111,19 @@
                 {%- if navPage.menu or navPage.icon -%}
                   {%- assign page_url = navPage.url | relative_url -%}
                   {%- capture optional_class %}{% if navPage.optional %}class="optional"{% endif %}{% endcapture -%}
-                  {%- if page_url == current_url -%}
-                    <li {{ optional_class }}><a title="{{ navPage.title | escape }}">{%- if navPage.icon -%}<span class="fas fa-{{ navPage.icon }}"></span>{%- else -%}{{ navPage.menu }}{%- endif -%}</a></li>
-                  {%- elsif navPage.icon -%}
-                    <li {{ optional_class }}><a href="{{ page_url }}" title="{{ navPage.title | escape }}"> <span class="fas fa-{{ navPage.icon }}"></span></a></li>
-                  {%- else -%}
-                    <li {{ optional_class }}><a href="{{ page_url }}" title="{{ navPage.title | escape }}">{{ navPage.menu }}</a></li>
-                  {%- endif -%}
+                  <li {{ optional_class }}>
+                    {%- if page_url == current_url -%}
+                      {%- if navPage.icon -%}
+                        <a title="{{ navPage.title | escape }}" class="no-highlight"><span class="fas fa-{{ navPage.icon }}"></span></a>
+                      {%- else -%}
+                        <a title="{{ navPage.title | escape }}">{{ navPage.menu }}</a>
+                      {%- endif -%}
+                    {%- elsif navPage.icon -%}
+                      <a href="{{ page_url }}" title="{{ navPage.title | escape }}"> <span class="fas fa-{{ navPage.icon }}"></span></a>
+                    {%- else -%}
+                      <a href="{{ page_url }}" title="{{ navPage.title | escape }}">{{ navPage.menu }}</a>
+                    {%- endif -%}
+                  </li>
                 {%- endif -%}
               {%- endfor -%}
             </ul>

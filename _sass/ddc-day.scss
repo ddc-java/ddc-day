@@ -529,12 +529,12 @@ div#banner {
             text-decoration-line: underline;
             text-decoration-style: solid;            
 
-            &:hover {
-              color: $base-dark-color;
+            &.no-highlight {
+              text-decoration: none;
             }
             
-            span.fas & {
-              text-decoration: none;
+            &:hover {
+              color: $base-dark-color;
             }
             
           }
