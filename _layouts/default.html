@@ -20,11 +20,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     {% seo %}
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | default: '/assets/images/favicon.ico' | relative_url }}">
     <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-        
+
+    <script src="https://use.fontawesome.com/c858e278cf.js"></script>
+
     <script>
       var headingNavFrom = {{ page.heading_navigator.from | default: site.heading_navigator.from | default: 2 }};
       var headingNavTo = {{ page.heading_navigator.to | default: site.heading_navigator.to | default: 2 }};
@@ -110,7 +111,7 @@
                 {%- if navPage.menu or navPage.icon -%}
                   {%- assign page_url = navPage.url | relative_url -%}
                   {%- if page_url == current_url -%}
-                    <li><a title="{{ navPage.title | escape }}">{{ navPage.menu }}</a></li>
+                    <li><a title="{{ navPage.title | escape }}">{%- if navPage.icon -%}<span class="fas fa-{{ navPage.icon }}"></span>{%- else -%}{{ navPage.menu }}{%- endif -%}</a></li>
                   {%- elsif navPage.icon -%}
                     <li><a href="{{ page_url }}" title="{{ navPage.title | escape }}"> <span class="fas fa-{{ navPage.icon }}"></span></a></li>
                   {%- else -%}
