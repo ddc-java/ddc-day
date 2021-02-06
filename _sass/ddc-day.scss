@@ -830,7 +830,7 @@ div.wrapper {
         font-size: 14px;
         
         li {
-          margin: 0 1%;
+          margin: 0 0.75%;
         }
           
       }
@@ -916,7 +916,9 @@ div.wrapper {
   }
 
   div#banner {
+
     top: 84px;
+
   }
 
   div.wrapper {
@@ -946,6 +948,20 @@ div.wrapper {
  
 }
 
+@media print, screen and (max-width: 780px) {
+
+  div#banner {
+
+    span#logo {
+      right: 10px;
+      top: -75px
+    }
+
+  }
+
+}
+
+
 @media print, screen and (max-width: 650px) {
 
   header {
@@ -962,14 +978,28 @@ div.wrapper {
 
     top: 62px;
 
+    span#logo {
+      right: 7px;
+      top: -55px
+      
+    }
+
     div.page-navigator {
+    
       ul {
+      
         li {
+        
+          margin-right: 0.75%;
+          
           &.optional {
             display: none;
           }
+          
         }
+        
       }
+      
     }
     
   }
