@@ -28,7 +28,7 @@ For the most part, the DDC Day theme is responsible for the specific typefaces a
     * First use of a term defined in the text, e.g. "_Hypertext Transfer Protocol_ (HTTP) is the primary protocol used by web traffic."
     * Emphasis (use this sparingly).
     
-`highlighted fixed-width`{:.normal-weight}
+`fixed-width`
 
 : 
     * Code fragments (in any programming/scripting, markup, or data interchange language).
