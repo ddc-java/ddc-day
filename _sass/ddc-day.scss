@@ -219,7 +219,8 @@ code {
 
   font-family: $code-fonts;
   font-size: 13px;
-  background-color: $medium-light-color;
+  font-weight: bolder;
+/*  background-color: $medium-light-color; */
   color: $base-dark-color;
   text-shadow: none;
   margin: 0;
