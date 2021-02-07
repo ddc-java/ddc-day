@@ -491,7 +491,8 @@ div#banner {
     
     ul {
     
-      display: block;
+      display: flex;
+      justify-content: space-evenly;
       position: absolute;
       top: 15px;
       width: 100%;
@@ -503,9 +504,7 @@ div#banner {
       li {
       
         margin-top: 0;
-        margin-right: 1.25%;
         margin-bottom: 0;
-        margin-left: 1.25%;
         font-family: $navigator-fonts;
         white-space: nowrap;
         
@@ -827,14 +826,8 @@ div.wrapper {
       right: 0;
 
       ul {
-
         top: 16px;
         font-size: 14px;
-        
-        li {
-          margin: 0 0.75%;
-        }
-          
       }
       
     }
@@ -990,22 +983,14 @@ div.wrapper {
       
     }
 
-    div.page-navigator {
-    
+    div.page-navigator {    
       ul {
-      
         li {
-        
-          margin-right: 0.75%;
-          
           &.optional {
             display: none;
-          }
-          
+          }          
         }
-        
       }
-      
     }
     
   }
