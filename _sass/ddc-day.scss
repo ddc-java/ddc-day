@@ -26,6 +26,7 @@ Based on Leap Day by Matt Graham.
 $base-dark-color: #242626;
 $medium-dark-color: #4c4e4e;
 $base-light-color: #f5f5f6;
+$code-highlight-color: #f0f0f1;
 $medium-light-color: #e1e2e1;
 $deep-dive-yellow: #ffd007;
 
@@ -220,7 +221,7 @@ code {
   font-family: $code-fonts;
   font-size: 13px;
   font-weight: bolder;
-/*  background-color: $medium-light-color; */
+  background-color: $code-highlight-color;
   color: $base-dark-color;
   text-shadow: none;
   margin: 0;
