@@ -1,3 +1,4 @@
+*[AOT]: Ahead-Of-Time compilation
 *[API]: Application Programming Interface
 *[AWT]: Abstract Window Toolkit
 *[CSS]: Cascading Style Sheets
@@ -19,6 +20,7 @@
 *[J2ME]: Java 2 Micro Edition
 *[J2SE]: Java 2 Standard Edition
 *[JEE]: Jakarta Enterprise Edition (formerly Java Enterprise Edition)
+*[JIT]: Just-In-Time compilation
 *[JME]: Java Micro Edition
 *[JNI]: Java Native Interface
 *[JPEG]: Joint Photographic Experts Group
