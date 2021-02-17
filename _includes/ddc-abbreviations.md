@@ -3,6 +3,7 @@
 *[AWT]: Abstract Window Toolkit
 *[CSS]: Cascading Style Sheets
 *[FI]: Functional Interface
+*[GC]: Garbage Collection
 *[GJSG]: Google Java Style Guide
 *[CRUD]: Create-Read-Update-Delete
 *[DRY]: Don't Reinvent Yourself
