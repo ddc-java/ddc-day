@@ -237,6 +237,9 @@ code {
     font-family: $code-fonts;
   }
 
+  h2 & {
+    font-size: 22px;
+  }
 }
 
 pre {
