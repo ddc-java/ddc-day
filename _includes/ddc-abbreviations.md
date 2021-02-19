@@ -9,6 +9,7 @@
 *[DRY]: Don't Reinvent Yourself
 *[DVCS]: Distributed Version Control System
 *[EAR]: Enterprise ARchive
+*[ERD]: Entity-Relationship Diagram
 *[GC]: Garbage Collection (or Garbage Collector)
 *[GIF]: Graphics Interchange Format
 *[HTML]: HyperText Markup Language
