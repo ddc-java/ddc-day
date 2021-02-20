@@ -45,9 +45,9 @@ $\text{serif roman and }italic$
 
 : Normal text content.[^theme-defaults]
 
-[^theme-defaults]: These font groups are used automatically when the corresponding elements are written in Markdown content that uses this theme.
+[^theme-defaults]: These font groups are used automatically when the corresponding elements (headings, dictionary lists, code fragments, etc.) are written in content that uses this theme.
 
-[^latex-defaults]: These font groups are used automatically when using [$\LaTeX$ mathematical expressions](formatting.md#mathematical-expressions).
+[^latex-defaults]: These font groups are used automatically when using [$\LaTeX$ mathematical expressions](formatting/#mathematical-expressions).
 
 ## Symbols
 
