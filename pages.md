@@ -70,7 +70,7 @@ order: 30
 ---
 ```
 
-### Guidelines
+## Guidelines
 
 * On a multi-page site, `title` and `description` property values should be set explicitly on all pages.
 
