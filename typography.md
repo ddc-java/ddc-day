@@ -31,7 +31,7 @@ sans-serif bold
 `fixed-width`
 
 : 
-    * Code fragments (in any programming/scripting, markup, or data interchange language).
+    * Code fragments (in any programming/scripting, markup, or data interchange language).[^theme-defaults]
     * References to code symbols.
     * Shell commands, arguments, and options.
     * Console output.
