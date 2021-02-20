@@ -12,13 +12,13 @@ For the most part, the DDC Day theme is responsible for the specific typefaces a
 {:.title}slab-serif
 
 : 
-    * Page, section, and subsection titles.
-    * Navigator link text.
+    * Page, section, and subsection titles.[^theme-defaults]
+    * Navigator link text.[^theme-defaults]
 
-**sans-serif bold**
+sans-serif bold
 
 : 
-    * Glossary (definition list) titles.
+    * Glossary (definition list) titles.[^theme-defaults]
     * Strong emphasis (use this very sparingly).
     * UI control labels (e.g. window titles, button labels, menu item text, field labels).
 
@@ -39,11 +39,15 @@ For the most part, the DDC Day theme is responsible for the specific typefaces a
     
 $\text{serif roman and }italic$
 
-: Mathematical expressions.
+: Mathematical expressions.[^latex-defaults]
 
 {:.normal-weight}sans-serif roman
 
-: Normal text content.
+: Normal text content.[^theme-defaults]
+
+[^theme-defaults]: These font groups are used automatically when the corresponding elements are written in Markdown content that uses this theme.
+
+[^latex-defaults]: These font groups are used automatically when using [$\LaTeX$ mathematical expressions](formatting.md#mathematical-expressions).
 
 ## Symbols
 
