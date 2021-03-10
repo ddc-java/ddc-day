@@ -240,10 +240,11 @@ code {
     font-size: 22px;
   }
   
-  header & {
+  header &, banner & {
     background-color: inherit;
     color: inherit;  
     font-size: inherit;
+    font-weight: inherit;
   }
   
 }
