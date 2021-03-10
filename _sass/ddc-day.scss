@@ -221,12 +221,8 @@ code {
   font-family: $code-fonts;
   font-size: 13px;
   font-weight: bolder;
-  background-color: $code-highlight-color;
-  color: $base-dark-color;
   text-shadow: none;
   margin: 0;
-/*  padding: 1px; */
-/*  border-radius: 2px; */
   white-space: pre-wrap;
   
   &.normal-weight {
@@ -240,6 +236,7 @@ code {
   h2 & {
     font-size: 22px;
   }
+  
 }
 
 pre {
@@ -648,6 +645,11 @@ div.wrapper {
       color:#0060FF;
     }
 
+    code {  
+      background-color: $code-highlight-color;
+      color: $base-dark-color;
+    }
+    
     h2 {
       clear: both;
     }
