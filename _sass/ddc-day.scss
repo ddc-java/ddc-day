@@ -224,6 +224,9 @@ code {
   text-shadow: none;
   margin: 0;
   white-space: pre-wrap;
+
+  background-color: $code-highlight-color;
+  color: $base-dark-color;
   
   &.normal-weight {
     font-weight: normal;
@@ -235,6 +238,11 @@ code {
 
   h2 & {
     font-size: 22px;
+  }
+  
+  header & {
+    background-color: inherit;
+    color: inherit;  
   }
   
 }
@@ -645,11 +653,6 @@ div.wrapper {
       color:#0060FF;
     }
 
-    code {  
-      background-color: $code-highlight-color;
-      color: $base-dark-color;
-    }
-    
     h2 {
       clear: both;
     }
