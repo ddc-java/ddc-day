@@ -50,6 +50,7 @@
 *[SQL]: Structured Query Language
 *[SSG]: SQL Style Guide
 *[SVG]: Scalable Vector Graphics
+*[TAoCP]: _The Art of Computer Programming_, by Donald Knuth---the definitive reference work on algorithms.
 *[TeX]: Typesetting system invented by Donald Knuth, used for formatting complex or technical content, such as mathematical formulas.
 *[VCS]: Version Control System
 *[WAR]: Web application ARchive
