@@ -32,6 +32,7 @@
 *[JSON]: JavaScript Object Notation
 *[JVM]: Java Virtual Machine
 *[KISS]: Keep It Simple, Stupid
+*[LMS]: Learning Management System
 *[MPEG]: Motion Picture Experts Group
 *[mp3]: MPEG audio layer III
 *[mp4]: MPEG-4 with audio & video
@@ -58,5 +59,5 @@
 *[XSL]: eXtensible Stylesheet Language
 *[XSLT]: XSL Transformations
 *[YAGNI]: You Ain't Gonna Need It 
-*[YAML]: Yaml Ain't Markup Language (originally, Yet Another Markup Language)
+*[YAML]: Yaml Ain't a Markup Language (originally, Yet Another Markup Language)
 *[yml]: 3-character variation of YAML, used as a file extension
