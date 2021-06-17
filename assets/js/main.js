@@ -15,7 +15,7 @@ $(window).resize(sectionHeight);
 $(function() {
   const selectors = [];
   for (let i = headingNavFrom; i <= headingNavTo; i++) {
-    selectors.push("section > h" + i);
+    selectors.push("section > h" + i + ":not(.no-nav)");
   }
   $(selectors.join(", ")).each(function(){
     $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
