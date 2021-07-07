@@ -17,6 +17,7 @@
 *[IoC]: Inversion of Control
 *[JAR]: Java ARchive
 *[JCL]: Java Class Library
+*[JDBC]: Java Database Connectivity
 *[JDK]: Java Development Kit
 *[J2EE]: Java 2 Enterprise Edition
 *[J2ME]: Java 2 Micro Edition
@@ -26,6 +27,7 @@
 *[JME]: Java Micro Edition
 *[JNI]: Java Native Interface
 *[JPEG]: Joint Photographic Experts Group
+*[JPA]: Java Persistence API
 *[JPG]: Joint Photographic Experts Group (3-character variation of JPEG, used as a file extension)
 *[JRE]: Java Runtime Environment
 *[JSE]: Java Standard Edition
