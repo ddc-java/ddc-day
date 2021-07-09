@@ -2,6 +2,7 @@
 *[API]: Application Programming Interface
 *[AWT]: Abstract Window Toolkit
 *[CSS]: Cascading Style Sheets
+*[CSV]: Comma-Separated Values
 *[FI]: Functional Interface
 *[GC]: Garbage Collection
 *[GJSG]: Google Java Style Guide
@@ -49,7 +50,7 @@
 *[REPL]: Read-Evaluate-Print Loop
 *[SDK]: Software Development Kit
 *[SoC]: Separation of Concerns 
-*[SOLID]: Single-responsibility principle; Open-closed principle; Liskov substitution principle; Interface segregation principle; Dependency inversion principle.
+*[SOLID]: **S**ingle-responsibility principle; **O**pen-closed principle; **L**iskov substitution principle; **I**nterface segregation principle; **D**ependency inversion principle.
 *[SQL]: Structured Query Language
 *[SSG]: SQL Style Guide
 *[SVG]: Scalable Vector Graphics
