@@ -45,7 +45,7 @@ description: "Links to external documentation and examples"
 
 ### Pseudocode
 
-* [Introduction to Algorithms and Pseudocode](https://ddc-java.github.io/assets/pdf/Introduction%20to%20Algorithms%20and%20Pseudocode.pdf)
+* [Introduction to Algorithms and Pseudocode](/library/documents/Introduction to Algorithms and Pseudocode.pdf)
 
 ### Examples
 
