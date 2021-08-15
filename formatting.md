@@ -78,7 +78,7 @@ For example, consider this sentence: "One Git command that is a major source of 
 
 The proper way to format these monospaced fragments is with Markdown [_code blocks_](#code-blocks) and [_inline code_](#inline-code); these are generally converted to HTML `<pre>` and `<code>` elements.
 
-#### Inline code
+### Inline code
 
 Simple symbols, filenames, expressions, etc., that do not make up an entire statement, can be written as inline code, enclosed in backticks (<code>`</code>). (Note that a backtick is not the same as an apostrophe or single quote character.) For example,
 
@@ -91,7 +91,7 @@ is converted to HTML and rendered as
 > The first class of the Java standard library that most beginning programmers encounter is the `String` class.
 {:.render-example}
 
-#### Code blocks
+### Code blocks
 
 For classes, methods, or other multi-line code fragments---or even single-line fragments that comprise complete statements or complex expressions---use _fenced code blocks_, with language tags.
 
@@ -145,7 +145,7 @@ Even if a module includes a glossary, terms (including abbreviations) should be 
 
 The Markdown extensions supported by kramdown include support for definition lists. However, please note that the syntax for definition lists is quite different from that for ordered and unordered lists.
 
-#### Example
+### Example
 
 A portion of a glossary of basic Git-related terms could be written as follows:
 
@@ -367,118 +367,7 @@ This is rendered as
 
 ## Pseudocode
 
-Pseudocode included in a module should be formatted using an ordered (numbered) or unordered (bullet) list, with nested lists as appropriate. Use the indentation structure of nested lists to provide visual and logical structure to the pseudocode.
-
-Use inline LaTeX, LaTeX blocks, inline code, and code blocks as appropriate. However, when using LaTeX or code blocks, be sure to respect the current indentation of the enclosing list, so that the list structure isn't broken (e.g. the numbering in an ordered list restarted). 
-
-#### Example
-
-What follows is annotated pseudocode for a binary search of an array of integers. Since the algorithm is not specific to Java, the pseudocode doesn't use Java code, but does use mathematical notation.
-
-First, here is the Markdown code, with inline LaTex:
-
-```markdown
-**Given:**
-
-* $D$ is array to be searched, $D = (d_0, d_1, \ldots, d_{n - 1})$.
-
-* $D$ is in sorted order---that is, $d_i \le d_j, \forall i < j$.
-    
-* $v$ is value to search for: 
-
-    * If $v$ is in $D$, its position must be returned. 
-    * If $v$ is _not_ in $D$, $(-p - 1)$ must be returned, where insertion of $v$ at position $p$ would preserve the sort order.
-
-**To find $v$ in $D$:**
-
-1. $l \gets 0$. 
-
-    ($l$ is the lower inclusive bound of search range.)
-
-2. $u \gets n$. 
-    
-    ($l$ is the upper exclusive bound of search range.)
-
-3. While $l < u$:
-
-    1. $m \gets \left \lfloor \frac{l + u}{2} \right \rfloor$. 
-    
-        ($m$ is the midpoint of search range.)
-    
-    2. If $d_m = v$,
-    
-        * return $m$;
-        
-            (Done: $v$ is found at position $m$.)
-        
-        otherwise, if $d_m > v$,
-        
-        * $u \gets m$;
-        
-            ($d_m$ is too high, so updated search range should end at $m$.)
-        
-        otherwise,
-        
-        * $l \gets m + 1$.
-        
-            ($d_m$ is too low, so updated search range should start at $m + 1$.)
-        
-4. Return $(-u - 1)$.
-
-    ($v$ is not in $D$, but inserting $v$ at position $u$ would preserve the sorted order.)
-```
-
-Now, the rendered output:
-
-> **Given:**
-> 
-> * $D$ is array to be searched, $D = (d_0, d_1, \ldots, d_{n - 1})$.
-> 
-> * $D$ is in sorted order---that is, $d_i \le d_j, \forall i < j$.
->     
-> * $v$ is value to search for: 
-> 
->     * If $v$ is in $D$, its position must be returned. 
->     * If $v$ is _not_ in $D$, $(-p - 1)$ must be returned, where insertion of $v$ at position $p$ would preserve the sort order.
-> 
-> **To find $v$ in $D$:**
-> 
-> 1. $l \gets 0$. 
-> 
->     ($l$ is the lower inclusive bound of search range.)
-> 
-> 2. $u \gets n$. 
->     
->     ($l$ is the upper exclusive bound of search range.)
-> 
-> 3. While $l < u$:
-> 
->     1. $m \gets \left \lfloor \frac{l + u}{2} \right \rfloor$. 
->     
->         ($m$ is the midpoint of search range.)
->     
->     2. If $d_m = v$,
->     
->         * return $m$;
->         
->             (Done: $v$ is found at position $m$.)
->         
->         otherwise, if $d_m > v$,
->         
->         * $u \gets m$;
->         
->             ($d_m$ is too high, so updated search range should end at $m$.)
->         
->         otherwise,
->         
->         * $l \gets m + 1$.
->         
->             ($d_m$ is too low, so updated search range should start at $m + 1$.)
->         
-> 4. Return $(-u - 1)$.
-> 
->     ($v$ is not in $D$, but inserting $v$ at position $u$ would preserve the sorted order.)
-{:.render-example}
+Steps in an algorithm or computational process should be specified as _pseudocode_, and should follow the [pseudocode guidelines](/style-guide/pseudocode) in the [DDC style guide](/style-guide). See the details and examples in that resource for further information.
 
 ## Test cases
 
@@ -486,7 +375,7 @@ Test cases should be written using tables, with clear and concise column headers
 
 Inline code Markdown tables are easy to write, and usually work well for this purpose. However, if a table cell needs to contain a block element, that's not directly supported in Markdown; HTML may be required, or a combination of Markdown, HTML, and kramdown options.
 
-#### Example
+### Example
 
 The following Markdown creates a table of test cases for one of the practical exam problems used in the bootcamp:
 
