@@ -769,41 +769,47 @@ div.wrapper {
 }
 
 .tag-btn {
-    margin: 5px 5px 5px 0;
+  margin: 5px 5px 5px 0;
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
 }
 
 .btn-navigation {
-    color: $base-dark-color;
-    background-color: $deep-dive-yellow;
-    border-color: $medium-dark-color;
+  color: $base-dark-color;
+  background-color: $deep-dive-yellow;
+  border-color: $medium-dark-color;
 }
 
 .btn {
-    display: inline-block;
-    padding: 2px 5px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
+  display: inline-block;
+  padding: 2px 5px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.variant-page-link {
+  text-align: right;
+  margin: 0;
+  padding: 0;
 }
 
 @media print, screen and (max-width: 1170px) {
