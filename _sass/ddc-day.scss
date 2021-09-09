@@ -769,25 +769,25 @@ div.wrapper {
 }
 
 .tag-btn {
-  margin: 5px 5px 5px 0;
 }
 
 .btn-primary {
   color: #fff;
   background-color: #337ab7;
   border-color: #2e6da4;
+  margin: 5px 5px 0 0;
 }
 
 .btn-navigation {
   color: $base-dark-color;
   background-color: $deep-dive-yellow;
   border-color: $medium-dark-color;
+  margin: 0;
 }
 
 .btn {
   display: inline-block;
   padding: 2px 5px;
-  margin-bottom: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.42857143;
@@ -808,7 +808,7 @@ div.wrapper {
 
 .variant-page-link {
   text-align: right;
-  margin: -10px 0 10px 0;
+  margin: 0 0 10px 0;
   padding: 0;
 }
 
