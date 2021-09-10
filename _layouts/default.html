@@ -113,7 +113,7 @@
                   {%- assign page_url = navPage.url | relative_url -%}
                   {%- capture optional_class %}{% if navPage.optional %}class="optional"{% endif %}{% endcapture -%}
                   <li {{ optional_class }}>
-                    {%- if page_url == current_url -%}
+                    {%- if page_url == current_url or page.variant_group == navPage.variant_group and page.variant_group -%}
                       {%- if navPage.icon -%}
                         <a title="{{ navPage.title | escape }}" class="no-highlight"><span class="fas fa-{{ navPage.icon }}"></span></a>
                       {%- else -%}
