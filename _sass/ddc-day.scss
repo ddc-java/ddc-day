@@ -79,12 +79,18 @@ h2 {
 }
 
 h3 {
+  
   font-family: $heading-fonts;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.1em;
   color: $medium-dark-color;
   margin: 0 0 1em 0;
+  
+  &.resource-heading {
+    margin: 0 0 0.5em 0;
+  }
+  
 }
 
 h4, h5, h6 {
