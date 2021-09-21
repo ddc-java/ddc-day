@@ -1,0 +1,14 @@
+{%- assign video_ids = include.id | split: "," -%}
+{%- if include.style -%}
+    {%- assign style_attr = include.style | prepend: "style=\"" | append: "\"" -%}
+{%- endif -%}
+{%- for video_id in video_ids -%}
+<div id="video-{{ video_id }}" class="youtube-container" {{ style_attr }}>
+    <iframe
+        src="https://www.youtube.com/embed/{{ video_id }}"
+        frameborder="0"
+        autoplay="false"
+        allowfullscreen="true">
+    </iframe>
+</div>
+{%- endfor -%}
