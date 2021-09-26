@@ -3,6 +3,7 @@
 *[AWT]: Abstract Window Toolkit
 *[CSS]: Cascading Style Sheets
 *[CSV]: Comma-Separated Values
+*[DSL]: Domain-Specific Language
 *[FI]: Functional Interface
 *[GC]: Garbage Collection
 *[GJSG]: Google Java Style Guide
