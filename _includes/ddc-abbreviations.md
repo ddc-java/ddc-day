@@ -1,5 +1,6 @@
 *[AOT]: Ahead-Of-Time compilation
 *[API]: Application Programming Interface
+*[ASF]: Apache Software Foundation
 *[AWT]: Abstract Window Toolkit
 *[CSPRNG]: Cryptographically Secure Pseudo-Random Number Generator
 *[CSS]: Cascading Style Sheets
