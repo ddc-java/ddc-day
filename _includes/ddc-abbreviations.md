@@ -1,6 +1,7 @@
 *[AOT]: Ahead-Of-Time compilation
 *[API]: Application Programming Interface
 *[AWT]: Abstract Window Toolkit
+*[CSPRNG]: Cryptographically Secure Pseudo-Random Number Generator
 *[CSS]: Cascading Style Sheets
 *[CSV]: Comma-Separated Values
 *[DSL]: Domain-Specific Language
@@ -48,8 +49,10 @@
 *[OOP]: Object-Oriented Programming
 *[ORM]: Object-Relational Mapping
 *[PNG]: Portable Network Graphics
+*[PRNG]: Pseudo-Random Number Generator
 *[RDBMS]: Relational DataBase Management System
 *[REPL]: Read-Evaluate-Print Loop
+*[RNG]: Random Number Generator
 *[SDK]: Software Development Kit
 *[SoC]: Separation of Concerns 
 *[SOLID]: **S**ingle-responsibility principle; **O**pen-closed principle; **L**iskov substitution principle; **I**nterface segregation principle; **D**ependency inversion principle.
