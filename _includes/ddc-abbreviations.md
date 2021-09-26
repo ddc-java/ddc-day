@@ -18,6 +18,7 @@
 *[IoC]: Inversion of Control
 *[JAR]: Java ARchive
 *[JCL]: Java Class Library
+*[JCP]: Java Community Process
 *[JDBC]: Java Database Connectivity
 *[JDK]: Java Development Kit
 *[J2EE]: Java 2 Enterprise Edition
