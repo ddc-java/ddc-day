@@ -14,6 +14,7 @@
 *[DVCS]: Distributed Version Control System
 *[EAR]: Enterprise ARchive
 *[ERD]: Entity-Relationship Diagram
+*[FSM]: Finite-State Machine
 *[GC]: Garbage Collection (or Garbage Collector)
 *[GIF]: Graphics Interchange Format
 *[GUI]: Graphical User Interface 
