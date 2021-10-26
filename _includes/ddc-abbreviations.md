@@ -16,6 +16,7 @@
 *[ERD]: Entity-Relationship Diagram
 *[GC]: Garbage Collection (or Garbage Collector)
 *[GIF]: Graphics Interchange Format
+*[GUI]: Graphical User Interface 
 *[HTML]: HyperText Markup Language
 *[IDE]: Integrated Development Environment
 *[IoC]: Inversion of Control
