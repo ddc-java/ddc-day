@@ -35,7 +35,7 @@
 *[JNI]: Java Native Interface
 *[JPEG]: Joint Photographic Experts Group
 *[JPA]: Java Persistence API
-*[JPG]: Joint Photographic Experts Group (3-character variation of JPEG, used as a file extension)
+*[jpg]: Joint Photographic Experts Group (3-character variation of JPEG, used as a file extension)
 *[JRE]: Java Runtime Environment
 *[JSE]: Java Standard Edition
 *[JSON]: JavaScript Object Notation
