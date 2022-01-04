@@ -2,6 +2,7 @@
 *[API]: Application Programming Interface
 *[ASF]: Apache Software Foundation
 *[AWT]: Abstract Window Toolkit
+*[BOM]: Byte Order Mark
 *[CSPRNG]: Cryptographically Secure Pseudo-Random Number Generator
 *[CSS]: Cascading Style Sheets
 *[CSV]: Comma-Separated Values
@@ -67,6 +68,7 @@
 *[VCS]: Version Control System
 *[WAR]: Web application ARchive
 *[XML]: eXtensible Markup Language
+*[XSD]: XML Schema Definition
 *[XSL]: eXtensible Stylesheet Language
 *[XSLT]: XSL Transformations
 *[YAGNI]: You Ain't Gonna Need It 
