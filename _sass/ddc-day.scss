@@ -63,21 +63,34 @@ body {
 }
 
 h1 {
+  
   font-family: $title-fonts;
   font-size: 30px;
   font-weight: 400;
   line-height: 1.1em;
   color: $medium-dark-color;
   margin:0 0 10px 0;
+
+  &.highlighted {
+    font-size: 24px;
+  }
+  
+
 }
 
 h2 {
+  
   font-family: $heading-fonts;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.1em;
   color: $medium-dark-color;
   margin: 0 0 1em 0;
+  
+  &.highlighted {
+    font-size: 19px;
+  }
+    
 }
 
 h3 {
@@ -92,7 +105,11 @@ h3 {
   &.resource-heading {
     margin: 0 0 0.5em 0;
   }
-  
+
+  &.highlighted {
+    font-size: 14px;
+  }
+    
 }
 
 h4, h5, h6 {
@@ -882,16 +899,34 @@ div.wrapper {
 @media print, screen and (max-width: 1170px) {
 
   h1 {
+
     font-size: 28px;
     line-height: 42px;
+
+    &.highlighted {
+      font-size: 22px;
+    }
+    
   }
   
   h2 {
+
     font-size: 22px;
+
+    &.highlighted {
+      font-size: 18px;
+    }
+    
   }
   
   h3 {
+
     font-size: 16px;
+
+    &.highlighted {
+      font-size: 13px;
+    }
+    
   }
   
 
@@ -1178,15 +1213,33 @@ div.wrapper {
       }
 
       h1 {
+
         font-size: 20px;
+
+        &.highlighted {
+          font-size: 16px;
+        }
+        
       }
 
       h2 {
+
         font-size: 18px;
+
+        &.highlighted {
+          font-size: 14px;
+        }
+        
       }
 
       h3 {
+
         font-size: 16px;
+
+        &.highlighted {
+          font-size: 13px;
+        }
+        
       }
 
       h4 {
