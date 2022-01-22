@@ -321,18 +321,22 @@ pre {
     
   }
   
-  &.highlight {
-  
-    &.success {
-      border-left: 2px solid $success-color;
-    }
-    
-    &.failure {
-      border-left: 2px solid $failure-color;
-    }  
-    
+}
+
+.success {
+
+  pre, blockquote& {
+    border-left: 2px solid $success-color;
   }
-  
+
+}
+
+.failure {
+
+  pre, blockquote& {
+    border-left: 2px solid $failure-color;
+  }
+
 }
 
 table {
