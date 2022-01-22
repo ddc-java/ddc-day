@@ -325,7 +325,7 @@ pre {
 
 .success {
 
-  pre, blockquote& {
+  pre {
     border-left: 2px solid $success-color;
   }
 
@@ -333,7 +333,7 @@ pre {
 
 .failure {
 
-  pre, blockquote& {
+  pre {
     border-left: 2px solid $failure-color;
   }
 
