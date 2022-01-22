@@ -103,9 +103,20 @@ h4, h5, h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
+
   &:not(:first-child) {
     margin-top: 1.1em;
   }
+  
+  &.tight {
+    margin-bottom: 0;
+  }
+  
+  &.highlighted {
+    background-color: $deep-dive-yellow;
+    padding: 0.2em;
+  }  
+  
 }
 
 p, ul, ol, table, pre, dl {
@@ -296,8 +307,34 @@ pre {
 }
 
 table {
+
   width: 100%;
   border-collapse: collapse;
+
+  &.recordings {
+
+    tr {
+
+      &:first-child {
+
+        td, th {
+        
+          &:nth-child(1) {
+            width: 10%;
+          }
+          
+          &:nth-child(2) {
+            width: 25%;
+          }
+
+        }
+
+      }
+
+    }
+        
+  }
+  
 }
 
 th {
