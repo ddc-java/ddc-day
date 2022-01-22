@@ -326,7 +326,12 @@ pre {
 .success {
 
   pre {
-    border-left: 3px solid $success-color;
+
+    border {
+      left: 4px solid $success-color;
+      right: 4px solid $success-color;
+    }
+
   }
 
 }
@@ -334,7 +339,12 @@ pre {
 .failure {
 
   pre {
-    border-left: 3px solid $failure-color;
+
+    border {
+      left: 4px solid $failure-color;
+      right: 4px solid $failure-color;
+    }
+
   }
 
 }
