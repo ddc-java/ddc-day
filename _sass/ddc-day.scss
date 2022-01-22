@@ -29,6 +29,8 @@ $base-light-color: #f5f5f6;
 $code-highlight-color: #ededee;
 $medium-light-color: #e1e2e1;
 $deep-dive-yellow: #ffd007;
+$success-color: #00c000;
+$failure-color: #c00000;
 
 $title-fonts: 'Roboto Slab', Rockwell, serif;
 $heading-fonts: $title-fonts;
@@ -213,14 +215,24 @@ abbr[title] {
 }
 
 blockquote {
+  
   border-left: 2px solid $deep-dive-yellow;
   margin: 0;
   padding: 0 0 0 20px;
   font-style: italic;
-}
+  
+  &.render-example {
+    border-left: 1px dotted $medium-dark-color;
+  }
 
-blockquote.render-example {
-  border-left: 1px dotted $medium-dark-color;
+  &.success {
+    border-left: 1px dotted $success-color;
+  }
+  
+  &.failure {
+    border-left: 1px dotted $failure-color;
+  }  
+
 }
 
 code {
