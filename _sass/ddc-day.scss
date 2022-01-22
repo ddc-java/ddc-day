@@ -254,11 +254,11 @@ blockquote {
   }
 
   &.success {
-    border-left: 1px dotted $success-color;
+    border-left: 2px solid $success-color;
   }
   
   &.failure {
-    border-left: 1px dotted $failure-color;
+    border-left: 2px solid $failure-color;
   }  
 
 }
@@ -318,6 +318,18 @@ pre {
       font-family: $code-fonts;
       overflow-x: auto;
     }
+    
+  }
+  
+  &.highlight {
+  
+    &.success {
+      border-left: 2px solid $success-color;
+    }
+    
+    &.failure {
+      border-left: 2px solid $failure-color;
+    }  
     
   }
   
