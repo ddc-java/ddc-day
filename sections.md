@@ -32,7 +32,7 @@ If the `heading_navigator.enabled` property is set to `true` at the site level, 
 * To omit a heading that would normally be linked to in the sidebar from appearing there, use the `no-nav` CSS class. The kramdown processor supports this in Markdown with a block-level _Inline Attribute List_ (IAL), e.g.
 
     ```markdown
-    ## Not in navigator sidebar
+    ## Not included in the navigator sidebar
     {:.no-nav}
     ```
 
@@ -58,13 +58,13 @@ For example, the code fragment shown above is used below, to render a TOC for th
 To omit a heading from the table of contents, use the `no_toc` CSS class. This can be done in kramdown Markdown with an IAL:
 
 ```markdown
-## Not in TOC
+## Not included in the TOC
 {:.no_toc}
 ```
 
 In fact, the Markdown shown above is used to define the headline rendered immediately below, and the result is not included in the [example TOC](#markdown-toc) rendered [above](#markdown-toc).
 
-> ## Not in TOC
+> ## Not included in the TOC
 > {:.no_toc}
 
 ## Section-specific guidelines

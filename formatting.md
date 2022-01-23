@@ -94,11 +94,13 @@ is converted to HTML and rendered as
 
 For classes, methods, or other multi-line code fragments---or even single-line fragments that comprise complete statements or complex expressions---use _fenced code blocks_, with language tags.
 
-A fenced code block begins with a line containing 3 backticks, optionally (and immediately) followed by a language identifier; there must be nothing else on the line. Similarly, the block ends with a line containing 3 backticks _only_. 
+#### Syntax 
 
-**Important**: Java, SQL, XML, and JSON code blocks must conform to the [DDC Java+Android Bootcamp Style Guide](/style-guide/). In general, code should be written in IntelliJ code files and then---after running the **Code/Reformat Code** command, with IntelliJ configured to use the `intellij-java-google-style.xml` scheme from the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) [repository](https://github.com/google/styleguide)---copied & pasted into the relevant Markdown code blocks. (Of course, if the code block is presenting an example of undesirable naming or formatting, then this rule does not apply.)
+A fenced code block begins with a line containing 3 backticks, optionally (and immediately) followed by a language identifier; there must be nothing else on the line. Similarly, the block ends with a line containing 3 backticks _only_.[^indented-code-block]
 
-For example, here's a simple Java method, written in a fenced code block: 
+[^indented-code-block]: Prior to the advent of the fenced code block in most Markdown dialects, there was another way to write a code block: If one or more lines of text is indented at least 4 spaces in from the current indent level (but without setting a new indent level via a list), that block would be converted to an HTML `<pre>` element. That approach still works; however, fenced code blocks with language identifiers should be used for this purpose whenever possible.
+
+For example, here's a simple Java method in a fenced code block: 
 
     ```java
     public static void main(String[] args) {
@@ -115,7 +117,30 @@ This will be rendered as
 > ```
 {:.render-example}
 
-Prior to the advent of the fenced code block in most Markdown dialects, there was another way to write a code block: If one or more lines of text is indented at least 4 spaces in from the current indent level (but without setting a new indent level via a list), that block would be converted to an HTML `<pre>` element. That approach still works; however, fenced code blocks with language identifiers should be used for this purpose whenever possible.
+#### Content format
+
+**Important**: The code included in Java, SQL, XML, and JSON code blocks must conform to the [DDC Java+Android Bootcamp Style Guide](/style-guide/). One way to do this is to write the content in IntelliJ code files, run the **Code/Reformat Code** command (with IntelliJ configured to use the `intellij-java-google-style.xml` scheme from the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) [repository](https://github.com/google/styleguide)), then copy and paste the code into the Markdown fenced code block. (Of course, if the code block is presenting an example of undesirable naming or formatting, then this rule does not apply.)
+
+#### Highlighting
+
+Sometimes, it's important to show that a code fragment presented in a code block is invalid and won't compile, or will throw exceptions or exhibit other unexpected behavior at runtime. In some cases, this might be done with code comments, or by including copied console output or screen captures below the code block. 
+
+in combination with, or as an alternative to, the above options, color cues can be included with the code block itself. Currently, this theme recognizes `success` and `failure` CSS classes attached to a fenced code block, resulting in green or red (respectively) left and right borders on the rendered code block.
+
+For example, this code block uses the `failure` class (specified an a kramdown IAL) to indicate that the displayed code is invalid:
+
+   ```java
+   int x = "This is not an integer";
+   ```
+   {:.failure}
+
+This is rendered as:
+
+> ```java
+> int x = "This is not an integer";
+> ```
+> {:.failure}
+{:.render-example}
 
 ## Footnotes
 
