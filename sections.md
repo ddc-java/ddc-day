@@ -49,7 +49,7 @@ To include a TOC in a Markdown page using the kramdown processor, assign the `to
 
 The contents of the `toc`-named list will be replaced by links to the headings on the page, and the list expanded as necessary; thus, the text of the list item (`TOC` in the example above) isn't included in the rendered result.
 
-For example, the code fragment shown above is used below, to display a TOC for this page:
+For example, the code fragment shown above is used below, to render a TOC for this page:
 
 > * TOC
 > {:toc}
@@ -61,6 +61,11 @@ To omit a heading from the table of contents, use the `no_toc` CSS class. This c
 ## Not in TOC
 {:.no_toc}
 ```
+
+In fact, the Markdown shown above is used to define the headline rendered immediately below, and the result is not included in the [example TOC](#markdown-toc) rendered [above](#markdown-toc).
+
+> ## Not in TOC
+> {:.no_toc}
 
 ## Section-specific guidelines
 
