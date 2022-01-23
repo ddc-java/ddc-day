@@ -209,7 +209,7 @@ will be displayed as
 
 [^footnote-example]: A footnote is automatically displayed at the bottom of the page, no matter where the footnote definition appears.
 
-Because a footnote (like the one defined above) is displayed at the bottom of the page, regardless of where it's defined, it should be defined immediately after the paragraph or list where it is first referenced.
+A footnote (like the one defined above) is displayed at the bottom of the page, regardless of where the body of the footnote is defined. However, to keep related text together in the Markdown source, the footnote should be defined immediately after the paragraph or list where it is first referenced.
 
 ## Glossaries
 
