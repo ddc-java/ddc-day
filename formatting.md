@@ -155,7 +155,7 @@ This is rendered as:
 
 ### General
 
-The traditional purpose of blockquotes (aka _block quotations_) is to highlight direct quotes with block-level indentation---usually (but not exclusively) when such quotes are more than a couple of lines long. In our curricular content, we expand on this by using blockquotes to emphasize rules or guidelines (like the [general guideline](#general-guideline) stated at the top of this page), display output from code we're explaining, showing other console output, quoting from error logs, etc.
+The traditional purpose of blockquotes (aka _block quotations_) is to highlight direct quotes with block-level indentation---usually (but not exclusively) when such quotes are more than a couple of lines long. In our curricular content, we expand on this by using blockquotes to emphasize important rules or guidelines that stand alone (like the [general guideline](#general-guideline) stated at the top of this page), rather than in a list; to display output from code we're explaining; to quote from error logs; etc.
 
 For most cases, Markdown blockquotes can be used without any need for additional styling. For example, this Markdown fragment uses blockquotes to present a useful quotation on mathematical and computational modeling:
 
@@ -193,6 +193,8 @@ This will be rendered as:
 {:.render-example #second-blockquote}
 
 Did you spot the difference between the rendering of the [first](#first-blockquote) and [second](#second-blockquote) blockquote?
+
+If we were using the George Box quote in a module about computational modeling, we'd probably use the [first form](#first-blockquote); here, since we're using it to illustrate the use of blockquotes in module content, it would be more appropriate to use the [second form](#second-blockquote) when displaying the rendered output that results from our Markdown.
 
 ## Footnotes
 
