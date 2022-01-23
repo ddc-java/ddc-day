@@ -129,10 +129,10 @@ in combination with, or as an alternative to, the above options, color cues can 
 
 For example, this code block uses the `failure` class (specified an a kramdown IAL) to indicate that the displayed code is invalid:
 
-   ```java
-   int x = "This is not an integer";
-   ```
-   {:.failure}
+    ```java
+    int x = "This is not an integer";
+    ```
+    {:.failure}
 
 This is rendered as:
 
