@@ -169,12 +169,13 @@ When used verbatim, the above Markdown appears as
 > Essentially, all models are wrong, but some are useful.
 >
 > --- George E. P. Box
+{: #first-blockquote}
 
 ### Showing example output
 
 This theme defines a `render-example` CSS class for use with blockquotes. This class should be specified (generally via a kramdown IAL) when a blockquote is being used for the express purpose of displaying output from a code fragment included before the blockquote. In other words: when the module content includes a code fragment, and then includes the output produced by that code fragment; when that output is not in the form of a screen image (or video) capture, but is textual in nature; the output should be included in a Markdown blockquote that uses the `render-example` CSS class.
 
-For example, we can specify the `render-example` class in the George Box quote:
+For example, we can (and should, since we're showing example Markdown rendering output) use the `render-example` class in the George Box quote:
 
 ```markdown
 > Essentially, all models are wrong, but some are useful.
@@ -188,9 +189,9 @@ This will be rendered as:
 > Essentially, all models are wrong, but some are useful.
 >
 > --- George E. P. Box
-{:.render-example}
+{:.render-example #second-blockquote}
 
-Can you spot the difference?
+Did you spot the difference between the rendering of the [first](#first-blockquote) and [second](#second-blockquote) blockquote?
 
 ## Footnotes
 
