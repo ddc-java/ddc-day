@@ -3,11 +3,10 @@ title: Formatting Content
 menu: Formatting
 order: 50
 description: "Formatting curriculum content (code, mathematical expressions, pseudocode, etc.)"
-heading_navigator:
-  enabled: true
-  to: 2
 ---
 
+{% include ddc-abbreviations.md %}
+      
 ## Overview
 
 It is assumed that the curriculum module author has significant Markdown experience already. Thus, the aim of this page is not to be a Markdown syntax reference. On the other hand, many types of content can be written in Markdown (or HTML) in a variety of ways---often with different outcomes in page layout and style. So the objective here is to present guidelines for several key content types, to encourage consistency across curriculum modules.

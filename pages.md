@@ -5,6 +5,8 @@ order: 20
 description: "Defining and configuring one or more pages"
 ---
 
+{% include ddc-abbreviations.md %}
+      
 ## Overview
 
 This theme may be used for a site with a single page, or multiple pages. Optionally, a navigator bar containing links to one or more pages of the site may be displayed in the page header. 

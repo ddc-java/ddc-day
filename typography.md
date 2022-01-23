@@ -22,7 +22,7 @@ sans-serif bold
     * Strong emphasis (use this very sparingly).
     * UI control labels (e.g. window titles, button labels, menu item text, field labels).
 
-{:.normal-weight.emphasized}sans-serif italic
+{:.normal-weight .emphasized}sans-serif italic
 
 : 
     * First use of a term defined in the text, e.g. "_Hypertext Transfer Protocol_ (HTTP) is the primary protocol used by web traffic."

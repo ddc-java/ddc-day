@@ -5,6 +5,8 @@ order: 30
 description: "Typical sections included in assignments, tutorials, practical exam problems, etc."
 ---
 
+{% include ddc-abbreviations.md %}
+      
 ## Overview
 
 The content of a typical web pages (whether written originally in HTML, Markdown, or another markup language), is organized into sections, using one or more heading tags.
@@ -13,7 +15,7 @@ The kramdown parser used by default in this theme supports the usual Markdown he
 
 If the `heading_navigator.enabled` property is set to `true` at the site level, or at the page level for any given page, headings in the page content at level 2 (by default) will become links in a section navigator sidebar (as seen in this page).
 
-## General guidelines
+## General tips & guidelines
 
 * In most cases, `heading_navigator.enabled` should be set to `true` (the default) at the site level. 
 
@@ -26,6 +28,39 @@ If the `heading_navigator.enabled` property is set to `true` at the site level, 
 * Items in the navigator sidebar are displayed as right-aligned items in an unordered list; however, only links to level-3 headings include a bullet character. Thus, when `heading_navigator` is enabled, and the range from `heading_navigator.from` to `heading_navigator.to` (inclusive) includes 3, the headings in a page should either _all_ be at level 3+, or all level-3 headings (if any) should be subheadings beneath one or more level-2 headings. Otherwise, you will end up with some bullet items nested below a non-bullet item, and other bullet items that are not nested.
 
 * The text of headings used in the navigator sidebar must be distinct, or the links will not work as expected.
+
+* To omit a heading that would normally be linked to in the sidebar from appearing there, use the `no-nav` CSS class. The kramdown processor supports this in Markdown with a block-level _Inline Attribute List_ (IAL), e.g.
+
+    ```markdown
+    ## Not in navigator sidebar
+    {:.no-nav}
+    ```
+
+## Including a TOC
+
+For complex pages with more than a dozen or so level-2 headlines, or with a deeply-nested headline structure, a table of contents (TOC) should be considered in addition to, or as an alternative to, the navigator sidebar.
+
+To include a TOC in a Markdown page using the kramdown processor, assign the `toc` reference name to an unordered (bulleted) or ordered (numbered) list:
+
+```markdown
+* TOC
+{:toc}
+```
+
+The contents of the `toc`-named list will be replaced by links to the headings on the page, and the list expanded as necessary; thus, the text of the list item (`TOC` in the example above) isn't included in the rendered result.
+
+For example, the code fragment shown above is used below, to display a TOC for this page:
+
+> * TOC
+> {:toc}
+{:.render-example}
+
+To omit a heading from the table of contents, use the `no_toc` CSS class. This can be done in kramdown Markdown with an IAL:
+
+```markdown
+## Not in TOC
+{:.no_toc}
+```
 
 ## Section-specific guidelines
 
@@ -67,7 +102,7 @@ If the page specifies some deliverable task(s) the student is expected to perfor
 
 This section may be used to expand on [Requirements](#requirements), listing key assumptions that the student may make regarding inputs, environment, etc. 
 
-#### Hints
+#### Hints or tips
 
 If the module is for an assignment, practical exam problem, or extra-credit opportunity---particularly if it's especially challenging or requires an approach that's not very obvious---it may be a good idea to include some general tips.
 

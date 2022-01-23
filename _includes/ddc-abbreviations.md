@@ -20,6 +20,7 @@
 *[GIF]: Graphics Interchange Format
 *[GUI]: Graphical User Interface 
 *[HTML]: HyperText Markup Language
+*[IAL]: Inline Attribute List
 *[IDE]: Integrated Development Environment
 *[IoC]: Inversion of Control
 *[JAR]: Java ARchive
@@ -63,6 +64,7 @@
 *[SQL]: Structured Query Language
 *[SSG]: SQL Style Guide
 *[SVG]: Scalable Vector Graphics
+*[TOC]: Table of Contents
 *[TAoCP]: _The Art of Computer Programming_, by Donald Knuth---the definitive reference work on algorithms.
 *[TeX]: Typesetting system invented by Donald Knuth, used for formatting complex or technical content, such as mathematical formulas.
 *[VCS]: Version Control System

@@ -6,6 +6,8 @@ order: 60
 description: "Links to external documentation and examples"
 ---
 
+{% include ddc-abbreviations.md %}
+      
 ## Platform
 
 * [GitHub Pages](https://pages.github.com/)

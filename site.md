@@ -5,6 +5,8 @@ order: 10
 description: "Enabling and configuring theme on a GitHub Pages site"
 ---
 
+{% include ddc-abbreviations.md %}
+      
 ## Overview
 
 DDC Day is a GitHub Pages _remote theme_. In other words, it's not one of the standard dozen (or so) themes that can be selected in the GitHub Pages theme chooser; nonetheless, it can be selected as a theme for a GitHub Pages site, simply by making a change to the `_config.yml` file in the repository, committing the change, and---if the change was committed to a local clone---pushing the commit to GitHub. 
