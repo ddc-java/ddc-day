@@ -151,11 +151,11 @@ This is rendered as:
 > {:.failure}
 {:.render-example}
 
-## Block quotes
+## Blockquotes
 
 ### General
 
-The traditional purpose of blockquotes (aka _block quotations_) is to highlight, using block-level indentation, direct quotes---and usually, but not necessarily, quotes that are more than a couple of lines long. We add to this by using blockquotes to emphasize rules or guidelines (like the [general guideline](#general-guideline) stated at the top of this page), display output from code we're explaining, showing other console output, quoting from error logs, etc.
+The traditional purpose of blockquotes (aka _block quotations_) is to highlight direct quotes with block-level indentation---usually, but not necessarily, when such quotes are more than a couple of lines long. In our curricular content, we expand on this by using blockquotes to emphasize rules or guidelines (like the [general guideline](#general-guideline) stated at the top of this page), display output from code we're explaining, showing other console output, quoting from error logs, etc.
 
 For most cases, Markdown blockquotes can be used without any need for additional styling. For example, this Markdown fragment uses blockquotes to present a useful quotation on mathematical and computational modeling:
 
