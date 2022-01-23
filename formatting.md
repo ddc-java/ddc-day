@@ -7,7 +7,7 @@ description: "Formatting curriculum content (code, mathematical expressions, pse
 
 {% include ddc-abbreviations.md %}
       
-## Contents
+## Topics
 {:.no_toc}
 
 * TOC
@@ -67,6 +67,8 @@ The DDC Day theme has a predefined list of abbreviations. These can be used in a
 The contents of this list can be viewed at <https://raw.githubusercontent.com/ddc-java/ddc-day/master/_includes/ddc-abbreviations.md>. If you want to override some of these abbreviations in a module you're writing, simply use the syntax above to define (or redefine) one or more of them in any pages where the modified definition is needed.
 
 ## Code fragments
+
+### General
 
 When referenced, excerpted, or embedded in an instruction module, virtually all references to programmatic, markup, configuration, shell, or filesystem tokens (names or symbols of operators, classes, interfaces, methods, fields, variables, tables, columns, directories, files, elements, attributes, properties, commands, arguments, options, selectors, etc.) must be typographically distinct from the rest of the module text. Following widely used conventions, all of these should be displayed in a fixed-width (aka monospace) typeface. Not coincidentally, such typefaces are also widely used in shell programs, programming text editors, IDEs, etc.
 
@@ -147,6 +149,48 @@ This is rendered as:
 > ```
 > {:.failure}
 {:.render-example}
+
+## Block quotes
+
+### General
+
+The traditional purpose of blockquotes (aka _block quotations_) is to highlight, using block-level indentation, direct quotes---and usually, but not necessarily, quotes that are more than a couple of lines long. We add to this by using blockquotes for "quoting" output from code we're explaining, other console output, error logs, etc.
+
+For most cases, Markdown blockquotes can be used without any need for additional styling. For example, this Markdown uses blockquotes to present a useful quotation on mathematical and computational modeling:
+
+```markdown
+> Essentially, all models are wrong, but some are useful.
+>
+> --- George E. P. Box
+```
+
+When used verbatim, the above Markdown appears as 
+
+> Essentially, all models are wrong, but some are useful.
+>
+> --- George E. P. Box
+
+### Showing example output
+
+This theme defines a `render-example` CSS class for use with blockquotes. This class should be specified (generally via a kramdown IAL) when a blockquote is being used for the express purpose of displaying output from a code fragment included before the blockquote. In other words: when the module content includes a code fragment, and then includes the output produced by that code fragment; when that output is not in the form of a screen image (or video) capture, but is textual in nature; the output should be included in a Markdown blockquote that uses the `render-example` CSS class.
+
+For example, we can specify the `render-example` class in the George Box quote:
+
+```markdown
+> Essentially, all models are wrong, but some are useful.
+>
+> --- George E. P. Box
+{:.render-example}
+```
+
+This will be rendered as:
+
+> Essentially, all models are wrong, but some are useful.
+>
+> --- George E. P. Box
+{:.render-example}
+
+Can you spot the difference?
 
 ## Footnotes
 
