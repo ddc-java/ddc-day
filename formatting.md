@@ -15,9 +15,10 @@ description: "Formatting curriculum content (code, mathematical expressions, pse
 
 ## Overview
 
-It is assumed that the curriculum module author has significant Markdown experience already. Thus, the aim of this page is not to be a Markdown syntax reference. On the other hand, many types of content can be written in Markdown (or HTML) in a variety of ways---often with different outcomes in page layout and style. So the objective here is to present guidelines for several key content types, to encourage consistency across curriculum modules.
+It is assumed that the curriculum module author has significant Markdown experience already. Thus, the aim of this page is not to be a Markdown syntax reference. On the other hand, many types of content can be written in Markdown (or HTML) in a variety of ways---often with different outcomes in page layout and style. So the objective here is to present guidelines for several types of text content, to encourage consistency across curriculum modules.
 
 One general guideline, applicable to all of the rules that follow, is this:
+{: #general-guideline}
 
 > If an identical (and desirable) formatting result can be produced with either Markdown or HTML, the former should be used. In other words, content should be written using Markdown when possible, mixed Markdown & HTML when necessary, and pure HTML as a last resort.
 
@@ -154,9 +155,9 @@ This is rendered as:
 
 ### General
 
-The traditional purpose of blockquotes (aka _block quotations_) is to highlight, using block-level indentation, direct quotes---and usually, but not necessarily, quotes that are more than a couple of lines long. We add to this by using blockquotes for "quoting" output from code we're explaining, other console output, error logs, etc.
+The traditional purpose of blockquotes (aka _block quotations_) is to highlight, using block-level indentation, direct quotes---and usually, but not necessarily, quotes that are more than a couple of lines long. We add to this by using blockquotes to emphasize rules or guidelines (like the [general guideline](#general-guideline) stated at the top of this page), display output from code we're explaining, showing other console output, quoting from error logs, etc.
 
-For most cases, Markdown blockquotes can be used without any need for additional styling. For example, this Markdown uses blockquotes to present a useful quotation on mathematical and computational modeling:
+For most cases, Markdown blockquotes can be used without any need for additional styling. For example, this Markdown fragment uses blockquotes to present a useful quotation on mathematical and computational modeling:
 
 ```markdown
 > Essentially, all models are wrong, but some are useful.
