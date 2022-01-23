@@ -66,6 +66,7 @@ In fact, the Markdown shown above is used to define the headline rendered immedi
 
 > ## Not included in the TOC
 > {:.no_toc}
+{:.render-example}
 
 ## Section-specific guidelines
 
