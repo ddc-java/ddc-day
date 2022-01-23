@@ -52,4 +52,4 @@ description: "Links to external documentation and examples"
 ### Examples
 
 * [Recursion](https://ddc-java.github.io/recursion/)
-* [Introduction to Git and Markdown](https://ddc-java.github.io/pre-work-git-markdown/)
+* [Introduction to Git and Markdown](https://ddc-java.github.io/git-markdown/)
