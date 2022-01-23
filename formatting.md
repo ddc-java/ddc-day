@@ -7,6 +7,12 @@ description: "Formatting curriculum content (code, mathematical expressions, pse
 
 {% include ddc-abbreviations.md %}
       
+## Contents
+{:.no_toc}
+
+* TOC
+{:toc}
+
 ## Overview
 
 It is assumed that the curriculum module author has significant Markdown experience already. Thus, the aim of this page is not to be a Markdown syntax reference. On the other hand, many types of content can be written in Markdown (or HTML) in a variety of ways---often with different outcomes in page layout and style. So the objective here is to present guidelines for several key content types, to encourage consistency across curriculum modules.
@@ -127,7 +133,7 @@ Sometimes, it's important to show that a code fragment presented in a code block
 
 in combination with, or as an alternative to, the above options, color cues can be included with the code block itself. Currently, this theme recognizes `success` and `failure` CSS classes attached to a fenced code block, resulting in green or red (respectively) left and right borders on the rendered code block.
 
-For example, this code block uses the `failure` class (specified an a kramdown IAL) to indicate that the displayed code is invalid:
+For example, this code block uses the `failure` class (specified in a kramdown IAL) to indicate that the displayed code is invalid:
 
     ```java
     int x = "This is not an integer";
