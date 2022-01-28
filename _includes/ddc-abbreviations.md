@@ -3,6 +3,7 @@
 *[ASF]: Apache Software Foundation
 *[AWT]: Abstract Window Toolkit
 *[BOM]: Byte Order Mark
+*[CORBA]: Common Object Request Broker Architecture
 *[CSPRNG]: Cryptographically Secure Pseudo-Random Number Generator
 *[CSS]: Cascading Style Sheets
 *[CSV]: Comma-Separated Values
@@ -20,6 +21,7 @@
 *[GIF]: Graphics Interchange Format
 *[GUI]: Graphical User Interface 
 *[HTML]: HyperText Markup Language
+*[HTTP]: HyperText Transfer Protocol
 *[IAL]: Inline Attribute List
 *[IDE]: Integrated Development Environment
 *[IoC]: Inversion of Control
@@ -57,13 +59,16 @@
 *[PRNG]: Pseudo-Random Number Generator
 *[RDBMS]: Relational DataBase Management System
 *[REPL]: Read-Evaluate-Print Loop
+*[REST]: REpresentational State Transfer
 *[RMI]: Remote Method Invocation
 *[RNG]: Random Number Generator
 *[SDK]: Software Development Kit
+*[SOAP]: Simple Object Acces Protocol
 *[SoC]: Separation of Concerns 
 *[SOLID]: **S**ingle-responsibility principle; **O**pen-closed principle; **L**iskov substitution principle; **I**nterface segregation principle; **D**ependency inversion principle.
 *[SQL]: Structured Query Language
 *[SSG]: SQL Style Guide
+*[SSL]: Secure Sockets Layer
 *[SVG]: Scalable Vector Graphics
 *[TOC]: Table of Contents
 *[TAoCP]: _The Art of Computer Programming_, by Donald Knuth---the definitive reference work on algorithms.
@@ -71,6 +76,7 @@
 *[VCS]: Version Control System
 *[WAR]: Web application ARchive
 *[XML]: eXtensible Markup Language
+*[XML-RPC]: XML Remote Procedure Call
 *[XSD]: XML Schema Definition
 *[XSL]: eXtensible Stylesheet Language
 *[XSLT]: XSL Transformations
