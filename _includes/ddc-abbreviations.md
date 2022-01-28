@@ -57,6 +57,7 @@
 *[PRNG]: Pseudo-Random Number Generator
 *[RDBMS]: Relational DataBase Management System
 *[REPL]: Read-Evaluate-Print Loop
+*[RMI]: Remote Method Invocation
 *[RNG]: Random Number Generator
 *[SDK]: Software Development Kit
 *[SoC]: Separation of Concerns 
