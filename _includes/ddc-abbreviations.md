@@ -13,6 +13,7 @@
 *[GJSG]: Google Java Style Guide
 *[CRUD]: Create-Read-Update-Delete
 *[DRY]: Don't Reinvent Yourself
+*[DTO]: Data Transfer Object
 *[DVCS]: Distributed Version Control System
 *[EAR]: Enterprise ARchive
 *[ERD]: Entity-Relationship Diagram
@@ -56,6 +57,7 @@
 *[OOP]: Object-Oriented Programming
 *[ORM]: Object-Relational Mapping
 *[PNG]: Portable Network Graphics
+*[POJO]: Plain Old Java Object
 *[PRNG]: Pseudo-Random Number Generator
 *[RDBMS]: Relational DataBase Management System
 *[REPL]: Read-Evaluate-Print Loop
