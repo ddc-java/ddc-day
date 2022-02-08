@@ -60,6 +60,7 @@
 *[POJO]: Plain Old Java Object
 *[PRNG]: Pseudo-Random Number Generator
 *[RDBMS]: Relational DataBase Management System
+*[regex]: Regular expression
 *[REPL]: Read-Evaluate-Print Loop
 *[REST]: REpresentational State Transfer
 *[RMI]: Remote Method Invocation
