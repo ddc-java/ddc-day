@@ -790,6 +790,14 @@ div.wrapper {
 
     }
 
+    p {
+    
+      img:only-child {
+        margin-left: 2em;
+      }
+      
+    }
+    
     ol {
 
       list-style-type: decimal;
