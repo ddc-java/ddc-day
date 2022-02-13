@@ -788,14 +788,6 @@ div.wrapper {
         margin: 10px 0 10px 10px;
       }
       
-      &.half-width {
-        width: 50%;
-      }
-
-      &.quarter-width {
-        width: 25%;
-      }
-
     }
 
     ol {
@@ -921,6 +913,35 @@ div.wrapper {
   margin: 0 0 10px 0;
   padding: 0;
 }
+
+.five-sixths-width {
+  width: 83.33%;
+}
+
+.three-quarters-width {
+  width: 75%;
+}
+
+.two-thirds-width {
+  width: 66.75%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.third-width {
+  width: 33.33%;
+}
+
+.quarter-width {
+  width: 25%;
+}
+
+.sixth-width {
+  width: 16.67%;
+}
+
 
 @media print, screen and (max-width: 1170px) {
 
