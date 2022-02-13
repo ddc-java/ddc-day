@@ -261,6 +261,10 @@ blockquote {
     border-left: 2px solid $failure-color;
   }  
 
+  &.borderless {
+    border-left: none;
+  }
+
 }
 
 code {
