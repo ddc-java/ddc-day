@@ -7,6 +7,8 @@
 *[CSPRNG]: Cryptographically Secure Pseudo-Random Number Generator
 *[CSS]: Cascading Style Sheets
 *[CSV]: Comma-Separated Values
+*[DDL]: Data Definition Language
+*[DML]: Data Manipulation Language
 *[DSL]: Domain-Specific Language
 *[FI]: Functional Interface
 *[GC]: Garbage Collection
@@ -61,6 +63,7 @@
 *[POJO]: Plain Old Java Object
 *[PRNG]: Pseudo-Random Number Generator
 *[RDBMS]: Relational DataBase Management System
+*[RDBMSs]: Relational DataBase Management Systems
 *[regex]: Regular expression
 *[REPL]: Read-Evaluate-Print Loop
 *[REST]: REpresentational State Transfer
