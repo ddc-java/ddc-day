@@ -4,12 +4,15 @@
 *[AWT]: Abstract Window Toolkit
 *[BOM]: Byte Order Mark
 *[CORBA]: Common Object Request Broker Architecture
+*[CRUD]: Create-Read-Update-Delete
 *[CSPRNG]: Cryptographically Secure Pseudo-Random Number Generator
 *[CSS]: Cascading Style Sheets
 *[CSV]: Comma-Separated Values
+*[DAO]: Data Access Object
 *[DDL]: Data Definition Language
 *[DML]: Data Manipulation Language
 *[DSL]: Domain-Specific Language
+*[DTO]: Data Transfer Object
 *[FI]: Functional Interface
 *[GC]: Garbage Collection
 *[GJSG]: Google Java Style Guide
