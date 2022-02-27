@@ -51,6 +51,7 @@
 *[JSE]: Java Standard Edition
 *[JSON]: JavaScript Object Notation
 *[JVM]: Java Virtual Machine
+*[JWT]: JSON Web Token
 *[KISS]: Keep It Simple, Stupid
 *[LMS]: Learning Management System
 *[MPEG]: Motion Picture Experts Group
