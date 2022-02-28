@@ -63,6 +63,7 @@
 *[MVVM]: Model-View-ViewModel
 *[OOP]: Object-Oriented Programming
 *[ORM]: Object-Relational Mapping
+*[PII]: Personally Identifiable Information
 *[PNG]: Portable Network Graphics
 *[POJO]: Plain Old Java Object
 *[PRNG]: Pseudo-Random Number Generator
