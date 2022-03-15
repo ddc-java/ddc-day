@@ -2,6 +2,7 @@
 *[API]: Application Programming Interface
 *[ASF]: Apache Software Foundation
 *[AWT]: Abstract Window Toolkit
+*[BMP]: Basic Multilingual Plane
 *[BOM]: Byte Order Mark
 *[CORBA]: Common Object Request Broker Architecture
 *[CRUD]: Create-Read-Update-Delete
