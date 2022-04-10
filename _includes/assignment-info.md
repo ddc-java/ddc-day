@@ -13,12 +13,15 @@
 {% else -%}
 * Basic problem: None
 {% endif -%}
-{% if site.assignment.value.extra | default: site.assignment.value.stretch -%}
-{% if site.assignment.value.extra.implementation  | default: site.assignment.value.stretch.implementation -%}
-* Stretch goal implementation: {{ site.assignment.value.extra.implementation  | default: site.assignment.value.stretch.implementation }} points
+{% assign stretch_implementation = site.assignment.value.extra.implementation | default: site.assignment.value.stretch.implementation %}
+{% assign stretch_tests = site.assignment.value.extra.tests | default: site.assignment.value.stretch.tests %}
+{% assign stretch_value = site.assignment.value.extra.implementation | default: site.assignment.value.stretch.implementation %}
+{% if stretch_implementation or stretch_tests -%}
+{% if stretch_implementation -%}
+* Stretch goal implementation: {{ stretch_implementation }} points
 {% endif -%}
-{% if site.assignment.value.extra.tests  | default: site.assignment.value.stretch.tests -%}
-* Stretch goal unit tests: {{ site.assignment.value.extra.tests  | default: site.assignment.value.stretch.tests }} points
+{% if stretch_tests -%}
+* Stretch goal unit tests: {{ stretch_tests }} points
 {% endif -%}
 {% else -%}
 * Stretch goals: None
