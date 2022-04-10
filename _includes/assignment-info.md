@@ -13,9 +13,9 @@
 {% else -%}
 * Basic problem: None
 {% endif -%}
-{% assign stretch_implementation = site.assignment.value.extra.implementation | default: site.assignment.value.stretch.implementation %}
-{% assign stretch_tests = site.assignment.value.extra.tests | default: site.assignment.value.stretch.tests %}
-{% assign stretch_value = site.assignment.value.extra.implementation | default: site.assignment.value.stretch.implementation %}
+{% assign stretch_implementation = site.assignment.value.extra.implementation | default: site.assignment.value.stretch.implementation -%}
+{% assign stretch_tests = site.assignment.value.extra.tests | default: site.assignment.value.stretch.tests -%}
+{% assign stretch_value = site.assignment.value.extra.implementation | default: site.assignment.value.stretch.implementation -%}
 {% if stretch_implementation or stretch_tests -%}
 {% if stretch_implementation -%}
 * Stretch goal implementation: {{ stretch_implementation }} points
