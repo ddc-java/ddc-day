@@ -110,7 +110,7 @@
               {%- assign current_url = page.url | relative_url -%}
               {%- for navPage in navPages %}
                 {%- if navPage.menu or navPage.icon -%}
-                  {%- assign page_url = navPage.url | relative_url -%}
+                  {%- assign page_url = navPage.href | default: navPage.url | relative_url -%}
                   {%- capture optional_class %}{% if navPage.optional %}class="optional"{% endif %}{% endcapture -%}
                   <li {{ optional_class }}>
                     {%- if page_url == current_url or page.variant_group == navPage.variant_group and page.variant_group -%}
