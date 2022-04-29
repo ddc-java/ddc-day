@@ -109,15 +109,15 @@ Alternatively, **Summary** may be used at the end of a page or module, recapitul
 
 #### Value
 
-If the module is an assignment, practical exam problem, or extra-credit problem, this section (at or near the top---usually even above an [overview](#inventory-overview) or [summary](#summary)) should show the point value---broken down into separate components, if appropriate.
+If the module is an assignment, practical exam problem, or extra-credit problem, this section (at or near the top---usually even above an [overview](#inventory-overview) or [summary](#summary)) can be used to show the point value---broken down into separate components, if appropriate.
 
-#### Requirements
+#### Requirements or specifications
 
-If the page specifies some deliverable task(s) the student is expected to perform, include functional and technical requirements in a clearly identified section. Include code fragments and test cases in this section, as appropriate.
+If the page specifies some deliverable task(s) the student is expected to perform, include functional and technical specifications in a clearly identified section. Include code fragments and test cases in this section, as appropriate.
 
 #### Assumptions
 
-This section may be used to expand on [Requirements](#requirements), listing key assumptions that the student may make regarding inputs, environment, etc. 
+This section may be used to expand on [specifications](#requirements-or-specifications), listing key assumptions that the student may make regarding inputs, environment, etc. 
 
 #### Hints or tips
 
