@@ -78,7 +78,8 @@ In fact, the Markdown shown above is used to define the headline rendered immedi
 > {:.no_toc}
 {:.render-example}
 
-## Section-specific guidelines
+## Guidelines for specific sections
+{: menu="Specific sections" }
 
 The actual sections used in curriculum module site pages will vary greatly, depending on the type of module (practical exam problem, homework assignment, extra-credit opportunity, guided tutorial, lecture notes, etc.). Nonetheless, consistency should be an aim; to that end, here are some typical section headings, with explanatory text for how each section might be used.
 
