@@ -745,11 +745,28 @@ div.wrapper {
       scroll-snap-margin-top: 155px;
     }
 
-    a code {
-      font-family: $code-fonts;
-      color:#0060FF;
-    }
+    a > {
+    
+      code {
+        font-family: $code-fonts;
+        color:#0060FF;
+      }
 
+      *:not(pre) {
+        code {
+          font-family: $code-fonts;
+          color:#0060FF;
+        }
+      }
+      
+      pre {
+        code {
+          font-family: $code-fonts;
+        }
+      }
+      
+    }
+    
     h2 {
       clear: both;
     }
