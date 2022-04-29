@@ -34,4 +34,9 @@ $(function() {
   sectionHeight();
 
   $('img').on('load', sectionHeight);
+
+  $("*[autolink][href]").wrap(function() {
+    return "<a href='" + $(this).attr("href") + "'></a>";
+  });
+
 });
