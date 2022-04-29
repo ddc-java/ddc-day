@@ -16,6 +16,7 @@ The kramdown parser used by default in this theme supports the usual Markdown he
 If the `heading_navigator.enabled` property is set to `true` at the site level, or at the page level for any given page, headings in the page content at level 2 (by default) will become links in a section navigator sidebar (as seen in this page).
 
 ## General tips & guidelines
+{: menu="General guidelines" }
 
 * In most cases, `heading_navigator.enabled` should be set to `true` (the default) at the site level. 
 
@@ -23,13 +24,22 @@ If the `heading_navigator.enabled` property is set to `true` at the site level, 
 
 * Related to the above, `heading_navigator.from` should generally be left at the default value of 2. `heading_navigator.to` should generally be left at the default value of 2, but may be increased to 3.
 
-* When `heading_navigator` is enabled, the text of headings appearing as links in the navigator should be kept short---usually 1--3 words, and with the ampersand (&) substituting for "and". Be sure to review the published appearance of links in the navigator sidebar, and adjust heading text as necessary.
+* When `heading_navigator` is enabled, the text of headings appearing as links in the navigator should be kept short---usually 1--3 words, and with the ampersand (&) substituting for "and". 
 
+    Alternatively, the `menu` attribute may be set on a heading; text specified in this attribute will be used in the section navigator sidebar, in place of the heading text. To set this attribute, use a block-level _Inline Attribute List_ (IAL), provided by kramdown as an extension to Markdown. For example, the sidebar link for the section you're reading now is defined as follows:
+    
+    ```markdown
+    ## General tips & guidelines
+    {: menu="General guidelines" }
+    ```
+    
+    In any event, be sure to review the published appearance of links in the navigator sidebar, and adjust heading text or the `menu` attribute value as necessary.
+    
 * Items in the navigator sidebar are displayed as right-aligned items in an unordered list; however, only links to level-3 headings include a bullet character. Thus, when `heading_navigator` is enabled, and the range from `heading_navigator.from` to `heading_navigator.to` (inclusive) includes 3, the headings in a page should either _all_ be at level 3+, or all level-3 headings (if any) should be subheadings beneath one or more level-2 headings. Otherwise, you will end up with some bullet items nested below a non-bullet item, and other bullet items that are not nested.
 
 * The text of headings used in the navigator sidebar must be distinct, or the links will not work as expected.
 
-* To omit a heading that would normally be linked to in the sidebar from appearing there, use the `no-nav` CSS class. The kramdown processor supports this in Markdown with a block-level _Inline Attribute List_ (IAL), e.g.
+* To omit a heading that would normally be linked to in the sidebar from appearing there, use the `no-nav` CSS class. The kramdown processor supports with a block-level IAL, e.g.
 
     ```markdown
     ## Not included in the navigator sidebar
