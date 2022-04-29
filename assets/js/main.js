@@ -18,7 +18,7 @@ $(function() {
     selectors.push("section > h" + i + ":not(.no-nav)");
   }
   $(selectors.join(", ")).each(function(){
-    $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + ($(this).attr(menu) || $(this).text()) + "</a></li>");
+    $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + ($(this).attr("menu") || $(this).text()) + "</a></li>");
     $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
     $("nav ul li:first-child a").parent().addClass("active");
   });
