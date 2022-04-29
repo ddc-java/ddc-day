@@ -35,7 +35,7 @@ Site-level configuration is done in `_config.yml`, and supports the following pr
 
 `author.href`
 
-: This property is used in conjunction with `author.copyright`. If this property is set, then the value of `author.name`included in the copyright notice will be rendered as a link with an `href` attribute set to the value of this property; otherwise, the value of `author.name` will be included in the copyright notice, but not as a link.
+: This property is used in conjunction with `author.copyright` and `author.name`. If this property is set, then the value of `author.name` included in the copyright notice will be rendered as a link with an `href` attribute set to the value of this property; otherwise, the value of `author.name` will be included in the copyright notice, but not as a link.
 
 `author.name`
 
@@ -199,7 +199,7 @@ This is a curriculum module of the [Deep Dive Coding](https://deepdivecoding.com
 
 This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
 
-&copy; 2020 CNM Ingenuity, Inc. All rights reserved.
+&copy; 2022 CNM Ingenuity, Inc. All rights reserved.
 ```
 
 When viewing the repository in GitHub, this is displayed as
@@ -222,7 +222,7 @@ When viewing the repository in GitHub, this is displayed as
 > 
 > This curriculum module was written by Nick Bennett, with Todd Nordquist and Rishita Hariyani.
 > 
-> &copy; 2020 CNM Ingenuity, Inc. All rights reserved.
+> &copy; 2022 CNM Ingenuity, Inc. All rights reserved.
 {:.render-example}
 
 ### License
