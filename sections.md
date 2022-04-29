@@ -33,7 +33,7 @@ If the `heading_navigator.enabled` property is set to `true` at the site level, 
     {: menu="General guidelines" }
     ```
     
-    In any event, be sure to review the published appearance of links in the navigator sidebar, and adjust heading text or the `menu` attribute value as necessary.
+    Use the `menu` attribute with caution: Sidebar link text that is significantly different from the heading text can result in reader confusion. In any event, be sure to review the published appearance of links in the navigator sidebar, and adjust heading text or the `menu` attribute value as necessary.
     
 * Items in the navigator sidebar are displayed as right-aligned items in an unordered list; however, only links to level-3 headings include a bullet character. Thus, when `heading_navigator` is enabled, and the range from `heading_navigator.from` to `heading_navigator.to` (inclusive) includes 3, the headings in a page should either _all_ be at level 3+, or all level-3 headings (if any) should be subheadings beneath one or more level-2 headings. Otherwise, you will end up with some bullet items nested below a non-bullet item, and other bullet items that are not nested.
 

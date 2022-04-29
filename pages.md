@@ -81,3 +81,18 @@ order: 30
     One permissible exception to this rule is the site default page, `index.md`: If the site has 5+ pages, and if the default page is just a short introduction, with little (if any) instructional content, it may be left out of the page navigator by omitting the `menu` property from the front matter. The default page will still be reachable from other pages on the site, by clicking on the main header text at the top of the page. 
     
     A preferred alternative to the above, where there are too many pages in a module to display the titles effectively in the page navigator menu, is to set the `icon` property, so that an icon (e.g. a home icon for the default page) is displayed instead of a title. However, this approach should not be used for more than 1--2 pages in a module, and it should only be used for the first and/or last pages that appear in the page navigator menu.
+    
+    If the `menu` property is not set in the front matter of a given page, a link to the page **will not** be displayed in the page navigator.
+    
+* In a multi-page site with `page_navigator.enabled` set to `true` at the site level, a page with the `menu` and `href` properties set will have a corresponding link in the page navigator, but the link will go to the address specified by the `href` property. for example, the front matter below will result in a link to the Mozilla Developer Network (MDN) site appearing in the page navigator.
+
+    ```yaml
+    ---
+    title: "Mozilla Developer Network"
+    menu: MDN
+    order: 100
+    href: "https://developer.mozilla.org"
+    ---
+    ```
+    
+    Note that when the `href` property is set, any content below the front matter will generally not be displayed (since the page navigator link will go to the page specified in `href`). Thus, pages using `href` should generally not contain content after the front matter.
