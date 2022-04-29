@@ -117,7 +117,7 @@ If the page specifies some deliverable task(s) the student is expected to perfor
 
 #### Assumptions
 
-This section may be used to expand on [specifications](#requirements-or-specifications), listing key assumptions that the student may make regarding inputs, environment, etc. 
+This section may be used to expand on the [requirements or specifications](#requirements-or-specifications), listing key assumptions that the student may make regarding inputs, environment, etc. 
 
 #### Hints or tips
 
