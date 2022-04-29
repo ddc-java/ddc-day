@@ -1,3 +1,4 @@
+
 ## Data definition language (DDL)
 {: menu="DDL" }
 
