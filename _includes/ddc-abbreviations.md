@@ -5,6 +5,7 @@
 *[BMP]: Basic Multilingual Plane
 *[BOM]: Byte Order Mark
 *[CORBA]: Common Object Request Broker Architecture
+*[CPU]: Central Processing Unit
 *[CRUD]: Create-Read-Update-Delete
 *[CSPRNG]: Cryptographically Secure Pseudo-Random Number Generator
 *[CSS]: Cascading Style Sheets
@@ -12,6 +13,7 @@
 *[DAO]: Data Access Object
 *[DDL]: Data Definition Language
 *[DML]: Data Manipulation Language
+*[DRY]: Don't Repeat Yourself
 *[DSL]: Domain-Specific Language
 *[DTO]: Data Transfer Object
 *[FI]: Functional Interface
@@ -24,6 +26,7 @@
 *[EAR]: Enterprise ARchive
 *[ERD]: Entity-Relationship Diagram
 *[ERDs]: Entity-Relationship Diagrams
+*[FPU]: Floating-Point Unit
 *[FSM]: Finite-State Machine
 *[GC]: Garbage Collection (or Garbage Collector)
 *[GIF]: Graphics Interchange Format
@@ -47,13 +50,14 @@
 *[JNI]: Java Native Interface
 *[JPEG]: Joint Photographic Experts Group
 *[JPA]: Java Persistence API
-*[jpg]: Joint Photographic Experts Group (3-character variation of JPEG, used as a file extension)
+*[jpg]: Joint Photographic Experts Group (3-character variation of JPEG, often used as a file extension)
 *[JRE]: Java Runtime Environment
 *[JSE]: Java Standard Edition
 *[JSON]: JavaScript Object Notation
 *[JVM]: Java Virtual Machine
 *[JWT]: JSON Web Token
 *[KISS]: Keep It Simple, Stupid
+*[LaTeX]: High-level, content-focused macros for TeX
 *[LMS]: Learning Management System
 *[MPEG]: Motion Picture Experts Group
 *[mp3]: MPEG audio layer III
@@ -78,14 +82,15 @@
 *[SDK]: Software Development Kit
 *[SOAP]: Simple Object Acces Protocol
 *[SoC]: Separation of Concerns 
-*[SOLID]: **S**ingle-responsibility principle; **O**pen-closed principle; **L**iskov substitution principle; **I**nterface segregation principle; **D**ependency inversion principle.
+*[SOLID]: Acronym for the combination of Single-responsibility principle, Open-closed principle, Liskov substitution principle, Interface segregation principle, Dependency inversion principle
 *[SQL]: Structured Query Language
 *[SSG]: SQL Style Guide
+*[SSH]: Secure SHell protocol
 *[SSL]: Secure Sockets Layer
 *[SVG]: Scalable Vector Graphics
+*[TAoCP]: "The Art of Computer Programming", by Donald Knuth—the definitive reference work on computational algorithms
+*[TeX]: Typesetting system invented by Donald Knuth, used for formatting complex content flexibly yet precisely
 *[TOC]: Table of Contents
-*[TAoCP]: _The Art of Computer Programming_, by Donald Knuth---the definitive reference work on algorithms.
-*[TeX]: Typesetting system invented by Donald Knuth, used for formatting complex or technical content, such as mathematical formulas.
 *[VCS]: Version Control System
 *[WAR]: Web application ARchive
 *[XML]: eXtensible Markup Language
@@ -95,4 +100,5 @@
 *[XSLT]: XSL Transformations
 *[YAGNI]: You Ain't Gonna Need It 
 *[YAML]: Yaml Ain't a Markup Language (originally, Yet Another Markup Language)
-*[yml]: 3-character variation of YAML, used as a file extension
+*[yml]: Yaml Ain't a Markup Language (3-character variation of YAML, often used as a file extension)
+*[*nix]: Any operating systems that may be reasonably described as "Unix-like"—including macOS and all Linux variants
