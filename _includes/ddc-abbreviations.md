@@ -4,6 +4,8 @@
 *[AWT]: Abstract Window Toolkit
 *[BMP]: Basic Multilingual Plane
 *[BOM]: Byte Order Mark
+*[CI]: Continuous Integration
+*[CD]: Continuous Delivery or Continuous Deployment
 *[CORBA]: Common Object Request Broker Architecture
 *[CPU]: Central Processing Unit
 *[CRUD]: Create-Read-Update-Delete
