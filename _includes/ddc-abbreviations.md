@@ -1,3 +1,4 @@
+*[2FA]: Two-Factor Authentication
 *[AOT]: Ahead-Of-Time compilation
 *[API]: Application Programming Interface
 *[ASF]: Apache Software Foundation
@@ -61,6 +62,7 @@
 *[KISS]: Keep It Simple, Stupid
 *[LaTeX]: High-level, content-focused macros for TeX
 *[LMS]: Learning Management System
+*[MFA]: Multi-Factor Authentication
 *[MPEG]: Motion Picture Experts Group
 *[mp3]: MPEG audio layer III
 *[mp4]: MPEG-4 with audio & video
@@ -82,6 +84,7 @@
 *[RMI]: Remote Method Invocation
 *[RNG]: Random Number Generator
 *[SDK]: Software Development Kit
+*[SE]: SOftware Engineering
 *[SOAP]: Simple Object Acces Protocol
 *[SoC]: Separation of Concerns 
 *[SOLID]: Acronym for the combination of Single-responsibility principle, Open-closed principle, Liskov substitution principle, Interface segregation principle, Dependency inversion principle
@@ -97,6 +100,7 @@
 *[WAR]: Web application ARchive
 *[XML]: eXtensible Markup Language
 *[XML-RPC]: XML Remote Procedure Call
+*[XP]: eXtreme Programming
 *[XSD]: XML Schema Definition
 *[XSL]: eXtensible Stylesheet Language
 *[XSLT]: XSL Transformations
