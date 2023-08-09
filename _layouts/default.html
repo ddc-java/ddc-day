@@ -68,7 +68,7 @@
           {%- assign headline_text = site.github.repository_name -%}
         {%- endif -%}
         <h1><a href="{{ '/' | relative_url }}">{{ headline_text }}</a></h1>
-        <p>{{ page.subtitle | default: page.description | default: site.description | default: site.github.project_tagline }}</p>
+        <p>{{ page.subtitle | default: page.description | default: site.description | default: site.github.project_tagline | markdownify }}</p>
       </header>
 
       <div id="banner">
