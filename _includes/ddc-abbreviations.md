@@ -34,6 +34,7 @@
 *[GC]: Garbage Collection (or Garbage Collector)
 *[GIF]: Graphics Interchange Format
 *[GUI]: Graphical User Interface 
+*[HDD]: Hard-Disk Drive—an electromechanical, non-volatile storage device incorporating spinning platters coated with a magnetic medium
 *[HTML]: HyperText Markup Language
 *[HTTP]: HyperText Transfer Protocol
 *[IAL]: Inline Attribute List
@@ -62,6 +63,7 @@
 *[KISS]: Keep It Simple, Stupid
 *[LaTeX]: High-level, content-focused macros for TeX
 *[LMS]: Learning Management System
+*[LTS]: Long-Term Support
 *[MFA]: Multi-Factor Authentication
 *[MPEG]: Motion Picture Experts Group
 *[mp3]: MPEG audio layer III
@@ -76,6 +78,7 @@
 *[PNG]: Portable Network Graphics
 *[POJO]: Plain Old Java Object
 *[PRNG]: Pseudo-Random Number Generator
+*[RAM]: Random-Access Memory (volatile storage)
 *[RDBMS]: Relational DataBase Management System
 *[RDBMSs]: Relational DataBase Management Systems
 *[regex]: Regular expression
@@ -89,6 +92,7 @@
 *[SoC]: Separation of Concerns 
 *[SOLID]: Acronym for the combination of Single-responsibility principle, Open-closed principle, Liskov substitution principle, Interface segregation principle, Dependency inversion principle
 *[SQL]: Structured Query Language
+*[SSD]: Solid-State Drive—a type of non-volatile storage that does not use spinning platters or other mechanical components
 *[SSG]: SQL Style Guide
 *[SSH]: Secure SHell protocol
 *[SSL]: Secure Sockets Layer
