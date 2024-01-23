@@ -262,6 +262,10 @@ blockquote {
     border-left: 2px solid $failure-color;
   }  
 
+  &.warning {
+    border-left: 2px solid $deep-dive-yellow;
+  }  
+
   &.borderless {
     border-left: none;
   }
