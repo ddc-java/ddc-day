@@ -350,6 +350,15 @@ pre {
 
 }
 
+.warning {
+
+  pre {
+    border-left: 4px solid $deep-dive-yellow;
+    border-right: 4px solid $deep-dive-yellow;
+  }
+
+}
+
 table {
 
   width: 100%;
