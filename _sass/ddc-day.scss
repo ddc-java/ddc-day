@@ -780,30 +780,33 @@ div.wrapper {
       }
       
     }
-    
+
     h2 {
       clear: both;
     }
-    
+
     img {
-    
+
       max-width: 100%;
-      
+
       &[alt^="Figure"] {
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
-      
-      &[alt^="screen"] {
+
+      &[alt^="screen"],
+      &.screen-capture,
+      &.quarter-width {
         width: 25%;
         min-width: 160px;
         float: right;
         clear: right;
         margin: 10px 0 10px 10px;
       }
-      
-      &[alt^="dialog"] {
+
+      &[alt^="dialog"],
+      &.dialog-capture {
         width: 20%;
         min-width: 128px;
         float: right;
