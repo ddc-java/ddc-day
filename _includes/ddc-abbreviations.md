@@ -61,7 +61,6 @@
 *[JVM]: Java Virtual Machine
 *[JWT]: JSON Web Token
 *[KISS]: Keep It Simple, Stupid
-*[LaTeX]: High-level, content-focused macros for TeX
 *[LMS]: Learning Management System
 *[LTS]: Long-Term Support
 *[MFA]: Multi-Factor Authentication
