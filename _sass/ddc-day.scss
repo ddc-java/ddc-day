@@ -789,7 +789,8 @@ div.wrapper {
 
       max-width: 100%;
 
-      &[alt^="Figure"] {
+      &[alt^="Figure"],
+      &.full-width {
         display: block;
         margin-left: auto;
         margin-right: auto;
