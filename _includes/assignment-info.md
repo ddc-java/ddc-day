@@ -1,7 +1,9 @@
 {% if site.assignment.url -%}
 * Assignment link: <{{ site.assignment.url }}>
-* Format: {{ site.assignment.format | default: "Gradle Java project" }}
-{%- endif %}
+{% endif -%}
+{% if site.assignment.format -%}
+* Format: {{ site.assignment.format }}
+{% endif -%}
 
 {% if site.assignment.value.basic.implementation -%}
 * Basic implementation: {{ site.assignment.value.basic.implementation }} points
