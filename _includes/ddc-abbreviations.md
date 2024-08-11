@@ -76,6 +76,7 @@
 *[PII]: Personally Identifiable Information
 *[PNG]: Portable Network Graphics
 *[POJO]: Plain Old Java Object
+*[PoLA]: Principle of Least Astonishment
 *[PRNG]: Pseudo-Random Number Generator
 *[RAM]: Random-Access Memory (volatile storage)
 *[RDBMS]: Relational DataBase Management System
@@ -96,8 +97,8 @@
 *[SSH]: Secure SHell protocol
 *[SSL]: Secure Sockets Layer
 *[SVG]: Scalable Vector Graphics
-*[TDD]; Test-Driven Development
-*[TFD]; Test-First Development
+*[TDD]: Test-Driven Development
+*[TFD]: Test-First Development
 *[TAoCP]: "The Art of Computer Programming", by Donald Knuth—the definitive reference work on computational algorithms
 *[TeX]: Typesetting system invented by Donald Knuth, used for formatting complex content flexibly yet precisely
 *[TOC]: Table of Contents
