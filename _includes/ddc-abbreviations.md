@@ -96,6 +96,8 @@
 *[SSH]: Secure SHell protocol
 *[SSL]: Secure Sockets Layer
 *[SVG]: Scalable Vector Graphics
+*[TDD]; Test-Driven Development
+*[TFD]; Test-First Development
 *[TAoCP]: "The Art of Computer Programming", by Donald Knuth—the definitive reference work on computational algorithms
 *[TeX]: Typesetting system invented by Donald Knuth, used for formatting complex content flexibly yet precisely
 *[TOC]: Table of Contents
