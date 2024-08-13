@@ -866,10 +866,20 @@ div.wrapper {
     }
 
     div.footnotes {
-	  font-size: 90%;
+
+      font-size: 90%;
       margin-top: 20px;
       padding-top: 20px;
       border-top: 0.5px solid rgba(76, 78, 78, 0.5);
+
+      ol {
+        li{
+          p {
+            margin-bottom: 0.5em;
+          }
+        }
+      }
+      
     }
 
     div.youtube-container {
